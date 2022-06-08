@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C2B6ED8-852B-4CE1-A96B-6B15AAF54265}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proyecto_Fabrica_Textil_Omar</RootNamespace>
+    <AssemblyName>Proyecto_Fabrica_Textil_Omar</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsitenciasOmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsitenciasOmar.Designer.cs">
+      <DependentUpon>AsitenciasOmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteOmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteOmar.Designer.cs">
+      <DependentUpon>ClienteOmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompraOmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraOmar.Designer.cs">
+      <DependentUpon>CompraOmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONEXION_MAESTRA_OMAR_FA.cs" />
+    <Compile Include="DevolucionesOmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevolucionesOmar.Designer.cs">
+      <DependentUpon>DevolucionesOmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Incluir_Detalles_FabricaOmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Incluir_Detalles_FabricaOmar.Designer.cs">
+      <DependentUpon>Incluir_Detalles_FabricaOmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MateriPrimaOmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MateriPrimaOmar.Designer.cs">
+      <DependentUpon>MateriPrimaOmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoOmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidoOmar.Designer.cs">
+      <DependentUpon>PedidoOmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerdidasOmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerdidasOmar.Designer.cs">
+      <DependentUpon>PerdidasOmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalOmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalOmar.Designer.cs">
+      <DependentUpon>PersonalOmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prendaOmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prendaOmar.Designer.cs">
+      <DependentUpon>prendaOmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProveedorOmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorOmar.Designer.cs">
+      <DependentUpon>ProveedorOmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentaOmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentaOmar.Designer.cs">
+      <DependentUpon>VentaOmar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AsitenciasOmar.resx">
+      <DependentUpon>AsitenciasOmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteOmar.resx">
+      <DependentUpon>ClienteOmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompraOmar.resx">
+      <DependentUpon>CompraOmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevolucionesOmar.resx">
+      <DependentUpon>DevolucionesOmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Incluir_Detalles_FabricaOmar.resx">
+      <DependentUpon>Incluir_Detalles_FabricaOmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MateriPrimaOmar.resx">
+      <DependentUpon>MateriPrimaOmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidoOmar.resx">
+      <DependentUpon>PedidoOmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerdidasOmar.resx">
+      <DependentUpon>PerdidasOmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalOmar.resx">
+      <DependentUpon>PersonalOmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prendaOmar.resx">
+      <DependentUpon>prendaOmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ProveedorOmar.resx">
+      <DependentUpon>ProveedorOmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentaOmar.resx">
+      <DependentUpon>VentaOmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pnatalones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_fa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camiseta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corbata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camiseta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camisa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camiseta2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chamarra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pantalon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\playera2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shorts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sueter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sueter2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vestido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vestido2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vestido3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarPrenda2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarPrenda1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarPrenda11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarPrenda21.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
