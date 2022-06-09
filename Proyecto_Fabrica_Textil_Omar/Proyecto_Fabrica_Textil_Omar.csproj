@@ -270,5 +270,23 @@
   <ItemGroup>
     <None Include="Resources\insertarPrenda21.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarPedido1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarPedido2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarCliente1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarCliente2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarDevoluciones1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarDevoluciones2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

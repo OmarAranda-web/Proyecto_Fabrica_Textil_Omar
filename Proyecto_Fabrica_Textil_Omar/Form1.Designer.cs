@@ -92,6 +92,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(664, 963);
             this.panel2.TabIndex = 14;
+            this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mostrarPedido2);
             // 
             // panel3
             // 
@@ -251,9 +252,9 @@
             this.btnPrendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrendas.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrendas.ForeColor = System.Drawing.Color.Transparent;
-            this.btnPrendas.Location = new System.Drawing.Point(3, 16);
+            this.btnPrendas.Location = new System.Drawing.Point(50, 18);
             this.btnPrendas.Name = "btnPrendas";
-            this.btnPrendas.Size = new System.Drawing.Size(658, 202);
+            this.btnPrendas.Size = new System.Drawing.Size(578, 176);
             this.btnPrendas.TabIndex = 3;
             this.btnPrendas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPrendas.UseVisualStyleBackColor = false;
@@ -263,33 +264,47 @@
             // 
             // btnPedido
             // 
+            this.btnPedido.BackColor = System.Drawing.Color.Transparent;
+            this.btnPedido.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.insertarPedido1;
+            this.btnPedido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPedido.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPedido.FlatAppearance.BorderSize = 0;
+            this.btnPedido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPedido.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPedido.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPedido.Image = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.vestido3;
             this.btnPedido.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPedido.Location = new System.Drawing.Point(38, 277);
+            this.btnPedido.Location = new System.Drawing.Point(50, 223);
             this.btnPedido.Name = "btnPedido";
-            this.btnPedido.Size = new System.Drawing.Size(602, 167);
+            this.btnPedido.Size = new System.Drawing.Size(586, 191);
             this.btnPedido.TabIndex = 4;
-            this.btnPedido.Text = "INSERTAR PEDIDO";
             this.btnPedido.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPedido.UseVisualStyleBackColor = true;
+            this.btnPedido.UseVisualStyleBackColor = false;
             this.btnPedido.Click += new System.EventHandler(this.btnPedido_Click);
+            this.btnPedido.MouseLeave += new System.EventHandler(this.mostarPedido1);
+            this.btnPedido.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mostrarPedido2);
             // 
             // btnCliente
             // 
+            this.btnCliente.BackColor = System.Drawing.Color.Transparent;
+            this.btnCliente.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.insertarCliente1;
+            this.btnCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCliente.FlatAppearance.BorderSize = 0;
+            this.btnCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCliente.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCliente.Image = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.pantalon;
             this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCliente.Location = new System.Drawing.Point(38, 491);
+            this.btnCliente.Location = new System.Drawing.Point(50, 454);
             this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Size = new System.Drawing.Size(602, 167);
+            this.btnCliente.Size = new System.Drawing.Size(586, 192);
             this.btnCliente.TabIndex = 5;
-            this.btnCliente.Text = "INSERTAR CLIENTE";
             this.btnCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCliente.UseVisualStyleBackColor = true;
+            this.btnCliente.UseVisualStyleBackColor = false;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
+            this.btnCliente.MouseLeave += new System.EventHandler(this.mostrarImgCliente1);
+            this.btnCliente.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mosatrarImgCliente2);
             // 
             // btnVenta
             // 
@@ -297,7 +312,7 @@
             this.btnVenta.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVenta.Image = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.playera;
             this.btnVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVenta.Location = new System.Drawing.Point(47, 682);
+            this.btnVenta.Location = new System.Drawing.Point(62, 688);
             this.btnVenta.Name = "btnVenta";
             this.btnVenta.Size = new System.Drawing.Size(593, 167);
             this.btnVenta.TabIndex = 6;
