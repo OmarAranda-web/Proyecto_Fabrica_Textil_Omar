@@ -20,6 +20,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void PerdidasOmar_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
+            CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPerdidasOmar, "exec proc_consul_perdidas");
         }
 
         private void btnRegMenOmar_Click(object sender, EventArgs e)
@@ -61,6 +62,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                         MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
                     }
                     CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                    CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPerdidasOmar, "exec proc_consul_perdidas");
                     cmbMateriaOmar.Items.Clear();
                     txtCantiPerd.Clear();
                     txtObservaPerd.Clear();

@@ -37,6 +37,8 @@
             this.btnMenuOmar = new System.Windows.Forms.Button();
             this.txtcantidadProd = new System.Windows.Forms.TextBox();
             this.btnInsertarPedido = new System.Windows.Forms.Button();
+            this.tabPedido = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.tabPedido)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -97,7 +99,7 @@
             // 
             // btnMenuOmar
             // 
-            this.btnMenuOmar.Location = new System.Drawing.Point(539, 366);
+            this.btnMenuOmar.Location = new System.Drawing.Point(623, 253);
             this.btnMenuOmar.Name = "btnMenuOmar";
             this.btnMenuOmar.Size = new System.Drawing.Size(145, 69);
             this.btnMenuOmar.TabIndex = 7;
@@ -114,7 +116,7 @@
             // 
             // btnInsertarPedido
             // 
-            this.btnInsertarPedido.Location = new System.Drawing.Point(268, 366);
+            this.btnInsertarPedido.Location = new System.Drawing.Point(623, 354);
             this.btnInsertarPedido.Name = "btnInsertarPedido";
             this.btnInsertarPedido.Size = new System.Drawing.Size(131, 69);
             this.btnInsertarPedido.TabIndex = 10;
@@ -122,11 +124,22 @@
             this.btnInsertarPedido.UseVisualStyleBackColor = true;
             this.btnInsertarPedido.Click += new System.EventHandler(this.btnInsertarPedido_Click);
             // 
+            // tabPedido
+            // 
+            this.tabPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabPedido.Location = new System.Drawing.Point(66, 354);
+            this.tabPedido.Name = "tabPedido";
+            this.tabPedido.RowHeadersWidth = 51;
+            this.tabPedido.RowTemplate.Height = 24;
+            this.tabPedido.Size = new System.Drawing.Size(537, 300);
+            this.tabPedido.TabIndex = 11;
+            // 
             // PedidoOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.tabPedido);
             this.Controls.Add(this.btnInsertarPedido);
             this.Controls.Add(this.txtcantidadProd);
             this.Controls.Add(this.btnMenuOmar);
@@ -140,6 +153,7 @@
             this.Text = "Pedido";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Pedido_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tabPedido)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,5 +170,6 @@
         private System.Windows.Forms.Button btnMenuOmar;
         private System.Windows.Forms.TextBox txtcantidadProd;
         private System.Windows.Forms.Button btnInsertarPedido;
+        private System.Windows.Forms.DataGridView tabPedido;
     }
 }

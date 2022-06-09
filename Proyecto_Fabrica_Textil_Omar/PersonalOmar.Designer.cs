@@ -51,6 +51,8 @@
             this.txtTelefonoPerOmar = new System.Windows.Forms.TextBox();
             this.btnRegMenOmar = new System.Windows.Forms.Button();
             this.btnPersonal = new System.Windows.Forms.Button();
+            this.tabPersonal = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.tabPersonal)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -251,11 +253,22 @@
             this.btnPersonal.UseVisualStyleBackColor = true;
             this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
             // 
+            // tabPersonal
+            // 
+            this.tabPersonal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabPersonal.Location = new System.Drawing.Point(392, 54);
+            this.tabPersonal.Name = "tabPersonal";
+            this.tabPersonal.RowHeadersWidth = 51;
+            this.tabPersonal.RowTemplate.Height = 24;
+            this.tabPersonal.Size = new System.Drawing.Size(1480, 545);
+            this.tabPersonal.TabIndex = 23;
+            // 
             // PersonalOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.tabPersonal);
             this.Controls.Add(this.btnPersonal);
             this.Controls.Add(this.btnRegMenOmar);
             this.Controls.Add(this.txtTelefonoPerOmar);
@@ -283,6 +296,7 @@
             this.Text = "Personal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PersonalOmar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tabPersonal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,5 +327,6 @@
         private System.Windows.Forms.TextBox txtTelefonoPerOmar;
         private System.Windows.Forms.Button btnRegMenOmar;
         private System.Windows.Forms.Button btnPersonal;
+        private System.Windows.Forms.DataGridView tabPersonal;
     }
 }

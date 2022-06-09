@@ -33,5 +33,10 @@ namespace Proyecto_Fabrica_Textil_Omar
             Form1 menu = new Form1();
             menu.Show();
         }
+
+        private void btnAsistenciaOmar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

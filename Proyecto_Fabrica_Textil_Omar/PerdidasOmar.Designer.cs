@@ -39,6 +39,8 @@
             this.txtObservaPerd = new System.Windows.Forms.TextBox();
             this.btnRegMenOmar = new System.Windows.Forms.Button();
             this.btnPerdidaPrendOmar = new System.Windows.Forms.Button();
+            this.tabPerdidasOmar = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.tabPerdidasOmar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -140,11 +142,22 @@
             this.btnPerdidaPrendOmar.UseVisualStyleBackColor = true;
             this.btnPerdidaPrendOmar.Click += new System.EventHandler(this.btnPerdidaPrendOmar_Click);
             // 
+            // tabPerdidasOmar
+            // 
+            this.tabPerdidasOmar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabPerdidasOmar.Location = new System.Drawing.Point(475, 92);
+            this.tabPerdidasOmar.Name = "tabPerdidasOmar";
+            this.tabPerdidasOmar.RowHeadersWidth = 51;
+            this.tabPerdidasOmar.RowTemplate.Height = 24;
+            this.tabPerdidasOmar.Size = new System.Drawing.Size(977, 391);
+            this.tabPerdidasOmar.TabIndex = 13;
+            // 
             // PerdidasOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.tabPerdidasOmar);
             this.Controls.Add(this.btnPerdidaPrendOmar);
             this.Controls.Add(this.btnRegMenOmar);
             this.Controls.Add(this.txtObservaPerd);
@@ -160,6 +173,7 @@
             this.Text = "Perdidas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PerdidasOmar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tabPerdidasOmar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,5 +192,6 @@
         private System.Windows.Forms.TextBox txtObservaPerd;
         private System.Windows.Forms.Button btnRegMenOmar;
         private System.Windows.Forms.Button btnPerdidaPrendOmar;
+        private System.Windows.Forms.DataGridView tabPerdidasOmar;
     }
 }

@@ -20,6 +20,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void ClienteOmar_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
+            CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabCliente, "exec proc_consulta_cliente");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,6 +52,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                         MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
                     }
                     CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                    CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabCliente, "exec proc_consulta_cliente");
                     TXTRazonSocial.Clear();
                     txtDireccion.Clear();
                     txtTelefono.Clear();

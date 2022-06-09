@@ -41,6 +41,8 @@
             this.cmbUnidadMedida = new System.Windows.Forms.ComboBox();
             this.btnRegMenuOmar = new System.Windows.Forms.Button();
             this.btnInsertarMateriaOmar = new System.Windows.Forms.Button();
+            this.tabMateriasOmar = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.tabMateriasOmar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -155,11 +157,22 @@
             this.btnInsertarMateriaOmar.UseVisualStyleBackColor = true;
             this.btnInsertarMateriaOmar.Click += new System.EventHandler(this.btnInsertarMateriaOmar_Click);
             // 
+            // tabMateriasOmar
+            // 
+            this.tabMateriasOmar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabMateriasOmar.Location = new System.Drawing.Point(496, 39);
+            this.tabMateriasOmar.Name = "tabMateriasOmar";
+            this.tabMateriasOmar.RowHeadersWidth = 51;
+            this.tabMateriasOmar.RowTemplate.Height = 24;
+            this.tabMateriasOmar.Size = new System.Drawing.Size(930, 338);
+            this.tabMateriasOmar.TabIndex = 13;
+            // 
             // MateriPrimaOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.tabMateriasOmar);
             this.Controls.Add(this.btnInsertarMateriaOmar);
             this.Controls.Add(this.btnRegMenuOmar);
             this.Controls.Add(this.cmbUnidadMedida);
@@ -177,6 +190,7 @@
             this.Text = "MateriPrima";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MateriPrimaOmar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tabMateriasOmar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,5 +211,6 @@
         private System.Windows.Forms.ComboBox cmbUnidadMedida;
         private System.Windows.Forms.Button btnRegMenuOmar;
         private System.Windows.Forms.Button btnInsertarMateriaOmar;
+        private System.Windows.Forms.DataGridView tabMateriasOmar;
     }
 }

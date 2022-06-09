@@ -20,6 +20,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void DevolucionesOmar_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
+            CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabDevolucionOmar, "exec proc_consul_devolucion");
         }
 
         private void mostrarCliente(object sender, EventArgs e)
@@ -54,6 +55,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                         MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
                     }
                     CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                    CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabDevolucionOmar, "exec proc_consul_devolucion");
                     cmbModPrenda.Items.Clear();
                     txtCantidad.Clear();
                 }

@@ -41,6 +41,8 @@
             this.txtDireccionOmar = new System.Windows.Forms.TextBox();
             this.btnRegMenOmar = new System.Windows.Forms.Button();
             this.btnInsertarProveedor = new System.Windows.Forms.Button();
+            this.tabProveedor = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.tabProveedor)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -152,11 +154,22 @@
             this.btnInsertarProveedor.UseVisualStyleBackColor = true;
             this.btnInsertarProveedor.Click += new System.EventHandler(this.btnInsertarProveedor_Click);
             // 
+            // tabProveedor
+            // 
+            this.tabProveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabProveedor.Location = new System.Drawing.Point(525, 66);
+            this.tabProveedor.Name = "tabProveedor";
+            this.tabProveedor.RowHeadersWidth = 51;
+            this.tabProveedor.RowTemplate.Height = 24;
+            this.tabProveedor.Size = new System.Drawing.Size(839, 339);
+            this.tabProveedor.TabIndex = 13;
+            // 
             // ProveedorOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.tabProveedor);
             this.Controls.Add(this.btnInsertarProveedor);
             this.Controls.Add(this.btnRegMenOmar);
             this.Controls.Add(this.txtDireccionOmar);
@@ -174,6 +187,7 @@
             this.Text = "Proveedor";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ProveedorOmar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tabProveedor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,5 +208,6 @@
         private System.Windows.Forms.TextBox txtDireccionOmar;
         private System.Windows.Forms.Button btnRegMenOmar;
         private System.Windows.Forms.Button btnInsertarProveedor;
+        private System.Windows.Forms.DataGridView tabProveedor;
     }
 }

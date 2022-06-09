@@ -39,6 +39,8 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.btnInsertarCliente = new System.Windows.Forms.Button();
+            this.tabCliente = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.tabCliente)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -134,11 +136,22 @@
             this.btnInsertarCliente.UseVisualStyleBackColor = true;
             this.btnInsertarCliente.Click += new System.EventHandler(this.btnInsertarCliente_Click);
             // 
+            // tabCliente
+            // 
+            this.tabCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabCliente.Location = new System.Drawing.Point(515, 85);
+            this.tabCliente.Name = "tabCliente";
+            this.tabCliente.RowHeadersWidth = 51;
+            this.tabCliente.RowTemplate.Height = 24;
+            this.tabCliente.Size = new System.Drawing.Size(672, 291);
+            this.tabCliente.TabIndex = 11;
+            // 
             // ClienteOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.tabCliente);
             this.Controls.Add(this.btnInsertarCliente);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtEmail);
@@ -154,6 +167,7 @@
             this.Text = "Cliente";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ClienteOmar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tabCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,5 +186,6 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnInsertarCliente;
+        private System.Windows.Forms.DataGridView tabCliente;
     }
 }

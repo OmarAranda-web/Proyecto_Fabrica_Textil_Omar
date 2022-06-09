@@ -25,6 +25,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void PersonalOmar_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
+            CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPersonal, "exec proc_consul_personal");
         }
 
         private void mostrarAreasOmar(object sender, EventArgs e)
@@ -55,7 +56,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                 ap2Pers=txtApellido2Omar.Text;
                 direcPers = txtDireccionOmar.Text;
                 emailOmarPers = txtemailOmar.Text;
-                telefonoPerso=txtemailOmar.Text;
+                telefonoPerso=txtTelefonoPerOmar.Text;
                 numMaquPers = cmbNumMaquOmar.Text;
                 areaFabri = cmbAreaFabriOmar.Text;
                 cargPersonal = cmbCargoOmar.Text;
@@ -72,6 +73,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                         MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
                     }
                     CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                    CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPersonal, "exec proc_consul_personal");
                     txtRFCPersoOmar.Clear();
                     txtNomPersonal.Clear();
                     txtApellido1Omar.Clear();

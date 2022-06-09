@@ -38,6 +38,7 @@
             this.txxFechSalidaOmar = new System.Windows.Forms.TextBox();
             this.txtUnidOmar = new System.Windows.Forms.TextBox();
             this.cmbRFCPerOmar = new System.Windows.Forms.ComboBox();
+            this.btnAsistenciaOmar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -87,7 +88,7 @@
             // 
             // btnRegMenOmar
             // 
-            this.btnRegMenOmar.Location = new System.Drawing.Point(75, 306);
+            this.btnRegMenOmar.Location = new System.Drawing.Point(341, 303);
             this.btnRegMenOmar.Name = "btnRegMenOmar";
             this.btnRegMenOmar.Size = new System.Drawing.Size(143, 70);
             this.btnRegMenOmar.TabIndex = 5;
@@ -125,11 +126,22 @@
             this.cmbRFCPerOmar.TabIndex = 9;
             this.cmbRFCPerOmar.Click += new System.EventHandler(this.mostrarRFCPerOmar);
             // 
+            // btnAsistenciaOmar
+            // 
+            this.btnAsistenciaOmar.Location = new System.Drawing.Point(72, 312);
+            this.btnAsistenciaOmar.Name = "btnAsistenciaOmar";
+            this.btnAsistenciaOmar.Size = new System.Drawing.Size(136, 70);
+            this.btnAsistenciaOmar.TabIndex = 10;
+            this.btnAsistenciaOmar.Text = "INSERTAR ASISTENCIA";
+            this.btnAsistenciaOmar.UseVisualStyleBackColor = true;
+            this.btnAsistenciaOmar.Click += new System.EventHandler(this.btnAsistenciaOmar_Click);
+            // 
             // AsitenciasOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.btnAsistenciaOmar);
             this.Controls.Add(this.cmbRFCPerOmar);
             this.Controls.Add(this.txtUnidOmar);
             this.Controls.Add(this.txxFechSalidaOmar);
@@ -161,5 +173,6 @@
         private System.Windows.Forms.TextBox txxFechSalidaOmar;
         private System.Windows.Forms.TextBox txtUnidOmar;
         private System.Windows.Forms.ComboBox cmbRFCPerOmar;
+        private System.Windows.Forms.Button btnAsistenciaOmar;
     }
 }

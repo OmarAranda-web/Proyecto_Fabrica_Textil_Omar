@@ -35,6 +35,8 @@
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.btnRegMenuOmar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.tabDevolucionOmar = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.tabDevolucionOmar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +51,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(74, 55);
+            this.label2.Location = new System.Drawing.Point(65, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 16);
             this.label2.TabIndex = 1;
@@ -59,7 +61,7 @@
             // 
             this.cmbModPrenda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbModPrenda.FormattingEnabled = true;
-            this.cmbModPrenda.Location = new System.Drawing.Point(142, 47);
+            this.cmbModPrenda.Location = new System.Drawing.Point(302, 47);
             this.cmbModPrenda.Name = "cmbModPrenda";
             this.cmbModPrenda.Size = new System.Drawing.Size(121, 24);
             this.cmbModPrenda.TabIndex = 2;
@@ -101,11 +103,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // tabDevolucionOmar
+            // 
+            this.tabDevolucionOmar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabDevolucionOmar.Location = new System.Drawing.Point(471, 47);
+            this.tabDevolucionOmar.Name = "tabDevolucionOmar";
+            this.tabDevolucionOmar.RowHeadersWidth = 51;
+            this.tabDevolucionOmar.RowTemplate.Height = 24;
+            this.tabDevolucionOmar.Size = new System.Drawing.Size(744, 387);
+            this.tabDevolucionOmar.TabIndex = 9;
+            // 
             // DevolucionesOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.tabDevolucionOmar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnRegMenuOmar);
             this.Controls.Add(this.txtCantidad);
@@ -117,6 +130,7 @@
             this.Text = "Devoluciones";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.DevolucionesOmar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tabDevolucionOmar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,5 +145,6 @@
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Button btnRegMenuOmar;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView tabDevolucionOmar;
     }
 }
