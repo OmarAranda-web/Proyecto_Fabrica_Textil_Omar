@@ -136,13 +136,64 @@ namespace Proyecto_Fabrica_Textil_Omar
             btnCliente.BackgroundImage = Properties.Resources.insertarCliente1;
         }
 
-        private void mosatrarImgDevolucion2(object sender, MouseEventArgs e)
+        private void btnDevoluciones_MouseMove(object sender, MouseEventArgs e)
         {
             btnDevoluciones.BackgroundImage = Properties.Resources.insertarDevoluciones2;
         }
+
         private void btnDevoluciones_MouseLeave(object sender, EventArgs e)
         {
-            btnCliente.BackgroundImage = Properties.Resources.insertarDevoluciones1;
+            btnDevoluciones.BackgroundImage = Properties.Resources.insertarDevoluciones1;
+        }
+
+        private void btnMateriaPrima_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnMateriaPrima.BackgroundImage = Properties.Resources.insertarMateria2;
+        }
+
+        private void btnMateriaPrima_MouseLeave(object sender, EventArgs e)
+        {
+            btnMateriaPrima.BackgroundImage = Properties.Resources.insertarMateria1;
+        }
+
+        private void btnProveedor_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnProveedor.BackgroundImage = Properties.Resources.insertarProveedor2;
+        }
+
+        private void btnProveedor_MouseLeave(object sender, EventArgs e)
+        {
+            btnProveedor.BackgroundImage = Properties.Resources.insertarProveedor;
+        }
+
+        private void btnPerdida_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnPerdida.BackgroundImage = Properties.Resources.insertarPerdida2;
+        }
+
+        private void btnPerdida_MouseLeave(object sender, EventArgs e)
+        {
+            btnPerdida.BackgroundImage = Properties.Resources.insertarPerdida1;
+        }
+
+        private void btnAsitencias_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnAsitencias.BackgroundImage = Properties.Resources.insertarAsistencia2;
+        }
+
+        private void btnAsitencias_MouseLeave(object sender, EventArgs e)
+        {
+            btnAsitencias.BackgroundImage = Properties.Resources.insertarAsistencia1;
+        }
+
+        private void btnPersonal_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnPersonal.BackgroundImage = Properties.Resources.insertarPersonal2;
+        }
+
+        private void btnPersonal_MouseLeave(object sender, EventArgs e)
+        {
+            btnPersonal.BackgroundImage = Properties.Resources.insertarPersonal1;
         }
     }
 }

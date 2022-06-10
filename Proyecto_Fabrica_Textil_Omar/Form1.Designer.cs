@@ -119,48 +119,69 @@
             // 
             // btnPerdida
             // 
+            this.btnPerdida.BackColor = System.Drawing.Color.Transparent;
+            this.btnPerdida.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.insertarPerdida1;
+            this.btnPerdida.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPerdida.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPerdida.FlatAppearance.BorderSize = 0;
+            this.btnPerdida.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPerdida.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnPerdida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPerdida.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPerdida.Image = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.sueter2;
             this.btnPerdida.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPerdida.Location = new System.Drawing.Point(22, 51);
+            this.btnPerdida.Location = new System.Drawing.Point(3, 39);
             this.btnPerdida.Name = "btnPerdida";
-            this.btnPerdida.Size = new System.Drawing.Size(593, 167);
+            this.btnPerdida.Size = new System.Drawing.Size(612, 179);
             this.btnPerdida.TabIndex = 11;
-            this.btnPerdida.Text = "INSERTAR PERDIDA";
             this.btnPerdida.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPerdida.UseVisualStyleBackColor = true;
+            this.btnPerdida.UseVisualStyleBackColor = false;
             this.btnPerdida.Click += new System.EventHandler(this.btnPerdida_Click);
+            this.btnPerdida.MouseLeave += new System.EventHandler(this.btnPerdida_MouseLeave);
+            this.btnPerdida.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnPerdida_MouseMove);
             // 
             // btnPersonal
             // 
+            this.btnPersonal.BackColor = System.Drawing.Color.Transparent;
+            this.btnPersonal.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.insertarPersonal1;
+            this.btnPersonal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPersonal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPersonal.FlatAppearance.BorderSize = 0;
+            this.btnPersonal.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnPersonal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnPersonal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPersonal.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPersonal.Image = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.vestido;
             this.btnPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPersonal.Location = new System.Drawing.Point(22, 277);
             this.btnPersonal.Name = "btnPersonal";
             this.btnPersonal.Size = new System.Drawing.Size(593, 167);
             this.btnPersonal.TabIndex = 12;
-            this.btnPersonal.Text = "INSERTAR PERSONAL";
             this.btnPersonal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPersonal.UseVisualStyleBackColor = true;
+            this.btnPersonal.UseVisualStyleBackColor = false;
             this.btnPersonal.Click += new System.EventHandler(this.btnPersonal_Click);
+            this.btnPersonal.MouseLeave += new System.EventHandler(this.btnPersonal_MouseLeave);
+            this.btnPersonal.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnPersonal_MouseMove);
             // 
             // btnAsitencias
             // 
+            this.btnAsitencias.BackColor = System.Drawing.Color.Transparent;
+            this.btnAsitencias.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.insertarAsistencia1;
+            this.btnAsitencias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAsitencias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAsitencias.FlatAppearance.BorderSize = 0;
+            this.btnAsitencias.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAsitencias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAsitencias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAsitencias.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAsitencias.Image = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.vestido2;
             this.btnAsitencias.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAsitencias.Location = new System.Drawing.Point(22, 491);
+            this.btnAsitencias.Location = new System.Drawing.Point(0, 473);
             this.btnAsitencias.Name = "btnAsitencias";
-            this.btnAsitencias.Size = new System.Drawing.Size(593, 167);
+            this.btnAsitencias.Size = new System.Drawing.Size(612, 184);
             this.btnAsitencias.TabIndex = 13;
-            this.btnAsitencias.Text = "INSERTAR ASISTENCIAS";
             this.btnAsitencias.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAsitencias.UseVisualStyleBackColor = true;
+            this.btnAsitencias.UseVisualStyleBackColor = false;
             this.btnAsitencias.Click += new System.EventHandler(this.btnAsitencias_Click);
+            this.btnAsitencias.MouseLeave += new System.EventHandler(this.btnAsitencias_MouseLeave);
+            this.btnAsitencias.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnAsitencias_MouseMove);
             // 
             // btnIngresarDetalles
             // 
@@ -181,33 +202,46 @@
             // 
             // btnDevoluciones
             // 
+            this.btnDevoluciones.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.insertarDevoluciones1;
+            this.btnDevoluciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDevoluciones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDevoluciones.FlatAppearance.BorderSize = 0;
+            this.btnDevoluciones.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnDevoluciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnDevoluciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDevoluciones.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDevoluciones.Image = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.sueter;
             this.btnDevoluciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDevoluciones.Location = new System.Drawing.Point(23, 51);
             this.btnDevoluciones.Name = "btnDevoluciones";
             this.btnDevoluciones.Size = new System.Drawing.Size(593, 167);
             this.btnDevoluciones.TabIndex = 7;
-            this.btnDevoluciones.Text = "DEVOLUCIONES";
             this.btnDevoluciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDevoluciones.UseVisualStyleBackColor = true;
             this.btnDevoluciones.Click += new System.EventHandler(this.btnDevoluciones_Click);
+            this.btnDevoluciones.MouseLeave += new System.EventHandler(this.btnDevoluciones_MouseLeave);
+            this.btnDevoluciones.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnDevoluciones_MouseMove);
             // 
             // btnMateriaPrima
             // 
+            this.btnMateriaPrima.BackColor = System.Drawing.Color.Transparent;
+            this.btnMateriaPrima.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.insertarMateria1;
+            this.btnMateriaPrima.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMateriaPrima.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMateriaPrima.FlatAppearance.BorderSize = 0;
+            this.btnMateriaPrima.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMateriaPrima.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMateriaPrima.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMateriaPrima.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMateriaPrima.Image = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.shorts;
             this.btnMateriaPrima.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMateriaPrima.Location = new System.Drawing.Point(23, 277);
+            this.btnMateriaPrima.Location = new System.Drawing.Point(23, 235);
             this.btnMateriaPrima.Name = "btnMateriaPrima";
-            this.btnMateriaPrima.Size = new System.Drawing.Size(593, 167);
+            this.btnMateriaPrima.Size = new System.Drawing.Size(593, 179);
             this.btnMateriaPrima.TabIndex = 8;
-            this.btnMateriaPrima.Text = "INSERTAR MATERIA PRIMA ";
             this.btnMateriaPrima.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMateriaPrima.UseVisualStyleBackColor = true;
+            this.btnMateriaPrima.UseVisualStyleBackColor = false;
             this.btnMateriaPrima.Click += new System.EventHandler(this.btnMateriaPrima_Click);
+            this.btnMateriaPrima.MouseLeave += new System.EventHandler(this.btnMateriaPrima_MouseLeave);
+            this.btnMateriaPrima.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnMateriaPrima_MouseMove);
             // 
             // btnCompra
             // 
@@ -215,7 +249,7 @@
             this.btnCompra.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCompra.Image = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.saco;
             this.btnCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCompra.Location = new System.Drawing.Point(23, 491);
+            this.btnCompra.Location = new System.Drawing.Point(23, 445);
             this.btnCompra.Name = "btnCompra";
             this.btnCompra.Size = new System.Drawing.Size(593, 167);
             this.btnCompra.TabIndex = 9;
@@ -226,18 +260,25 @@
             // 
             // btnProveedor
             // 
+            this.btnProveedor.BackColor = System.Drawing.Color.Transparent;
+            this.btnProveedor.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.insertarProveedor;
+            this.btnProveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnProveedor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProveedor.FlatAppearance.BorderSize = 0;
+            this.btnProveedor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnProveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProveedor.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProveedor.Image = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.playera2;
             this.btnProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProveedor.Location = new System.Drawing.Point(23, 676);
+            this.btnProveedor.Location = new System.Drawing.Point(23, 646);
             this.btnProveedor.Name = "btnProveedor";
             this.btnProveedor.Size = new System.Drawing.Size(593, 179);
             this.btnProveedor.TabIndex = 10;
-            this.btnProveedor.Text = "INSERTAR PROVEEDOR";
             this.btnProveedor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnProveedor.UseVisualStyleBackColor = true;
+            this.btnProveedor.UseVisualStyleBackColor = false;
             this.btnProveedor.Click += new System.EventHandler(this.btnProveedor_Click);
+            this.btnProveedor.MouseLeave += new System.EventHandler(this.btnProveedor_MouseLeave);
+            this.btnProveedor.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnProveedor_MouseMove);
             // 
             // btnPrendas
             // 
@@ -328,7 +369,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1924, 953);
+            this.ClientSize = new System.Drawing.Size(1945, 974);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);

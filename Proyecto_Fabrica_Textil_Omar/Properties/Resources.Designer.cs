@@ -163,6 +163,26 @@ namespace Proyecto_Fabrica_Textil_Omar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap insertarAsistencia1 {
+            get {
+                object obj = ResourceManager.GetObject("insertarAsistencia1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insertarAsistencia2 {
+            get {
+                object obj = ResourceManager.GetObject("insertarAsistencia2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap insertarCliente1 {
             get {
                 object obj = ResourceManager.GetObject("insertarCliente1", resourceCulture);
@@ -213,6 +233,26 @@ namespace Proyecto_Fabrica_Textil_Omar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap insertarMateria1 {
+            get {
+                object obj = ResourceManager.GetObject("insertarMateria1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insertarMateria2 {
+            get {
+                object obj = ResourceManager.GetObject("insertarMateria2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap insertarPedido1 {
             get {
                 object obj = ResourceManager.GetObject("insertarPedido1", resourceCulture);
@@ -226,6 +266,46 @@ namespace Proyecto_Fabrica_Textil_Omar.Properties {
         internal static System.Drawing.Bitmap insertarPedido2 {
             get {
                 object obj = ResourceManager.GetObject("insertarPedido2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insertarPerdida1 {
+            get {
+                object obj = ResourceManager.GetObject("insertarPerdida1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insertarPerdida2 {
+            get {
+                object obj = ResourceManager.GetObject("insertarPerdida2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insertarPersonal1 {
+            get {
+                object obj = ResourceManager.GetObject("insertarPersonal1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insertarPersonal2 {
+            get {
+                object obj = ResourceManager.GetObject("insertarPersonal2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +346,26 @@ namespace Proyecto_Fabrica_Textil_Omar.Properties {
         internal static System.Drawing.Bitmap insertarPrenda21 {
             get {
                 object obj = ResourceManager.GetObject("insertarPrenda21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insertarProveedor {
+            get {
+                object obj = ResourceManager.GetObject("insertarProveedor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insertarProveedor2 {
+            get {
+                object obj = ResourceManager.GetObject("insertarProveedor2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -288,5 +288,35 @@
   <ItemGroup>
     <None Include="Resources\insertarDevoluciones2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarMateria1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarMateria2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarProveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarProveedor2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarPerdida1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarPerdida2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarAsistencia1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarAsistencia2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarPersonal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarPersonal2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
