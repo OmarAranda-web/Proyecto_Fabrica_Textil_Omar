@@ -213,6 +213,46 @@ namespace Proyecto_Fabrica_Textil_Omar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap insertarCompra1 {
+            get {
+                object obj = ResourceManager.GetObject("insertarCompra1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insertarCompra2 {
+            get {
+                object obj = ResourceManager.GetObject("insertarCompra2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insertarDetalle1 {
+            get {
+                object obj = ResourceManager.GetObject("insertarDetalle1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insertarDetalle2 {
+            get {
+                object obj = ResourceManager.GetObject("insertarDetalle2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap insertarDevoluciones1 {
             get {
                 object obj = ResourceManager.GetObject("insertarDevoluciones1", resourceCulture);
@@ -366,6 +406,26 @@ namespace Proyecto_Fabrica_Textil_Omar.Properties {
         internal static System.Drawing.Bitmap insertarProveedor2 {
             get {
                 object obj = ResourceManager.GetObject("insertarProveedor2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insertarVenta1 {
+            get {
+                object obj = ResourceManager.GetObject("insertarVenta1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insertarVenta2 {
+            get {
+                object obj = ResourceManager.GetObject("insertarVenta2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

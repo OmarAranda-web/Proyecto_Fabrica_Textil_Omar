@@ -195,5 +195,35 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             btnPersonal.BackgroundImage = Properties.Resources.insertarPersonal1;
         }
+
+        private void btnVenta_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnVenta.BackgroundImage = Properties.Resources.insertarVenta2;
+        }
+
+        private void btnVenta_MouseLeave(object sender, EventArgs e)
+        {
+            btnVenta.BackgroundImage = Properties.Resources.insertarVenta1;
+        }
+
+        private void btnCompra_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnCompra.BackgroundImage = Properties.Resources.insertarCompra2;
+        }
+
+        private void btnCompra_MouseLeave(object sender, EventArgs e)
+        {
+            btnCompra.BackgroundImage = Properties.Resources.insertarCompra1;
+        }
+
+        private void btnIngresarDetalles_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnIngresarDetalles.BackgroundImage = Properties.Resources.insertarDetalle2;
+        }
+
+        private void btnIngresarDetalles_MouseLeave(object sender, EventArgs e)
+        {
+            btnIngresarDetalles.BackgroundImage= Properties.Resources.insertarDetalle1;
+        }
     }
 }

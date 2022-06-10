@@ -318,5 +318,23 @@
   <ItemGroup>
     <None Include="Resources\insertarPersonal2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarVenta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarVenta2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarCompra1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarCompra2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarDetalle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertarDetalle2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

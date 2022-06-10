@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -66,20 +65,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Info;
-            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1945, 76);
+            this.panel1.Size = new System.Drawing.Size(1945, 93);
             this.panel1.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(1297, 75);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(186, 100);
-            this.panel4.TabIndex = 16;
             // 
             // panel2
             // 
@@ -88,11 +79,10 @@
             this.panel2.Controls.Add(this.btnPedido);
             this.panel2.Controls.Add(this.btnCliente);
             this.panel2.Controls.Add(this.btnVenta);
-            this.panel2.Location = new System.Drawing.Point(21, 75);
+            this.panel2.Location = new System.Drawing.Point(3, 81);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(664, 963);
+            this.panel2.Size = new System.Drawing.Size(682, 872);
             this.panel2.TabIndex = 14;
-            this.panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mostrarPedido2);
             // 
             // panel3
             // 
@@ -101,9 +91,9 @@
             this.panel3.Controls.Add(this.btnMateriaPrima);
             this.panel3.Controls.Add(this.btnCompra);
             this.panel3.Controls.Add(this.btnProveedor);
-            this.panel3.Location = new System.Drawing.Point(682, 75);
+            this.panel3.Location = new System.Drawing.Point(682, 81);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(630, 960);
+            this.panel3.Size = new System.Drawing.Size(630, 872);
             this.panel3.TabIndex = 15;
             // 
             // panel5
@@ -112,9 +102,9 @@
             this.panel5.Controls.Add(this.btnPersonal);
             this.panel5.Controls.Add(this.btnAsitencias);
             this.panel5.Controls.Add(this.btnIngresarDetalles);
-            this.panel5.Location = new System.Drawing.Point(1318, 75);
+            this.panel5.Location = new System.Drawing.Point(1303, 81);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(627, 960);
+            this.panel5.Size = new System.Drawing.Size(642, 872);
             this.panel5.TabIndex = 16;
             // 
             // btnPerdida
@@ -185,20 +175,25 @@
             // 
             // btnIngresarDetalles
             // 
-            this.btnIngresarDetalles.BackColor = System.Drawing.SystemColors.Info;
+            this.btnIngresarDetalles.BackColor = System.Drawing.Color.Transparent;
+            this.btnIngresarDetalles.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.insertarDetalle1;
+            this.btnIngresarDetalles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIngresarDetalles.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIngresarDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnIngresarDetalles.FlatAppearance.BorderSize = 0;
+            this.btnIngresarDetalles.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnIngresarDetalles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnIngresarDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresarDetalles.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresarDetalles.Image = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.icono_fa;
             this.btnIngresarDetalles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIngresarDetalles.Location = new System.Drawing.Point(131, 712);
+            this.btnIngresarDetalles.Location = new System.Drawing.Point(125, 663);
             this.btnIngresarDetalles.Name = "btnIngresarDetalles";
             this.btnIngresarDetalles.Size = new System.Drawing.Size(387, 128);
             this.btnIngresarDetalles.TabIndex = 0;
-            this.btnIngresarDetalles.Text = "INGRESAR DETALLES DE FABRICA";
             this.btnIngresarDetalles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnIngresarDetalles.UseVisualStyleBackColor = false;
             this.btnIngresarDetalles.Click += new System.EventHandler(this.btnIngresarDetalles_Click);
+            this.btnIngresarDetalles.MouseLeave += new System.EventHandler(this.btnIngresarDetalles_MouseLeave);
+            this.btnIngresarDetalles.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnIngresarDetalles_MouseMove);
             // 
             // btnDevoluciones
             // 
@@ -211,7 +206,7 @@
             this.btnDevoluciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDevoluciones.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevoluciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDevoluciones.Location = new System.Drawing.Point(23, 51);
+            this.btnDevoluciones.Location = new System.Drawing.Point(9, 18);
             this.btnDevoluciones.Name = "btnDevoluciones";
             this.btnDevoluciones.Size = new System.Drawing.Size(593, 167);
             this.btnDevoluciones.TabIndex = 7;
@@ -233,7 +228,7 @@
             this.btnMateriaPrima.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMateriaPrima.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMateriaPrima.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMateriaPrima.Location = new System.Drawing.Point(23, 235);
+            this.btnMateriaPrima.Location = new System.Drawing.Point(9, 223);
             this.btnMateriaPrima.Name = "btnMateriaPrima";
             this.btnMateriaPrima.Size = new System.Drawing.Size(593, 179);
             this.btnMateriaPrima.TabIndex = 8;
@@ -245,18 +240,25 @@
             // 
             // btnCompra
             // 
+            this.btnCompra.BackColor = System.Drawing.Color.Transparent;
+            this.btnCompra.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.insertarCompra1;
+            this.btnCompra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCompra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCompra.FlatAppearance.BorderSize = 0;
+            this.btnCompra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnCompra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCompra.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompra.Image = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.saco;
             this.btnCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCompra.Location = new System.Drawing.Point(23, 445);
+            this.btnCompra.Location = new System.Drawing.Point(3, 432);
             this.btnCompra.Name = "btnCompra";
-            this.btnCompra.Size = new System.Drawing.Size(593, 167);
+            this.btnCompra.Size = new System.Drawing.Size(607, 173);
             this.btnCompra.TabIndex = 9;
-            this.btnCompra.Text = "INSERTAR COMPRA";
             this.btnCompra.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCompra.UseVisualStyleBackColor = true;
+            this.btnCompra.UseVisualStyleBackColor = false;
             this.btnCompra.Click += new System.EventHandler(this.btnCompra_Click);
+            this.btnCompra.MouseLeave += new System.EventHandler(this.btnCompra_MouseLeave);
+            this.btnCompra.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnCompra_MouseMove);
             // 
             // btnProveedor
             // 
@@ -270,7 +272,7 @@
             this.btnProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProveedor.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProveedor.Location = new System.Drawing.Point(23, 646);
+            this.btnProveedor.Location = new System.Drawing.Point(22, 640);
             this.btnProveedor.Name = "btnProveedor";
             this.btnProveedor.Size = new System.Drawing.Size(593, 179);
             this.btnProveedor.TabIndex = 10;
@@ -349,18 +351,25 @@
             // 
             // btnVenta
             // 
+            this.btnVenta.BackColor = System.Drawing.Color.Transparent;
+            this.btnVenta.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.insertarVenta1;
+            this.btnVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnVenta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVenta.FlatAppearance.BorderSize = 0;
+            this.btnVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVenta.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVenta.Image = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.playera;
             this.btnVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVenta.Location = new System.Drawing.Point(62, 688);
+            this.btnVenta.Location = new System.Drawing.Point(35, 673);
             this.btnVenta.Name = "btnVenta";
             this.btnVenta.Size = new System.Drawing.Size(593, 167);
             this.btnVenta.TabIndex = 6;
-            this.btnVenta.Text = "INSERTAR VENTA";
             this.btnVenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVenta.UseVisualStyleBackColor = true;
+            this.btnVenta.UseVisualStyleBackColor = false;
             this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
+            this.btnVenta.MouseLeave += new System.EventHandler(this.btnVenta_MouseLeave);
+            this.btnVenta.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnVenta_MouseMove);
             // 
             // Form1
             // 
@@ -369,7 +378,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1945, 974);
+            this.ClientSize = new System.Drawing.Size(1924, 974);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -394,7 +403,6 @@
         private System.Windows.Forms.Button btnIngresarDetalles;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnPrendas;
         private System.Windows.Forms.Button btnPedido;
         private System.Windows.Forms.Button btnCliente;
