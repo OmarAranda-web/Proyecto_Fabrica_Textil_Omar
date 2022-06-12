@@ -32,15 +32,16 @@ namespace Proyecto_Fabrica_Textil_Omar
 
         private void btnInsertarProveedor_Click(object sender, EventArgs e)
         {
-            String razonSocialPorvee, contactoProve, telefonoProvee, emailProvee, direccionProvee;
+            String razonSocialPorvee, contactoProve, emailProvee, direccionProvee;
+            int telefonoProvee;
             try
             {
                 razonSocialPorvee = txtRazonSocialOmar.Text;
                 contactoProve = txtContacto.Text;
-                telefonoProvee = txtContacto.Text;
+                telefonoProvee = Convert.ToInt32(txtTelefono.Text);
                 emailProvee = txtEmail.Text;
                 direccionProvee = txtDireccionOmar.Text;
-                if (razonSocialPorvee==""||contactoProve==""||telefonoProvee==""||emailProvee==""||direccionProvee=="")
+                if (razonSocialPorvee==""||contactoProve==""|| telefonoProvee<0|| emailProvee==""||direccionProvee=="")
                 {
                     MessageBox.Show("LLENE TODOS LOS CAMPOS DEL FORMULARIO");
                 }

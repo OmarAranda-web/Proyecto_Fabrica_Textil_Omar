@@ -32,17 +32,19 @@ namespace Proyecto_Fabrica_Textil_Omar
 
         private void btnInsertarCliente_Click(object sender, EventArgs e)
         {
-            String razonSocialCliente, direcCliente, telefonoClien, emailClien;
-            
+            String razonSocialCliente, direcCliente, emailClien;
+            int telefonoClien;
+
+
             try
             {
                 razonSocialCliente = TXTRazonSocial.Text;
                 direcCliente = txtDireccion.Text;
-                telefonoClien = txtTelefono.Text;
+                telefonoClien = Convert.ToInt32(txtTelefono.Text);
                 emailClien = txtEmail.Text;
-                if (razonSocialCliente=="" || direcCliente=="" || telefonoClien =="" || emailClien=="")
+                if (razonSocialCliente=="" || direcCliente=="" || telefonoClien<0 || emailClien=="")
                 {
-                    MessageBox.Show("LLENE TODOS LOS CAMPOS");
+                    MessageBox.Show("LLENE TODOS LOS CAMPOS DE MANERA CORRECTA");
                 }
                 else
                 {
@@ -62,7 +64,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             }
             catch
             {
-                MessageBox.Show("Coloque los valores de manera correcta");
+                MessageBox.Show("COLOCA TODOS LOS CAMPOS DE MANERA CORRECTA");
             }
         }
     }

@@ -48,97 +48,109 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(687, 13);
+            this.label1.Font = new System.Drawing.Font("Arial", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(478, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 16);
+            this.label1.Size = new System.Drawing.Size(324, 55);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Proveedor";
+            this.label1.Text = "PROVEEDOR";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 56);
+            this.label2.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(10, 128);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(223, 16);
+            this.label2.Size = new System.Drawing.Size(748, 51);
             this.label2.TabIndex = 1;
             this.label2.Text = "RAZON SOCIAL DEL PROVEDDOR";
             // 
             // CONTACTO
             // 
             this.CONTACTO.AutoSize = true;
-            this.CONTACTO.Location = new System.Drawing.Point(28, 106);
+            this.CONTACTO.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CONTACTO.Location = new System.Drawing.Point(12, 273);
             this.CONTACTO.Name = "CONTACTO";
-            this.CONTACTO.Size = new System.Drawing.Size(82, 16);
+            this.CONTACTO.Size = new System.Drawing.Size(267, 51);
             this.CONTACTO.TabIndex = 2;
             this.CONTACTO.Text = "CONTACTO";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 168);
+            this.label4.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(18, 374);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 16);
+            this.label4.Size = new System.Drawing.Size(261, 51);
             this.label4.TabIndex = 3;
             this.label4.Text = "TELEFONO";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(31, 227);
+            this.label5.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(31, 487);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 16);
+            this.label5.Size = new System.Drawing.Size(158, 51);
             this.label5.TabIndex = 4;
             this.label5.Text = "EMAIL";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(28, 272);
+            this.label6.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(31, 597);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 16);
+            this.label6.Size = new System.Drawing.Size(269, 51);
             this.label6.TabIndex = 5;
             this.label6.Text = "DIRECCION";
             // 
             // txtRazonSocialOmar
             // 
-            this.txtRazonSocialOmar.Location = new System.Drawing.Point(282, 56);
+            this.txtRazonSocialOmar.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRazonSocialOmar.Location = new System.Drawing.Point(813, 128);
             this.txtRazonSocialOmar.Name = "txtRazonSocialOmar";
-            this.txtRazonSocialOmar.Size = new System.Drawing.Size(100, 22);
+            this.txtRazonSocialOmar.Size = new System.Drawing.Size(307, 57);
             this.txtRazonSocialOmar.TabIndex = 6;
             // 
             // txtContacto
             // 
-            this.txtContacto.Location = new System.Drawing.Point(126, 106);
+            this.txtContacto.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContacto.Location = new System.Drawing.Point(728, 267);
             this.txtContacto.Name = "txtContacto";
-            this.txtContacto.Size = new System.Drawing.Size(100, 22);
+            this.txtContacto.Size = new System.Drawing.Size(392, 57);
             this.txtContacto.TabIndex = 7;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(126, 162);
+            this.txtTelefono.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.Location = new System.Drawing.Point(728, 368);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(100, 22);
+            this.txtTelefono.Size = new System.Drawing.Size(392, 57);
             this.txtTelefono.TabIndex = 8;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(126, 224);
+            this.txtEmail.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(728, 484);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 22);
+            this.txtEmail.Size = new System.Drawing.Size(392, 57);
             this.txtEmail.TabIndex = 9;
             // 
             // txtDireccionOmar
             // 
-            this.txtDireccionOmar.Location = new System.Drawing.Point(126, 266);
+            this.txtDireccionOmar.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccionOmar.Location = new System.Drawing.Point(728, 591);
             this.txtDireccionOmar.Name = "txtDireccionOmar";
-            this.txtDireccionOmar.Size = new System.Drawing.Size(100, 22);
+            this.txtDireccionOmar.Size = new System.Drawing.Size(392, 57);
             this.txtDireccionOmar.TabIndex = 10;
             // 
             // btnRegMenOmar
             // 
-            this.btnRegMenOmar.Location = new System.Drawing.Point(282, 320);
+            this.btnRegMenOmar.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegMenOmar.Location = new System.Drawing.Point(647, 698);
             this.btnRegMenOmar.Name = "btnRegMenOmar";
-            this.btnRegMenOmar.Size = new System.Drawing.Size(122, 57);
+            this.btnRegMenOmar.Size = new System.Drawing.Size(394, 182);
             this.btnRegMenOmar.TabIndex = 11;
             this.btnRegMenOmar.Text = "REGRESAR AL MENU";
             this.btnRegMenOmar.UseVisualStyleBackColor = true;
@@ -146,9 +158,10 @@
             // 
             // btnInsertarProveedor
             // 
-            this.btnInsertarProveedor.Location = new System.Drawing.Point(126, 320);
+            this.btnInsertarProveedor.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInsertarProveedor.Location = new System.Drawing.Point(59, 698);
             this.btnInsertarProveedor.Name = "btnInsertarProveedor";
-            this.btnInsertarProveedor.Size = new System.Drawing.Size(112, 70);
+            this.btnInsertarProveedor.Size = new System.Drawing.Size(394, 182);
             this.btnInsertarProveedor.TabIndex = 12;
             this.btnInsertarProveedor.Text = "INSERTAR PROVEEDOR";
             this.btnInsertarProveedor.UseVisualStyleBackColor = true;
@@ -157,11 +170,11 @@
             // tabProveedor
             // 
             this.tabProveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabProveedor.Location = new System.Drawing.Point(525, 66);
+            this.tabProveedor.Location = new System.Drawing.Point(1159, 84);
             this.tabProveedor.Name = "tabProveedor";
             this.tabProveedor.RowHeadersWidth = 51;
             this.tabProveedor.RowTemplate.Height = 24;
-            this.tabProveedor.Size = new System.Drawing.Size(839, 339);
+            this.tabProveedor.Size = new System.Drawing.Size(712, 863);
             this.tabProveedor.TabIndex = 13;
             // 
             // ProveedorOmar

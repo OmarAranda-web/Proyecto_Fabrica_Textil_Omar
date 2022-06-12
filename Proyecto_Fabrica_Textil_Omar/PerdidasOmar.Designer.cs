@@ -46,87 +46,97 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(700, 13);
+            this.label1.Font = new System.Drawing.Font("Arial", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(642, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 16);
+            this.label1.Size = new System.Drawing.Size(265, 55);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Perdidas";
+            this.label1.Text = "PERDIDAS";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 68);
+            this.label2.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(35, 141);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 16);
+            this.label2.Size = new System.Drawing.Size(369, 51);
             this.label2.TabIndex = 1;
             this.label2.Text = "MATERIA PRIMA";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 108);
+            this.label4.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(35, 274);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(180, 16);
+            this.label4.Size = new System.Drawing.Size(601, 51);
             this.label4.TabIndex = 3;
             this.label4.Text = "CANTIDAD DE LA PERDIDA";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(35, 155);
+            this.label5.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(35, 417);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 16);
+            this.label5.Size = new System.Drawing.Size(402, 51);
             this.label5.TabIndex = 4;
             this.label5.Text = "OBSERVACIONES";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(35, 198);
+            this.label6.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(35, 599);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 16);
+            this.label6.Size = new System.Drawing.Size(467, 51);
             this.label6.TabIndex = 5;
             this.label6.Text = "RFC DEL PERSONAL";
             // 
             // cmbMateriaOmar
             // 
             this.cmbMateriaOmar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMateriaOmar.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMateriaOmar.FormattingEnabled = true;
-            this.cmbMateriaOmar.Location = new System.Drawing.Point(292, 68);
+            this.cmbMateriaOmar.Location = new System.Drawing.Point(719, 133);
             this.cmbMateriaOmar.Name = "cmbMateriaOmar";
-            this.cmbMateriaOmar.Size = new System.Drawing.Size(121, 24);
+            this.cmbMateriaOmar.Size = new System.Drawing.Size(374, 59);
             this.cmbMateriaOmar.TabIndex = 6;
             this.cmbMateriaOmar.Click += new System.EventHandler(this.mostrarMateriaOmar);
             // 
             // cmbRFCOmar
             // 
             this.cmbRFCOmar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbRFCOmar.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbRFCOmar.FormattingEnabled = true;
-            this.cmbRFCOmar.Location = new System.Drawing.Point(292, 190);
+            this.cmbRFCOmar.Location = new System.Drawing.Point(719, 582);
             this.cmbRFCOmar.Name = "cmbRFCOmar";
-            this.cmbRFCOmar.Size = new System.Drawing.Size(121, 24);
+            this.cmbRFCOmar.Size = new System.Drawing.Size(374, 59);
             this.cmbRFCOmar.TabIndex = 7;
             this.cmbRFCOmar.Click += new System.EventHandler(this.mostrarRFCOmar);
             // 
             // txtCantiPerd
             // 
-            this.txtCantiPerd.Location = new System.Drawing.Point(292, 105);
+            this.txtCantiPerd.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantiPerd.Location = new System.Drawing.Point(719, 268);
             this.txtCantiPerd.Name = "txtCantiPerd";
-            this.txtCantiPerd.Size = new System.Drawing.Size(100, 22);
+            this.txtCantiPerd.Size = new System.Drawing.Size(374, 57);
             this.txtCantiPerd.TabIndex = 9;
             // 
             // txtObservaPerd
             // 
-            this.txtObservaPerd.Location = new System.Drawing.Point(292, 149);
+            this.txtObservaPerd.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObservaPerd.Location = new System.Drawing.Point(536, 411);
             this.txtObservaPerd.Name = "txtObservaPerd";
-            this.txtObservaPerd.Size = new System.Drawing.Size(100, 22);
+            this.txtObservaPerd.Size = new System.Drawing.Size(557, 57);
             this.txtObservaPerd.TabIndex = 10;
             // 
             // btnRegMenOmar
             // 
-            this.btnRegMenOmar.Location = new System.Drawing.Point(292, 290);
+            this.btnRegMenOmar.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegMenOmar.Location = new System.Drawing.Point(699, 737);
             this.btnRegMenOmar.Name = "btnRegMenOmar";
-            this.btnRegMenOmar.Size = new System.Drawing.Size(121, 77);
+            this.btnRegMenOmar.Size = new System.Drawing.Size(361, 185);
             this.btnRegMenOmar.TabIndex = 11;
             this.btnRegMenOmar.Text = "REGRESAR AL MENU";
             this.btnRegMenOmar.UseVisualStyleBackColor = true;
@@ -134,9 +144,10 @@
             // 
             // btnPerdidaPrendOmar
             // 
-            this.btnPerdidaPrendOmar.Location = new System.Drawing.Point(97, 290);
+            this.btnPerdidaPrendOmar.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPerdidaPrendOmar.Location = new System.Drawing.Point(141, 737);
             this.btnPerdidaPrendOmar.Name = "btnPerdidaPrendOmar";
-            this.btnPerdidaPrendOmar.Size = new System.Drawing.Size(118, 54);
+            this.btnPerdidaPrendOmar.Size = new System.Drawing.Size(361, 185);
             this.btnPerdidaPrendOmar.TabIndex = 12;
             this.btnPerdidaPrendOmar.Text = "INSERTAR PERDIDA";
             this.btnPerdidaPrendOmar.UseVisualStyleBackColor = true;
@@ -145,11 +156,11 @@
             // tabPerdidasOmar
             // 
             this.tabPerdidasOmar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabPerdidasOmar.Location = new System.Drawing.Point(475, 92);
+            this.tabPerdidasOmar.Location = new System.Drawing.Point(1119, 59);
             this.tabPerdidasOmar.Name = "tabPerdidasOmar";
             this.tabPerdidasOmar.RowHeadersWidth = 51;
             this.tabPerdidasOmar.RowTemplate.Height = 24;
-            this.tabPerdidasOmar.Size = new System.Drawing.Size(977, 391);
+            this.tabPerdidasOmar.Size = new System.Drawing.Size(761, 863);
             this.tabPerdidasOmar.TabIndex = 13;
             // 
             // PerdidasOmar

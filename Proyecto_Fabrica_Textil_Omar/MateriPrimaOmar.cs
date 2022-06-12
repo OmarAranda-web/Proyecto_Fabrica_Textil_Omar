@@ -42,28 +42,36 @@ namespace Proyecto_Fabrica_Textil_Omar
             try
             {
                 nomMateriaOmar = txtNomMateria.Text;
-                existenciMatOmar =(float) (Convert.ToDouble(txtExitencias.Text));
+                existenciMatOmar = (float)(Convert.ToDouble(txtExitencias.Text));
                 stoKMinOmar = (float)(Convert.ToDouble(txtStockMin.Text));
-                stoKMaxOmar=(float)(Convert.ToDouble(txtStockMax.Text));
-                unidadMed=cmbUnidadMedida.Text;
-                if (nomMateriaOmar=="" || existenciMatOmar<0 || stoKMinOmar<0 || stoKMaxOmar<0 || unidadMed=="")
+                stoKMaxOmar = (float)(Convert.ToDouble(txtStockMax.Text));
+                unidadMed = cmbUnidadMedida.Text;
+                if (nomMateriaOmar == "" || existenciMatOmar < 0 || stoKMinOmar <0 || stoKMaxOmar<0 || unidadMed=="")
                 {
                     MessageBox.Show("LLENE TODOS LOS CAMPOS Y SOLO SE ADMITEN VALORES POSITIVOS");
                 }
                 else
                 {
-                    CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_insertar_MateriasPrimas '"+nomMateriaOmar+"', "+existenciMatOmar+","+stoKMinOmar+","+stoKMaxOmar+",'"+unidadMed+"'");
-                    if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+                    if (stoKMinOmar<stoKMaxOmar && existenciMatOmar>=stoKMinOmar)
                     {
-                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                        CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_insertar_MateriasPrimas '" + nomMateriaOmar + "', " + existenciMatOmar + "," + stoKMinOmar + "," + stoKMaxOmar + ",'" + unidadMed + "'");
+                        if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+                        {
+                            MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                        }
+                        CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                        CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabMateriasOmar, "exec proc_consul_materias");
+                        txtNomMateria.Clear();
+                        txtExitencias.Clear();
+                        txtStockMax.Clear();
+                        txtStockMin.Clear();
+                        cmbUnidadMedida.Items.Clear();
                     }
-                    CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
-                    CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabMateriasOmar, "exec proc_consul_materias");
-                    txtNomMateria.Clear();
-                    txtExitencias.Clear();
-                    txtStockMax.Clear();
-                    txtStockMin.Clear();
-                    cmbUnidadMedida.Items.Clear();
+                    else
+                    {
+                        MessageBox.Show("EL STOCK MINIMO NO PUEDE SER MAYOR QUE EL MAXIMO Y LAS EXISTENCIAS MAYORES QUE EL STOCK MINIMO");
+                    }
+                    
                 }
             }
             catch

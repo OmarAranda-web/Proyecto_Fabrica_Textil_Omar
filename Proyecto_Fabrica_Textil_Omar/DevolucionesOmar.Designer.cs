@@ -42,52 +42,58 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(696, 13);
+            this.label1.Font = new System.Drawing.Font("Arial", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(301, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 16);
+            this.label1.Size = new System.Drawing.Size(398, 55);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Devoluciones";
+            this.label1.Text = "DEVOLUCIONES";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(65, 55);
+            this.label2.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(33, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 16);
+            this.label2.Size = new System.Drawing.Size(207, 51);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Prenda";
+            this.label2.Text = "PRENDA";
             // 
             // cmbModPrenda
             // 
             this.cmbModPrenda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbModPrenda.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbModPrenda.FormattingEnabled = true;
-            this.cmbModPrenda.Location = new System.Drawing.Point(302, 47);
+            this.cmbModPrenda.Location = new System.Drawing.Point(598, 164);
             this.cmbModPrenda.Name = "cmbModPrenda";
-            this.cmbModPrenda.Size = new System.Drawing.Size(121, 24);
+            this.cmbModPrenda.Size = new System.Drawing.Size(372, 59);
             this.cmbModPrenda.TabIndex = 2;
             this.cmbModPrenda.Click += new System.EventHandler(this.mostrarCliente);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(65, 135);
+            this.label3.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 402);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(206, 16);
+            this.label3.Size = new System.Drawing.Size(687, 51);
             this.label3.TabIndex = 3;
             this.label3.Text = "CANTIDAD DE DEVOLUCIONES";
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(302, 129);
+            this.txtCantidad.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantidad.Location = new System.Drawing.Point(740, 399);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(100, 22);
+            this.txtCantidad.Size = new System.Drawing.Size(218, 57);
             this.txtCantidad.TabIndex = 4;
             // 
             // btnRegMenuOmar
             // 
-            this.btnRegMenuOmar.Location = new System.Drawing.Point(302, 235);
+            this.btnRegMenuOmar.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegMenuOmar.Location = new System.Drawing.Point(572, 677);
             this.btnRegMenuOmar.Name = "btnRegMenuOmar";
-            this.btnRegMenuOmar.Size = new System.Drawing.Size(138, 61);
+            this.btnRegMenuOmar.Size = new System.Drawing.Size(398, 204);
             this.btnRegMenuOmar.TabIndex = 7;
             this.btnRegMenuOmar.Text = "REGRESAR AL MENU";
             this.btnRegMenuOmar.UseVisualStyleBackColor = true;
@@ -95,9 +101,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(77, 235);
+            this.button1.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(55, 679);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 61);
+            this.button1.Size = new System.Drawing.Size(374, 200);
             this.button1.TabIndex = 8;
             this.button1.Text = "INSERTAR DEVOLUCION";
             this.button1.UseVisualStyleBackColor = true;
@@ -106,11 +113,11 @@
             // tabDevolucionOmar
             // 
             this.tabDevolucionOmar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabDevolucionOmar.Location = new System.Drawing.Point(471, 47);
+            this.tabDevolucionOmar.Location = new System.Drawing.Point(1001, 164);
             this.tabDevolucionOmar.Name = "tabDevolucionOmar";
             this.tabDevolucionOmar.RowHeadersWidth = 51;
             this.tabDevolucionOmar.RowTemplate.Height = 24;
-            this.tabDevolucionOmar.Size = new System.Drawing.Size(744, 387);
+            this.tabDevolucionOmar.Size = new System.Drawing.Size(842, 717);
             this.tabDevolucionOmar.TabIndex = 9;
             // 
             // DevolucionesOmar

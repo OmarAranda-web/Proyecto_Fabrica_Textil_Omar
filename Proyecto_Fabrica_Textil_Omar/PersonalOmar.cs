@@ -47,7 +47,8 @@ namespace Proyecto_Fabrica_Textil_Omar
 
         private void btnPersonal_Click(object sender, EventArgs e)
         {
-            string refc_perosnal, nomPersonal, ap1Pers, ap2Pers, direcPers, emailOmarPers, telefonoPerso, numMaquPers, areaFabri, cargPersonal;
+            string refc_perosnal, nomPersonal, ap1Pers, ap2Pers, direcPers, emailOmarPers, numMaquPers, areaFabri, cargPersonal;
+            int telefonoPerso;
             try
             {
                 refc_perosnal=txtRFCPersoOmar.Text;
@@ -56,12 +57,12 @@ namespace Proyecto_Fabrica_Textil_Omar
                 ap2Pers=txtApellido2Omar.Text;
                 direcPers = txtDireccionOmar.Text;
                 emailOmarPers = txtemailOmar.Text;
-                telefonoPerso=txtTelefonoPerOmar.Text;
+                telefonoPerso= Convert.ToInt32 (txtTelefonoPerOmar.Text);
                 numMaquPers = cmbNumMaquOmar.Text;
                 areaFabri = cmbAreaFabriOmar.Text;
                 cargPersonal = cmbCargoOmar.Text;
                 if (refc_perosnal=="" || nomPersonal=="" || ap1Pers=="" || ap2Pers=="" || direcPers=="" ||
-                    emailOmarPers==""|| telefonoPerso=="" || numMaquPers=="" || areaFabri==""|| cargPersonal=="")
+                    emailOmarPers==""|| telefonoPerso<0 || numMaquPers=="" || areaFabri==""|| cargPersonal=="")
                 {
                     MessageBox.Show("LLENA TODOS LOS CAMPOS DE PERSONAL");
                 }
