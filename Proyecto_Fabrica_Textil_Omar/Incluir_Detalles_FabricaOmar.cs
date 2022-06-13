@@ -12,6 +12,7 @@ namespace Proyecto_Fabrica_Textil_Omar
 {
     public partial class Incluir_Detalles_FabricaOmar : Form
     {
+        
         public Incluir_Detalles_FabricaOmar()
         {
             InitializeComponent();
@@ -20,6 +21,30 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void Incluir_Detalles_Fabrica_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
+            if ( prendaOmar.detallesPrenda1== 1)
+            {
+                panelPersonal.Visible = false;
+                panelMateria.Visible = false;
+                btnMenu.Visible = false;
+            }
+            if(PersonalOmar.detaPersonal == 1)
+            {
+                panelMateria.Visible=false;
+                panelPrendas.Visible=false;
+                btnMenu.Visible=false;
+            }
+            if (MateriPrimaOmar.detaUni == 1)
+            {
+                panelPersonal.Visible=false;
+                panelPrendas.Visible=false;
+                btnMenu.Visible = false;
+            }
+            if(Form1.ocultaBotines == 1)
+            {
+                btnRegPersonal.Visible=false;
+                btnRegPrenda.Visible=false;
+                btnRegresarPrendas.Visible = false;
+            }
         }
 
         private void btnInsertarColor_Click(object sender, EventArgs e)
@@ -45,9 +70,10 @@ namespace Proyecto_Fabrica_Textil_Omar
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
+            Form1.ocultaBotines = 0;
             this.Close();
-            Form1 menu = new Form1();
-            menu.Show();
+            //Form1 menu = new Form1();
+            //menu.Show();
         }
 
         private void btnInsertarMaterial_Click(object sender, EventArgs e)
@@ -192,8 +218,23 @@ namespace Proyecto_Fabrica_Textil_Omar
             {
                 MessageBox.Show("Coloque Correctamente el sueldo del cargo");
             }
-            
+        }
 
+        private void btnRegresarPrendas_Click(object sender, EventArgs e)
+        {
+            MateriPrimaOmar.detaUni = 0;
+            this.Close();
+        }
+        private void btnRegPrenda_Click(object sender, EventArgs e)
+        {
+            prendaOmar.detallesPrenda1 = 0;
+            this.Close();
+        }
+
+        private void btnRegPersonal_Click(object sender, EventArgs e)
+        {
+            PersonalOmar.detaPersonal = 0;
+            this.Close();
         }
     }
 }

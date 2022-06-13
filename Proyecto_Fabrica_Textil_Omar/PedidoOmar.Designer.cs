@@ -38,6 +38,8 @@
             this.txtcantidadProd = new System.Windows.Forms.TextBox();
             this.btnInsertarPedido = new System.Windows.Forms.Button();
             this.tabPedido = new System.Windows.Forms.DataGridView();
+            this.btnPrendas = new System.Windows.Forms.Button();
+            this.btnInsertarClientePed = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tabPedido)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +59,7 @@
             this.label2.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(63, 194);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(488, 51);
+            this.label2.Size = new System.Drawing.Size(480, 51);
             this.label2.TabIndex = 1;
             this.label2.Text = "NOMBRE DE PRENDA";
             // 
@@ -78,7 +80,7 @@
             this.label4.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(63, 418);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(530, 51);
+            this.label4.Size = new System.Drawing.Size(521, 51);
             this.label4.TabIndex = 4;
             this.label4.Text = "CANTIDAD DEL PEDIDO";
             // 
@@ -88,7 +90,7 @@
             this.label5.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(63, 648);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(653, 51);
+            this.label5.Size = new System.Drawing.Size(641, 51);
             this.label5.TabIndex = 5;
             this.label5.Text = "RAZON SOCIAL DEL CLIENTE";
             // 
@@ -106,9 +108,9 @@
             // btnMenuOmar
             // 
             this.btnMenuOmar.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuOmar.Location = new System.Drawing.Point(718, 779);
+            this.btnMenuOmar.Location = new System.Drawing.Point(916, 797);
             this.btnMenuOmar.Name = "btnMenuOmar";
-            this.btnMenuOmar.Size = new System.Drawing.Size(471, 195);
+            this.btnMenuOmar.Size = new System.Drawing.Size(273, 165);
             this.btnMenuOmar.TabIndex = 7;
             this.btnMenuOmar.Text = "REGRESAR AL MENU";
             this.btnMenuOmar.UseVisualStyleBackColor = true;
@@ -125,9 +127,9 @@
             // btnInsertarPedido
             // 
             this.btnInsertarPedido.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertarPedido.Location = new System.Drawing.Point(72, 779);
+            this.btnInsertarPedido.Location = new System.Drawing.Point(42, 828);
             this.btnInsertarPedido.Name = "btnInsertarPedido";
-            this.btnInsertarPedido.Size = new System.Drawing.Size(498, 195);
+            this.btnInsertarPedido.Size = new System.Drawing.Size(306, 102);
             this.btnInsertarPedido.TabIndex = 10;
             this.btnInsertarPedido.Text = "INSERTAR PEDIDO";
             this.btnInsertarPedido.UseVisualStyleBackColor = true;
@@ -143,11 +145,33 @@
             this.tabPedido.Size = new System.Drawing.Size(702, 915);
             this.tabPedido.TabIndex = 11;
             // 
+            // btnPrendas
+            // 
+            this.btnPrendas.Location = new System.Drawing.Point(410, 828);
+            this.btnPrendas.Name = "btnPrendas";
+            this.btnPrendas.Size = new System.Drawing.Size(154, 77);
+            this.btnPrendas.TabIndex = 12;
+            this.btnPrendas.Text = "Insertar Nueva Prenda";
+            this.btnPrendas.UseVisualStyleBackColor = true;
+            this.btnPrendas.Click += new System.EventHandler(this.btnPrendas_Click);
+            // 
+            // btnInsertarClientePed
+            // 
+            this.btnInsertarClientePed.Location = new System.Drawing.Point(695, 828);
+            this.btnInsertarClientePed.Name = "btnInsertarClientePed";
+            this.btnInsertarClientePed.Size = new System.Drawing.Size(148, 77);
+            this.btnInsertarClientePed.TabIndex = 13;
+            this.btnInsertarClientePed.Text = "INSERTAR CLIENTE";
+            this.btnInsertarClientePed.UseVisualStyleBackColor = true;
+            this.btnInsertarClientePed.Click += new System.EventHandler(this.btnInsertarClientePed_Click);
+            // 
             // PedidoOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.btnInsertarClientePed);
+            this.Controls.Add(this.btnPrendas);
             this.Controls.Add(this.tabPedido);
             this.Controls.Add(this.btnInsertarPedido);
             this.Controls.Add(this.txtcantidadProd);
@@ -180,5 +204,7 @@
         private System.Windows.Forms.TextBox txtcantidadProd;
         private System.Windows.Forms.Button btnInsertarPedido;
         private System.Windows.Forms.DataGridView tabPedido;
+        private System.Windows.Forms.Button btnPrendas;
+        private System.Windows.Forms.Button btnInsertarClientePed;
     }
 }

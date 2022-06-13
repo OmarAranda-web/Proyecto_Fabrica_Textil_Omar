@@ -12,6 +12,7 @@ namespace Proyecto_Fabrica_Textil_Omar
 {
     public partial class prendaOmar : Form
     {
+        public static int detallesPrenda1 = 0;
         public prendaOmar()
         {
             InitializeComponent();
@@ -26,6 +27,14 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
             CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabMostrarPrendas, "exec proc_consulta_mostrarPrendas");
+            if (PedidoOmar.inserPrend == 1)
+            {
+                btnRegresarMenu.Visible = false;
+            }
+            if (Form1.ocultaRegPrendas==1)
+            {
+                btnRegPagAnterior.Visible = false;
+            }
 
         }
 
@@ -81,6 +90,22 @@ namespace Proyecto_Fabrica_Textil_Omar
             {
                 MessageBox.Show("Coloque Valores Aceptados: ");
             }
+        }
+
+        private void btnDetallesPrenda_Click(object sender, EventArgs e)
+        {
+            Incluir_Detalles_FabricaOmar detaPrenda = new Incluir_Detalles_FabricaOmar();
+            detallesPrenda1 = 1;
+            detaPrenda.Show();
+            
+        }
+
+        private void btnRegPagAnterior_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            PedidoOmar frmPedido = new PedidoOmar();
+            PedidoOmar.inserPrend = 0;
+            frmPedido.Show();
         }
     }
 }

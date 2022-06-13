@@ -12,6 +12,7 @@ namespace Proyecto_Fabrica_Textil_Omar
 {
     public partial class MateriPrimaOmar : Form
     {
+        public static int detaUni = 0;
         public MateriPrimaOmar()
         {
             InitializeComponent();
@@ -78,6 +79,13 @@ namespace Proyecto_Fabrica_Textil_Omar
             {
                 MessageBox.Show("COLOQUE VALORES CORRECTOS(CANTIDADES NUMERICAS)");
             }
+        }
+
+        private void btnMaterias_Click(object sender, EventArgs e)
+        {
+            Incluir_Detalles_FabricaOmar frmUnidad = new Incluir_Detalles_FabricaOmar();
+            detaUni = 1;
+            frmUnidad.Show();
         }
     }
 }

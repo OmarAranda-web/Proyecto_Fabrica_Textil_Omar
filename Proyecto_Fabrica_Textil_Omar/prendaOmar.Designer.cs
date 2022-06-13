@@ -43,6 +43,8 @@
             this.btnRegresarMenu = new System.Windows.Forms.Button();
             this.btnInsertarPrenda = new System.Windows.Forms.Button();
             this.tabMostrarPrendas = new System.Windows.Forms.DataGridView();
+            this.btnDetallesPrenda = new System.Windows.Forms.Button();
+            this.btnRegPagAnterior = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tabMostrarPrendas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -157,7 +159,7 @@
             // 
             // btnRegresarMenu
             // 
-            this.btnRegresarMenu.Location = new System.Drawing.Point(1760, 872);
+            this.btnRegresarMenu.Location = new System.Drawing.Point(1607, 404);
             this.btnRegresarMenu.Name = "btnRegresarMenu";
             this.btnRegresarMenu.Size = new System.Drawing.Size(129, 69);
             this.btnRegresarMenu.TabIndex = 11;
@@ -167,7 +169,7 @@
             // 
             // btnInsertarPrenda
             // 
-            this.btnInsertarPrenda.Location = new System.Drawing.Point(1588, 872);
+            this.btnInsertarPrenda.Location = new System.Drawing.Point(1428, 404);
             this.btnInsertarPrenda.Name = "btnInsertarPrenda";
             this.btnInsertarPrenda.Size = new System.Drawing.Size(142, 69);
             this.btnInsertarPrenda.TabIndex = 12;
@@ -182,8 +184,28 @@
             this.tabMostrarPrendas.Name = "tabMostrarPrendas";
             this.tabMostrarPrendas.RowHeadersWidth = 51;
             this.tabMostrarPrendas.RowTemplate.Height = 24;
-            this.tabMostrarPrendas.Size = new System.Drawing.Size(1877, 279);
+            this.tabMostrarPrendas.Size = new System.Drawing.Size(1877, 349);
             this.tabMostrarPrendas.TabIndex = 13;
+            // 
+            // btnDetallesPrenda
+            // 
+            this.btnDetallesPrenda.Location = new System.Drawing.Point(1236, 404);
+            this.btnDetallesPrenda.Name = "btnDetallesPrenda";
+            this.btnDetallesPrenda.Size = new System.Drawing.Size(161, 69);
+            this.btnDetallesPrenda.TabIndex = 14;
+            this.btnDetallesPrenda.Text = "INSERTAR DETALLES DE PRENDA";
+            this.btnDetallesPrenda.UseVisualStyleBackColor = true;
+            this.btnDetallesPrenda.Click += new System.EventHandler(this.btnDetallesPrenda_Click);
+            // 
+            // btnRegPagAnterior
+            // 
+            this.btnRegPagAnterior.Location = new System.Drawing.Point(1768, 404);
+            this.btnRegPagAnterior.Name = "btnRegPagAnterior";
+            this.btnRegPagAnterior.Size = new System.Drawing.Size(139, 69);
+            this.btnRegPagAnterior.TabIndex = 15;
+            this.btnRegPagAnterior.Text = "Regresar";
+            this.btnRegPagAnterior.UseVisualStyleBackColor = true;
+            this.btnRegPagAnterior.Click += new System.EventHandler(this.btnRegPagAnterior_Click);
             // 
             // prendaOmar
             // 
@@ -191,6 +213,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1924, 953);
+            this.Controls.Add(this.btnRegPagAnterior);
+            this.Controls.Add(this.btnDetallesPrenda);
             this.Controls.Add(this.tabMostrarPrendas);
             this.Controls.Add(this.btnInsertarPrenda);
             this.Controls.Add(this.btnRegresarMenu);
@@ -207,7 +231,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "prendaOmar";
-            this.Text = "prenda";
+            this.Text = "Insertar Detalles dePrenda";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.prenda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabMostrarPrendas)).EndInit();
@@ -232,5 +256,7 @@
         private System.Windows.Forms.Button btnRegresarMenu;
         private System.Windows.Forms.Button btnInsertarPrenda;
         private System.Windows.Forms.DataGridView tabMostrarPrendas;
+        private System.Windows.Forms.Button btnDetallesPrenda;
+        private System.Windows.Forms.Button btnRegPagAnterior;
     }
 }

@@ -21,6 +21,14 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
             CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabCliente, "exec proc_consulta_cliente");
+            if (PedidoOmar.inserClient == 1)
+            {
+                button1.Visible = false;
+            }
+            if (Form1.ocultaRegCliente==1)
+            {
+                btnRegPedido.Visible = false;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -66,6 +74,14 @@ namespace Proyecto_Fabrica_Textil_Omar
             {
                 MessageBox.Show("COLOCA TODOS LOS CAMPOS DE MANERA CORRECTA");
             }
+        }
+
+        private void btnRegPedido_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            PedidoOmar frmPed = new PedidoOmar();
+            PedidoOmar.inserClient = 0;
+            frmPed.Show();
         }
     }
 }

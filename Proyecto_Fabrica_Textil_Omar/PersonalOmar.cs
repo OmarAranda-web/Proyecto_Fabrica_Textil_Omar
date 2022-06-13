@@ -12,6 +12,7 @@ namespace Proyecto_Fabrica_Textil_Omar
 {
     public partial class PersonalOmar : Form
     {
+        public static int detaPersonal=0;
         public PersonalOmar()
         {
             InitializeComponent();
@@ -91,6 +92,13 @@ namespace Proyecto_Fabrica_Textil_Omar
             {
                 MessageBox.Show("Lle los campos de forma correcta");
             }
+        }
+
+        private void btnDetaPersonal_Click(object sender, EventArgs e)
+        {
+            Incluir_Detalles_FabricaOmar frmDeta = new Incluir_Detalles_FabricaOmar();
+            detaPersonal = 1;
+            frmDeta.Show();
         }
     }
 }

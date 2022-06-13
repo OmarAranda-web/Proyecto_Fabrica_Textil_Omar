@@ -12,6 +12,9 @@ namespace Proyecto_Fabrica_Textil_Omar
 {
     public partial class Form1 : Form
     {
+        public static int ocultaBotines = 0;
+        public static int ocultaRegCliente = 0;
+        public static int ocultaRegPrendas = 0;
         public Form1()
         {
             InitializeComponent();
@@ -24,14 +27,15 @@ namespace Proyecto_Fabrica_Textil_Omar
 
         private void btnIngresarDetalles_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Incluir_Detalles_FabricaOmar formIncluir = new Incluir_Detalles_FabricaOmar();
+            ocultaBotines = 1;
             formIncluir.Show();
         }
 
         private void btnPrendas_Click(object sender, EventArgs e)
         {
             this.Hide();
+            ocultaRegPrendas = 1;
             prendaOmar fomrPrenda = new prendaOmar();
             fomrPrenda.Show();
         }
@@ -46,6 +50,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void btnCliente_Click(object sender, EventArgs e)
         {
             this.Hide();
+            ocultaRegCliente = 1;
             ClienteOmar formCliente = new ClienteOmar();
             formCliente.Show();
         }

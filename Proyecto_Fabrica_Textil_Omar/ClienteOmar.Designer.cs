@@ -40,6 +40,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnInsertarCliente = new System.Windows.Forms.Button();
             this.tabCliente = new System.Windows.Forms.DataGridView();
+            this.btnRegPedido = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tabCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +60,7 @@
             this.label2.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(67, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(355, 51);
+            this.label2.Size = new System.Drawing.Size(348, 51);
             this.label2.TabIndex = 1;
             this.label2.Text = "RAZON SOCIAL";
             // 
@@ -77,7 +78,7 @@
             this.label3.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(67, 205);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(269, 51);
+            this.label3.Size = new System.Drawing.Size(263, 51);
             this.label3.TabIndex = 3;
             this.label3.Text = "DIRECCION";
             // 
@@ -95,7 +96,7 @@
             this.label4.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(67, 381);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(261, 51);
+            this.label4.Size = new System.Drawing.Size(256, 51);
             this.label4.TabIndex = 5;
             this.label4.Text = "TELEFONO";
             // 
@@ -113,7 +114,7 @@
             this.label5.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(67, 525);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(158, 51);
+            this.label5.Size = new System.Drawing.Size(157, 51);
             this.label5.TabIndex = 7;
             this.label5.Text = "EMAIL";
             // 
@@ -128,7 +129,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(752, 736);
+            this.button1.Location = new System.Drawing.Point(499, 736);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(416, 200);
             this.button1.TabIndex = 9;
@@ -139,7 +140,7 @@
             // btnInsertarCliente
             // 
             this.btnInsertarCliente.Font = new System.Drawing.Font("Arial", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertarCliente.Location = new System.Drawing.Point(66, 736);
+            this.btnInsertarCliente.Location = new System.Drawing.Point(29, 736);
             this.btnInsertarCliente.Name = "btnInsertarCliente";
             this.btnInsertarCliente.Size = new System.Drawing.Size(410, 200);
             this.btnInsertarCliente.TabIndex = 10;
@@ -157,11 +158,22 @@
             this.tabCliente.Size = new System.Drawing.Size(672, 851);
             this.tabCliente.TabIndex = 11;
             // 
+            // btnRegPedido
+            // 
+            this.btnRegPedido.Location = new System.Drawing.Point(954, 736);
+            this.btnRegPedido.Name = "btnRegPedido";
+            this.btnRegPedido.Size = new System.Drawing.Size(206, 200);
+            this.btnRegPedido.TabIndex = 12;
+            this.btnRegPedido.Text = "REGRESAR";
+            this.btnRegPedido.UseVisualStyleBackColor = true;
+            this.btnRegPedido.Click += new System.EventHandler(this.btnRegPedido_Click);
+            // 
             // ClienteOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.btnRegPedido);
             this.Controls.Add(this.tabCliente);
             this.Controls.Add(this.btnInsertarCliente);
             this.Controls.Add(this.button1);
@@ -198,5 +210,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnInsertarCliente;
         private System.Windows.Forms.DataGridView tabCliente;
+        private System.Windows.Forms.Button btnRegPedido;
     }
 }

@@ -12,6 +12,8 @@ namespace Proyecto_Fabrica_Textil_Omar
 {
     public partial class PedidoOmar : Form
     {
+        public static int inserPrend=0;
+        public static int inserClient = 0;
         public PedidoOmar()
         {
             InitializeComponent();
@@ -71,6 +73,22 @@ namespace Proyecto_Fabrica_Textil_Omar
             {
                 MessageBox.Show("Coloque valores Validos");
             }
+        }
+
+        private void btnPrendas_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            inserPrend = 1;
+            prendaOmar frmPrenda = new prendaOmar();
+            frmPrenda.Show();
+        }
+
+        private void btnInsertarClientePed_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ClienteOmar frmClien = new ClienteOmar();
+            inserClient = 1;
+            frmClien.Show();
         }
     }
 }
