@@ -157,7 +157,6 @@
             this.btnVenta.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.insertarVenta1;
             this.btnVenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnVenta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnVenta.Enabled = false;
             this.btnVenta.FlatAppearance.BorderSize = 0;
             this.btnVenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;

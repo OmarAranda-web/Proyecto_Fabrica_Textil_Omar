@@ -29,7 +29,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             Incluir_Detalles_FabricaOmar formIncluir = new Incluir_Detalles_FabricaOmar();
             ocultaBotines = 1;
-            formIncluir.Show();
+            formIncluir.ShowDialog();
         }
 
         private void btnPrendas_Click(object sender, EventArgs e)

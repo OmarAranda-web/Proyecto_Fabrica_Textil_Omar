@@ -179,6 +179,7 @@
             // 
             // tabMostrarPrendas
             // 
+            this.tabMostrarPrendas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.tabMostrarPrendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tabMostrarPrendas.Location = new System.Drawing.Point(12, 564);
             this.tabMostrarPrendas.Name = "tabMostrarPrendas";
