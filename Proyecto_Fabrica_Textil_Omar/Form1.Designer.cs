@@ -234,7 +234,6 @@
             this.btnCompra.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.insertarCompra1;
             this.btnCompra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCompra.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCompra.Enabled = false;
             this.btnCompra.FlatAppearance.BorderSize = 0;
             this.btnCompra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnCompra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
