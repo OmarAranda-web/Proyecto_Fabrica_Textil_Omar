@@ -17,6 +17,12 @@ namespace Proyecto_Fabrica_Textil_Omar
         public static string modeloDePrenda="";
         public static string folioVenta="";
         public static int cantidad=0;
+        public static string folio_venta_selec="";
+        public static string modelo_venta_selec = "";
+        public static string nomPrenda_Selec = "";
+        public static int eliminar_editar_venta;
+        public static int cantidad_editar=0;
+        public static int cantidad_seleccionada;
         public VentaOmar()
         {
             InitializeComponent();
@@ -76,6 +82,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             lblClientCate.Text = "Prendas";
             lblCliente.Visible = true;
             lblnomCliente.Text=tagCliente.Text;
+
             lblnomCliente.Visible = true;
             lblCategorias.Visible = true;
             flpanelCategoria.Visible = true;
@@ -201,5 +208,118 @@ namespace Proyecto_Fabrica_Textil_Omar
             cantidad = 0;
             omar_mostrar_Clientes();
         }
+
+        private void btnBuscarPrend_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BusquedaOmar frmBusqueda = new BusquedaOmar();
+            frmBusqueda.ShowDialog();
+        }
+
+        private void seleccionar_folios(object sender, DataGridViewCellEventArgs e)
+        {
+            int indice_fila = e.RowIndex;
+            folio_venta_selec = taaVentas.Rows[indice_fila].Cells[0].Value.ToString();
+            modelo_venta_selec = taaVentas.Rows[indice_fila].Cells[1].Value.ToString();
+            nomPrenda_Selec = taaVentas.Rows[indice_fila].Cells[2].Value.ToString();
+            try
+            {
+                eliminar_editar_venta = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox("¿Que deseas Hacer?\n1.-Eliminar\n2.-Editar\n3.-Cancelar"));
+                if (eliminar_editar_venta == 1)
+                {
+                    CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_eliminarar_detalle_venta '"+folio_venta_selec+"', '"+modelo_venta_selec+"'");
+                    if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+                    {
+                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                    }
+                    CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                    CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("Select VENTA_OMAR.TOTAL_VENTA_OMAR from VENTA_OMAR where VENTA_OMAR.FOLIO_VENTA_OMAR='" + folioVenta + "'");
+                    if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+                    {
+                        lblcantiVenta.Text = Convert.ToString(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0]);
+                    }
+                    CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                    CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(taaVentas, "exec proc_consulta_mostrar_venta '" + folioVenta + "'");
+                }
+                if (eliminar_editar_venta == 2)
+                {
+                    cantidad_editar = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox("Coloque cuantos prendas del modelo "+nomPrenda_Selec+" desea quitar"));
+                    if (cantidad_editar <= 0)
+                    {
+                        MessageBox.Show("No Se edito ningun registro");
+                    }
+                    else
+                    {
+                        CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("Select DETALLE_VENTA_OMAR.CANTIDAD_PRENDAS_DV_OMAR from DETALLE_VENTA_OMAR where DETALLE_VENTA_OMAR.FOLIO_VENTA_OMAR='"+folio_venta_selec+"' and DETALLE_VENTA_OMAR.MODELO_PRENDA_OMAR='"+modelo_venta_selec+"'");
+                        if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+                        {
+                            cantidad_seleccionada = Convert.ToInt32(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                        }
+                        CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                        if (cantidad_editar>=cantidad_seleccionada)
+                        {
+                            CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_eliminarar_detalle_venta '" + folio_venta_selec + "', '" + modelo_venta_selec + "'");
+                            if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+                            {
+                                MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                            }
+                            CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                            CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("Select VENTA_OMAR.TOTAL_VENTA_OMAR from VENTA_OMAR where VENTA_OMAR.FOLIO_VENTA_OMAR='" + folioVenta + "'");
+                            if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+                            {
+                                lblcantiVenta.Text = Convert.ToString(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0]);
+                            }
+                            CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                            CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(taaVentas, "exec proc_consulta_mostrar_venta '" + folioVenta + "'");
+                        }
+                        else
+                        {
+                            CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_editar_detalleventa '"+folio_venta_selec+"', '"+modelo_venta_selec+"', "+cantidad_editar+"");
+                            if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+                            {
+                                MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                            }
+                            CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+
+                            CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("Select VENTA_OMAR.TOTAL_VENTA_OMAR from VENTA_OMAR where VENTA_OMAR.FOLIO_VENTA_OMAR='" + folioVenta + "'");
+                            if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+                            {
+                                lblcantiVenta.Text = Convert.ToString(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0]);
+                            }
+                            CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                            CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(taaVentas, "exec proc_consulta_mostrar_venta '" + folioVenta + "'");
+                        }
+                    }
+                }
+            }
+            catch {
+                MessageBox.Show("Solo son admitidos numeros");
+            }
+        }
+        /*
+private void obtenerClave(object sender, KeyEventArgs e)
+{
+if (e.KeyValue == 13)
+{
+MessageBox.Show("Se presiono el enter");
+//txtPrueba.Focus();
+
+}
+}
+private void button1_Click(object sender, EventArgs e)
+{
+MessageBox.Show("Hola");
+}
+
+private void eventEnter1(object sender, KeyEventArgs e)
+{
+if (e.KeyValue == 13)
+{
+//MessageBox.Show("Se presiono el enter");
+button1_Click(sender, e);
+
+}
+}
+*/
     }
 }

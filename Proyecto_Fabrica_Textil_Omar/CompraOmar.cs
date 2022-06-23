@@ -18,6 +18,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         }
         public static string clave_provee="";
         public static string clave_materias = "";
+        public static string folio_compra = "";
         private void CompraOmar_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
@@ -50,8 +51,25 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             Button tagProve = sender as Button;
             clave_provee = Convert.ToString(tagProve.Tag);
-            flpanelProveedores.Controls.Clear();
-            mostrar_materiasPrimas();
+            try
+            {
+                folio_compra=txtFolioCompra.Text;
+                if (folio_compra=="")
+                {
+                    MessageBox.Show("Coloque el folio de compra");
+                }
+                else
+                {
+                    txtFolioCompra.Enabled = false;
+                    flpanelProveedores.Controls.Clear();
+                    mostrar_materiasPrimas();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+            }
+            
         }
         public void mostrar_materiasPrimas()
         {

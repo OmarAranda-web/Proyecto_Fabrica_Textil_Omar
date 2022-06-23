@@ -53,6 +53,12 @@
     <Compile Include="AsitenciasOmar.Designer.cs">
       <DependentUpon>AsitenciasOmar.cs</DependentUpon>
     </Compile>
+    <Compile Include="BusquedaOmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaOmar.Designer.cs">
+      <DependentUpon>BusquedaOmar.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClienteOmar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     </Compile>
     <EmbeddedResource Include="AsitenciasOmar.resx">
       <DependentUpon>AsitenciasOmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaOmar.resx">
+      <DependentUpon>BusquedaOmar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClienteOmar.resx">
       <DependentUpon>ClienteOmar.cs</DependentUpon>

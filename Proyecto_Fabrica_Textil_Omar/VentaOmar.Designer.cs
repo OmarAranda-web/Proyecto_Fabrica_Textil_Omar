@@ -41,6 +41,7 @@
             this.lblDetaVenta = new System.Windows.Forms.Label();
             this.lblTotalVenta = new System.Windows.Forms.Label();
             this.lblcantiVenta = new System.Windows.Forms.Label();
+            this.btnBuscarPrend = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.taaVentas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,6 +97,7 @@
             this.taaVentas.RowTemplate.Height = 24;
             this.taaVentas.Size = new System.Drawing.Size(760, 169);
             this.taaVentas.TabIndex = 6;
+            this.taaVentas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.seleccionar_folios);
             // 
             // lblnomCliente
             // 
@@ -161,11 +163,22 @@
             this.lblcantiVenta.TabIndex = 13;
             this.lblcantiVenta.Text = "0";
             // 
+            // btnBuscarPrend
+            // 
+            this.btnBuscarPrend.Location = new System.Drawing.Point(917, 66);
+            this.btnBuscarPrend.Name = "btnBuscarPrend";
+            this.btnBuscarPrend.Size = new System.Drawing.Size(158, 23);
+            this.btnBuscarPrend.TabIndex = 14;
+            this.btnBuscarPrend.Text = "Buscar Prenda";
+            this.btnBuscarPrend.UseVisualStyleBackColor = true;
+            this.btnBuscarPrend.Click += new System.EventHandler(this.btnBuscarPrend_Click);
+            // 
             // VentaOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.btnBuscarPrend);
             this.Controls.Add(this.lblcantiVenta);
             this.Controls.Add(this.lblTotalVenta);
             this.Controls.Add(this.lblDetaVenta);
@@ -204,5 +217,6 @@
         private System.Windows.Forms.Label lblDetaVenta;
         private System.Windows.Forms.Label lblTotalVenta;
         private System.Windows.Forms.Label lblcantiVenta;
+        private System.Windows.Forms.Button btnBuscarPrend;
     }
 }
