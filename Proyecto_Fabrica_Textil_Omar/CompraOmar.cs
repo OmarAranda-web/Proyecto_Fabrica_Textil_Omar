@@ -19,6 +19,9 @@ namespace Proyecto_Fabrica_Textil_Omar
         public static string clave_provee="";
         public static string clave_materias = "";
         public static string folio_compra = "";
+        public static float precioMateria=0;
+        public static string calidad="";
+        public static float cantidad=0;
         private void CompraOmar_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
@@ -97,6 +100,10 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             Button tagMateria = sender as Button;
             clave_materias = Convert.ToString(tagMateria.Tag);
+            cantidad = (float)Convert.ToDouble(Microsoft.VisualBasic.Interaction.InputBox("Coloque la cantidad"));
+            calidad = Microsoft.VisualBasic.Interaction.InputBox("En una escala del 1 al 10 coloque la calidad");
+            precioMateria = (float)(Convert.ToDouble(Microsoft.VisualBasic.Interaction.InputBox("Coloque el precio de una Unidad de Material")));
+
             //flpanelProveedores.Controls.Clear();
             MessageBox.Show(clave_materias);
         }

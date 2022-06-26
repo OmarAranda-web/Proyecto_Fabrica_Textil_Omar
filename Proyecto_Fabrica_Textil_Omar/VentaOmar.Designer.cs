@@ -42,6 +42,7 @@
             this.lblTotalVenta = new System.Windows.Forms.Label();
             this.lblcantiVenta = new System.Windows.Forms.Label();
             this.btnBuscarPrend = new System.Windows.Forms.Button();
+            this.btnExcel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.taaVentas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,11 +174,22 @@
             this.btnBuscarPrend.UseVisualStyleBackColor = true;
             this.btnBuscarPrend.Click += new System.EventHandler(this.btnBuscarPrend_Click);
             // 
+            // btnExcel
+            // 
+            this.btnExcel.Location = new System.Drawing.Point(524, 794);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(117, 73);
+            this.btnExcel.TabIndex = 15;
+            this.btnExcel.Text = "Excel";
+            this.btnExcel.UseVisualStyleBackColor = true;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
             // VentaOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.btnExcel);
             this.Controls.Add(this.btnBuscarPrend);
             this.Controls.Add(this.lblcantiVenta);
             this.Controls.Add(this.lblTotalVenta);
@@ -218,5 +230,6 @@
         private System.Windows.Forms.Label lblTotalVenta;
         private System.Windows.Forms.Label lblcantiVenta;
         private System.Windows.Forms.Button btnBuscarPrend;
+        private System.Windows.Forms.Button btnExcel;
     }
 }

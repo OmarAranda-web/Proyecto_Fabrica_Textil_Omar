@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Office.Interop.Excel;
+using Button = System.Windows.Forms.Button;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace Proyecto_Fabrica_Textil_Omar
 {
@@ -23,6 +26,8 @@ namespace Proyecto_Fabrica_Textil_Omar
         public static int eliminar_editar_venta;
         public static int cantidad_editar=0;
         public static int cantidad_seleccionada;
+        private Worksheet hoja;
+
         public VentaOmar()
         {
             InitializeComponent();
@@ -296,30 +301,39 @@ namespace Proyecto_Fabrica_Textil_Omar
                 MessageBox.Show("Solo son admitidos numeros");
             }
         }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            Excel.Application aplicacion = new Microsoft.Office.Interop.Excel.Application();
+            Workbook libro = aplicacion.Workbooks.Add("VentaOmar");
+            aplicacion.Visible = true;
+            hoja = (Excel.Worksheet)libro.Worksheets.get_Item(1);
+            hoja.Cells[3, 5]="Lo hicimos";
+            libro.SaveAs("Intento1.pdf");
+        }
         /*
-private void obtenerClave(object sender, KeyEventArgs e)
-{
-if (e.KeyValue == 13)
-{
-MessageBox.Show("Se presiono el enter");
-//txtPrueba.Focus();
+        private void obtenerClave(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == 13)
+            {
+            MessageBox.Show("Se presiono el enter");
+            //txtPrueba.Focus();
+        }
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+        MessageBox.Show("Hola");
+        }
 
-}
-}
-private void button1_Click(object sender, EventArgs e)
-{
-MessageBox.Show("Hola");
-}
+        private void eventEnter1(object sender, KeyEventArgs e)
+        {
+        if (e.KeyValue == 13)
+        {
+        //MessageBox.Show("Se presiono el enter");
+        button1_Click(sender, e);
 
-private void eventEnter1(object sender, KeyEventArgs e)
-{
-if (e.KeyValue == 13)
-{
-//MessageBox.Show("Se presiono el enter");
-button1_Click(sender, e);
-
-}
-}
-*/
+        }
+        }
+        */
     }
 }
