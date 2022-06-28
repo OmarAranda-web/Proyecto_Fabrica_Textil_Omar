@@ -19,9 +19,10 @@ namespace Proyecto_Fabrica_Textil_Omar
         public static string clave_provee="";
         public static string clave_materias = "";
         public static string folio_compra = "";
-        public static float precioMateria=0;
-        public static string calidad="";
+        public static int calidad=0;
         public static float cantidad=0;
+        public static string respuesta;
+
         private void CompraOmar_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
@@ -54,6 +55,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             Button tagProve = sender as Button;
             clave_provee = Convert.ToString(tagProve.Tag);
+            string proveedorSelect =Convert.ToString(tagProve.Text);
             try
             {
                 folio_compra=txtFolioCompra.Text;
@@ -63,9 +65,25 @@ namespace Proyecto_Fabrica_Textil_Omar
                 }
                 else
                 {
-                    txtFolioCompra.Enabled = false;
-                    flpanelProveedores.Controls.Clear();
-                    mostrar_materiasPrimas();
+                    
+                    CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_insertar_Compra " + folio_compra + ", " + clave_provee + "");
+                    if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+                    {
+                        respuesta = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString();
+                    }
+                    CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                    if (respuesta == "El folio ya existe escribalo de forma adecuada")
+                    {
+                        MessageBox.Show(respuesta);
+                    }
+                    else
+                    {
+                        txtFolioCompra.Enabled = false;
+                        lblnomProvedor.Text = proveedorSelect;
+                        flpanelProveedores.Controls.Clear();
+                        mostrar_materiasPrimas();
+                    }
+                        
                 }
             }
             catch(Exception ex)
@@ -100,12 +118,46 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             Button tagMateria = sender as Button;
             clave_materias = Convert.ToString(tagMateria.Tag);
-            cantidad = (float)Convert.ToDouble(Microsoft.VisualBasic.Interaction.InputBox("Coloque la cantidad"));
-            calidad = Microsoft.VisualBasic.Interaction.InputBox("En una escala del 1 al 10 coloque la calidad");
-            precioMateria = (float)(Convert.ToDouble(Microsoft.VisualBasic.Interaction.InputBox("Coloque el precio de una Unidad de Material")));
+            try
+            {
+                cantidad = (float)Convert.ToDouble(Microsoft.VisualBasic.Interaction.InputBox("Coloque la cantidad"));
+                calidad = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox("En una escala del 1 al 10 coloque la calidad"));
+                if (cantidad < 0 || calidad<0)
+                {
+                    MessageBox.Show("Coloque valores positivos");
+                }
+                else
+                {
+                    if (calidad>10)
+                    {
+                        MessageBox.Show("La calidad solo acepta valores entre 1 y el 9");
+                    }
+                    else
+                    {
+                        CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec porc_insertar_detalleCompra "+clave_materias+", "+cantidad+", "+respuesta+"");
+                        CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                        CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("EXEC proc_insertar_Materia_Proveedor "+clave_provee+","+clave_materias+",'"+calidad+"'");
+                        CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                        MessageBox.Show("Se inserto Compra");
+                        CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabCompras, "exec proc_consulta_compra "+respuesta+"");
+                        CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("Select COMPRA_OMAR.TOTAL_COMPRA_OMAR from COMPRA_OMAR where COMPRA_OMAR.ID_COMPRA_OMAR="+respuesta+"");
+                        if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+                        {
+                            lblTotal.Text = Convert.ToString(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0]);
+                        }
+                        CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                    }
+                }
+
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("LLene los campos de manera correcta "+ex);
+            }
+            
 
             //flpanelProveedores.Controls.Clear();
-            MessageBox.Show(clave_materias);
+            //MessageBox.Show(clave_materias);
         }
 
 
