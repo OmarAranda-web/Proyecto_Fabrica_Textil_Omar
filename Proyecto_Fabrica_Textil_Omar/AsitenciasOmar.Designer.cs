@@ -34,11 +34,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnRegMenOmar = new System.Windows.Forms.Button();
-            this.txxFechEntradaOmar = new System.Windows.Forms.TextBox();
-            this.txxFechSalidaOmar = new System.Windows.Forms.TextBox();
             this.txtUnidOmar = new System.Windows.Forms.TextBox();
-            this.cmbRFCPerOmar = new System.Windows.Forms.ComboBox();
             this.btnAsistenciaOmar = new System.Windows.Forms.Button();
+            this.cmbHoraEnt = new System.Windows.Forms.ComboBox();
+            this.cmbMinsEnt = new System.Windows.Forms.ComboBox();
+            this.cmbHoraSal = new System.Windows.Forms.ComboBox();
+            this.txtRFC = new System.Windows.Forms.TextBox();
+            this.calenFecha = new System.Windows.Forms.MonthCalendar();
+            this.cmbEntampm = new System.Windows.Forms.ComboBox();
+            this.cmbampmSal = new System.Windows.Forms.ComboBox();
+            this.cmbRFCPerOmar = new System.Windows.Forms.ComboBox();
+            this.cmbMinsSal = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -88,27 +94,13 @@
             // 
             // btnRegMenOmar
             // 
-            this.btnRegMenOmar.Location = new System.Drawing.Point(341, 303);
+            this.btnRegMenOmar.Location = new System.Drawing.Point(341, 298);
             this.btnRegMenOmar.Name = "btnRegMenOmar";
             this.btnRegMenOmar.Size = new System.Drawing.Size(143, 70);
             this.btnRegMenOmar.TabIndex = 5;
             this.btnRegMenOmar.Text = "REGRESAR AL MENU";
             this.btnRegMenOmar.UseVisualStyleBackColor = true;
             this.btnRegMenOmar.Click += new System.EventHandler(this.btnRegMenOmar_Click);
-            // 
-            // txxFechEntradaOmar
-            // 
-            this.txxFechEntradaOmar.Location = new System.Drawing.Point(341, 86);
-            this.txxFechEntradaOmar.Name = "txxFechEntradaOmar";
-            this.txxFechEntradaOmar.Size = new System.Drawing.Size(121, 22);
-            this.txxFechEntradaOmar.TabIndex = 6;
-            // 
-            // txxFechSalidaOmar
-            // 
-            this.txxFechSalidaOmar.Location = new System.Drawing.Point(341, 131);
-            this.txxFechSalidaOmar.Name = "txxFechSalidaOmar";
-            this.txxFechSalidaOmar.Size = new System.Drawing.Size(121, 22);
-            this.txxFechSalidaOmar.TabIndex = 7;
             // 
             // txtUnidOmar
             // 
@@ -117,18 +109,9 @@
             this.txtUnidOmar.Size = new System.Drawing.Size(100, 22);
             this.txtUnidOmar.TabIndex = 8;
             // 
-            // cmbRFCPerOmar
-            // 
-            this.cmbRFCPerOmar.FormattingEnabled = true;
-            this.cmbRFCPerOmar.Location = new System.Drawing.Point(341, 187);
-            this.cmbRFCPerOmar.Name = "cmbRFCPerOmar";
-            this.cmbRFCPerOmar.Size = new System.Drawing.Size(121, 24);
-            this.cmbRFCPerOmar.TabIndex = 9;
-            this.cmbRFCPerOmar.Click += new System.EventHandler(this.mostrarRFCPerOmar);
-            // 
             // btnAsistenciaOmar
             // 
-            this.btnAsistenciaOmar.Location = new System.Drawing.Point(72, 312);
+            this.btnAsistenciaOmar.Location = new System.Drawing.Point(75, 298);
             this.btnAsistenciaOmar.Name = "btnAsistenciaOmar";
             this.btnAsistenciaOmar.Size = new System.Drawing.Size(136, 70);
             this.btnAsistenciaOmar.TabIndex = 10;
@@ -136,16 +119,315 @@
             this.btnAsistenciaOmar.UseVisualStyleBackColor = true;
             this.btnAsistenciaOmar.Click += new System.EventHandler(this.btnAsistenciaOmar_Click);
             // 
+            // cmbHoraEnt
+            // 
+            this.cmbHoraEnt.FormattingEnabled = true;
+            this.cmbHoraEnt.Items.AddRange(new object[] {
+            "",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.cmbHoraEnt.Location = new System.Drawing.Point(341, 93);
+            this.cmbHoraEnt.Name = "cmbHoraEnt";
+            this.cmbHoraEnt.Size = new System.Drawing.Size(121, 24);
+            this.cmbHoraEnt.TabIndex = 11;
+            // 
+            // cmbMinsEnt
+            // 
+            this.cmbMinsEnt.FormattingEnabled = true;
+            this.cmbMinsEnt.Items.AddRange(new object[] {
+            "",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.cmbMinsEnt.Location = new System.Drawing.Point(489, 92);
+            this.cmbMinsEnt.Name = "cmbMinsEnt";
+            this.cmbMinsEnt.Size = new System.Drawing.Size(121, 24);
+            this.cmbMinsEnt.TabIndex = 12;
+            // 
+            // cmbHoraSal
+            // 
+            this.cmbHoraSal.FormattingEnabled = true;
+            this.cmbHoraSal.Items.AddRange(new object[] {
+            "",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.cmbHoraSal.Location = new System.Drawing.Point(341, 131);
+            this.cmbHoraSal.Name = "cmbHoraSal";
+            this.cmbHoraSal.Size = new System.Drawing.Size(121, 24);
+            this.cmbHoraSal.TabIndex = 13;
+            // 
+            // txtRFC
+            // 
+            this.txtRFC.Location = new System.Drawing.Point(341, 184);
+            this.txtRFC.Name = "txtRFC";
+            this.txtRFC.Size = new System.Drawing.Size(100, 22);
+            this.txtRFC.TabIndex = 14;
+            // 
+            // calenFecha
+            // 
+            this.calenFecha.Location = new System.Drawing.Point(821, 93);
+            this.calenFecha.Name = "calenFecha";
+            this.calenFecha.TabIndex = 15;
+            // 
+            // cmbEntampm
+            // 
+            this.cmbEntampm.FormattingEnabled = true;
+            this.cmbEntampm.Items.AddRange(new object[] {
+            "",
+            "a. m.",
+            "p. m."});
+            this.cmbEntampm.Location = new System.Drawing.Point(630, 93);
+            this.cmbEntampm.Name = "cmbEntampm";
+            this.cmbEntampm.Size = new System.Drawing.Size(121, 24);
+            this.cmbEntampm.TabIndex = 16;
+            // 
+            // cmbampmSal
+            // 
+            this.cmbampmSal.FormattingEnabled = true;
+            this.cmbampmSal.Items.AddRange(new object[] {
+            "",
+            "a. m.",
+            "p. m."});
+            this.cmbampmSal.Location = new System.Drawing.Point(630, 130);
+            this.cmbampmSal.Name = "cmbampmSal";
+            this.cmbampmSal.Size = new System.Drawing.Size(121, 24);
+            this.cmbampmSal.TabIndex = 17;
+            // 
+            // cmbRFCPerOmar
+            // 
+            this.cmbRFCPerOmar.FormattingEnabled = true;
+            this.cmbRFCPerOmar.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"});
+            this.cmbRFCPerOmar.Location = new System.Drawing.Point(489, 187);
+            this.cmbRFCPerOmar.Name = "cmbRFCPerOmar";
+            this.cmbRFCPerOmar.Size = new System.Drawing.Size(121, 24);
+            this.cmbRFCPerOmar.TabIndex = 9;
+            this.cmbRFCPerOmar.Click += new System.EventHandler(this.mostrarRFCPerOmar);
+            // 
+            // cmbMinsSal
+            // 
+            this.cmbMinsSal.FormattingEnabled = true;
+            this.cmbMinsSal.Items.AddRange(new object[] {
+            "",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.cmbMinsSal.Location = new System.Drawing.Point(489, 128);
+            this.cmbMinsSal.Name = "cmbMinsSal";
+            this.cmbMinsSal.Size = new System.Drawing.Size(121, 24);
+            this.cmbMinsSal.TabIndex = 18;
+            // 
             // AsitenciasOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1033);
+            this.Controls.Add(this.cmbMinsSal);
+            this.Controls.Add(this.cmbampmSal);
+            this.Controls.Add(this.cmbEntampm);
+            this.Controls.Add(this.calenFecha);
+            this.Controls.Add(this.txtRFC);
+            this.Controls.Add(this.cmbHoraSal);
+            this.Controls.Add(this.cmbMinsEnt);
+            this.Controls.Add(this.cmbHoraEnt);
             this.Controls.Add(this.btnAsistenciaOmar);
             this.Controls.Add(this.cmbRFCPerOmar);
             this.Controls.Add(this.txtUnidOmar);
-            this.Controls.Add(this.txxFechSalidaOmar);
-            this.Controls.Add(this.txxFechEntradaOmar);
             this.Controls.Add(this.btnRegMenOmar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -169,10 +451,16 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnRegMenOmar;
-        private System.Windows.Forms.TextBox txxFechEntradaOmar;
-        private System.Windows.Forms.TextBox txxFechSalidaOmar;
         private System.Windows.Forms.TextBox txtUnidOmar;
-        private System.Windows.Forms.ComboBox cmbRFCPerOmar;
         private System.Windows.Forms.Button btnAsistenciaOmar;
+        private System.Windows.Forms.ComboBox cmbHoraEnt;
+        private System.Windows.Forms.ComboBox cmbMinsEnt;
+        private System.Windows.Forms.ComboBox cmbHoraSal;
+        private System.Windows.Forms.TextBox txtRFC;
+        private System.Windows.Forms.MonthCalendar calenFecha;
+        private System.Windows.Forms.ComboBox cmbEntampm;
+        private System.Windows.Forms.ComboBox cmbampmSal;
+        private System.Windows.Forms.ComboBox cmbRFCPerOmar;
+        private System.Windows.Forms.ComboBox cmbMinsSal;
     }
 }

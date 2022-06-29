@@ -76,6 +76,14 @@
             this.label12 = new System.Windows.Forms.Label();
             this.btnMenu = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtNumMaquinaria = new System.Windows.Forms.TextBox();
+            this.cmbCategoriaMaq = new System.Windows.Forms.ComboBox();
+            this.btnInsertarNumMaquinaria = new System.Windows.Forms.Button();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panelMateria.SuspendLayout();
             this.panelPrendas.SuspendLayout();
@@ -200,7 +208,7 @@
             this.panelPrendas.Controls.Add(this.txtColor);
             this.panelPrendas.Location = new System.Drawing.Point(32, 213);
             this.panelPrendas.Name = "panelPrendas";
-            this.panelPrendas.Size = new System.Drawing.Size(324, 463);
+            this.panelPrendas.Size = new System.Drawing.Size(342, 463);
             this.panelPrendas.TabIndex = 41;
             // 
             // btnRegPrenda
@@ -309,7 +317,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 73);
+            this.label2.Location = new System.Drawing.Point(19, 48);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(206, 20);
             this.label2.TabIndex = 2;
@@ -348,6 +356,14 @@
             // 
             // panelPersonal
             // 
+            this.panelPersonal.Controls.Add(this.label26);
+            this.panelPersonal.Controls.Add(this.label25);
+            this.panelPersonal.Controls.Add(this.label24);
+            this.panelPersonal.Controls.Add(this.btnInsertarNumMaquinaria);
+            this.panelPersonal.Controls.Add(this.cmbCategoriaMaq);
+            this.panelPersonal.Controls.Add(this.txtNumMaquinaria);
+            this.panelPersonal.Controls.Add(this.label23);
+            this.panelPersonal.Controls.Add(this.label22);
             this.panelPersonal.Controls.Add(this.btnRegPersonal);
             this.panelPersonal.Controls.Add(this.label14);
             this.panelPersonal.Controls.Add(this.label16);
@@ -368,14 +384,14 @@
             this.panelPersonal.Controls.Add(this.label11);
             this.panelPersonal.Controls.Add(this.label15);
             this.panelPersonal.Controls.Add(this.label12);
-            this.panelPersonal.Location = new System.Drawing.Point(362, 46);
+            this.panelPersonal.Location = new System.Drawing.Point(380, 46);
             this.panelPersonal.Name = "panelPersonal";
-            this.panelPersonal.Size = new System.Drawing.Size(514, 362);
+            this.panelPersonal.Size = new System.Drawing.Size(514, 527);
             this.panelPersonal.TabIndex = 40;
             // 
             // btnRegPersonal
             // 
-            this.btnRegPersonal.Location = new System.Drawing.Point(367, 325);
+            this.btnRegPersonal.Location = new System.Drawing.Point(346, 481);
             this.btnRegPersonal.Name = "btnRegPersonal";
             this.btnRegPersonal.Size = new System.Drawing.Size(144, 30);
             this.btnRegPersonal.TabIndex = 39;
@@ -576,7 +592,7 @@
             this.btnMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenu.Image = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.menu;
             this.btnMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMenu.Location = new System.Drawing.Point(681, 414);
+            this.btnMenu.Location = new System.Drawing.Point(684, 580);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(195, 85);
             this.btnMenu.TabIndex = 5;
@@ -594,6 +610,76 @@
             this.label1.Size = new System.Drawing.Size(332, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "DETALLE DE FABRICA";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(0, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(51, 16);
+            this.label22.TabIndex = 40;
+            this.label22.Text = "label22";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(12, 333);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(176, 16);
+            this.label23.TabIndex = 41;
+            this.label23.Text = "NUMERO DE MAQUINARIA";
+            // 
+            // txtNumMaquinaria
+            // 
+            this.txtNumMaquinaria.Location = new System.Drawing.Point(15, 415);
+            this.txtNumMaquinaria.Name = "txtNumMaquinaria";
+            this.txtNumMaquinaria.Size = new System.Drawing.Size(100, 22);
+            this.txtNumMaquinaria.TabIndex = 42;
+            // 
+            // cmbCategoriaMaq
+            // 
+            this.cmbCategoriaMaq.FormattingEnabled = true;
+            this.cmbCategoriaMaq.Location = new System.Drawing.Point(137, 413);
+            this.cmbCategoriaMaq.Name = "cmbCategoriaMaq";
+            this.cmbCategoriaMaq.Size = new System.Drawing.Size(121, 24);
+            this.cmbCategoriaMaq.TabIndex = 43;
+            // 
+            // btnInsertarNumMaquinaria
+            // 
+            this.btnInsertarNumMaquinaria.Location = new System.Drawing.Point(295, 389);
+            this.btnInsertarNumMaquinaria.Name = "btnInsertarNumMaquinaria";
+            this.btnInsertarNumMaquinaria.Size = new System.Drawing.Size(177, 55);
+            this.btnInsertarNumMaquinaria.TabIndex = 44;
+            this.btnInsertarNumMaquinaria.Text = "Insertar Numero de Maquinaria";
+            this.btnInsertarNumMaquinaria.UseVisualStyleBackColor = true;
+            this.btnInsertarNumMaquinaria.Click += new System.EventHandler(this.btnInsertarNumMaquinaria_Click);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(16, 359);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(293, 16);
+            this.label24.TabIndex = 45;
+            this.label24.Text = "Coloque el numero de Maquinaria y la categoria";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(15, 391);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(105, 16);
+            this.label25.TabIndex = 46;
+            this.label25.Text = "Num Maquinaria";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(134, 390);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(155, 16);
+            this.label26.TabIndex = 47;
+            this.label26.Text = "Categoria de Maquinaria";
             // 
             // Incluir_Detalles_FabricaOmar
             // 
@@ -669,5 +755,13 @@
         private System.Windows.Forms.Button btnRegPrenda;
         private System.Windows.Forms.Panel panelPersonal;
         private System.Windows.Forms.Button btnRegPersonal;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Button btnInsertarNumMaquinaria;
+        private System.Windows.Forms.ComboBox cmbCategoriaMaq;
+        private System.Windows.Forms.TextBox txtNumMaquinaria;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
     }
 }

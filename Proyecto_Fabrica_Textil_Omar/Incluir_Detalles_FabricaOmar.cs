@@ -21,6 +21,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void Incluir_Detalles_Fabrica_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
+            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbCategoriaMaq, "Select CATEGORIA_MAQUINARIA_OMAR.CATEGORIA_MAQUINARIA_OMAR FROM CATEGORIA_MAQUINARIA_OMAR");
             if ( prendaOmar.detallesPrenda1== 1)
             {
                 panelPersonal.Visible = false;
@@ -32,6 +33,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                 panelMateria.Visible=false;
                 panelPrendas.Visible=false;
                 btnMenu.Visible=false;
+
             }
             if (MateriPrimaOmar.detaUni == 1)
             {
@@ -235,6 +237,36 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             PersonalOmar.detaPersonal = 0;
             this.Close();
+        }
+
+        private void btnInsertarNumMaquinaria_Click(object sender, EventArgs e)
+        {
+            string catMaqui;
+            int numMaq;
+            try
+            {
+                numMaq = Convert.ToInt32(txtNumMaquinaria.Text);
+                catMaqui = cmbCategoriaMaq.Text;
+                if (numMaq < 0)
+                {
+                    MessageBox.Show("El valor debe ser positivos");
+                }
+                else
+                {
+                    CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_insertar_numMaq "+numMaq+",'"+catMaqui+"'");
+                    if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+                    {
+                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                    }
+                    CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                    txtNumMaquinaria.Clear();
+                    cmbCategoriaMaq.Items.Clear();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Solo se admiten valores enteros"+ex);
+            }
         }
     }
 }

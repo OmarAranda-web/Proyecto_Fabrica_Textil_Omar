@@ -333,7 +333,6 @@
             this.btnAsitencias.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.insertarAsistencia1;
             this.btnAsitencias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAsitencias.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAsitencias.Enabled = false;
             this.btnAsitencias.FlatAppearance.BorderSize = 0;
             this.btnAsitencias.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnAsitencias.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;

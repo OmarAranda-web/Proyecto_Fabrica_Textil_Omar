@@ -36,7 +36,49 @@ namespace Proyecto_Fabrica_Textil_Omar
 
         private void btnAsistenciaOmar_Click(object sender, EventArgs e)
         {
-
+            string horaEnt, horaSal, rfcPersonal, fechaAsis;
+            int unidades;
+            try
+            {
+                if (cmbHoraEnt.Text=="" || cmbMinsEnt.Text=="" || cmbEntampm.Text==""||cmbHoraSal.Text==""||cmbMinsSal.Text==""||cmbampmSal.Text==""
+                    || txtRFC.Text==""||txtUnidOmar.Text=="" || calenFecha.SelectionRange.Start.ToShortDateString()=="")
+                {
+                    MessageBox.Show("Llene todos los campos");
+                }
+                else
+                {
+                    horaEnt = (cmbHoraEnt.Text + ":" + cmbMinsEnt.Text + " " + cmbEntampm.Text);
+                    horaSal = (cmbHoraSal.Text + ":" + cmbMinsSal.Text + " " + cmbampmSal.Text);
+                    rfcPersonal = txtRFC.Text;
+                    fechaAsis = calenFecha.SelectionRange.Start.ToShortDateString();
+                    unidades = Convert.ToInt32(txtUnidOmar.Text);
+                    if (horaEnt == horaSal)
+                    {
+                        MessageBox.Show("La hora de entrada es la misma que la hora de Salida");
+                    }
+                    else
+                    {
+                        CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_insertar_Asistencias '" + horaEnt + "','" + horaSal + "','" + rfcPersonal + "','" + unidades + "','" + fechaAsis + "'");
+                        if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+                        {
+                            MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                        }
+                        CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+                        cmbampmSal.SelectedIndex = 0;
+                        cmbEntampm.SelectedIndex = 0;
+                        cmbHoraEnt.SelectedIndex = 0;
+                        cmbHoraSal.SelectedIndex = 0;
+                        cmbMinsEnt.SelectedIndex = 0;
+                        cmbMinsSal.SelectedIndex = 0;
+                        txtRFC.Clear();
+                        txtUnidOmar.Clear();
+                    }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Solo se aceptan Numeros en la cantidad");
+            }            
         }
     }
 }

@@ -305,11 +305,13 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void btnExcel_Click(object sender, EventArgs e)
         {
             Excel.Application aplicacion = new Microsoft.Office.Interop.Excel.Application();
-            Workbook libro = aplicacion.Workbooks.Add("VentaOmar");
+            Workbook libro = aplicacion.Workbooks.Add("Disenio_de_factuta");
             aplicacion.Visible = true;
             hoja = (Excel.Worksheet)libro.Worksheets.get_Item(1);
-            hoja.Cells[3, 5]="Lo hicimos";
-            libro.SaveAs("Intento1.pdf");
+            hoja.Cells[4, 7]=folioVenta;
+            libro.SaveAs(@"C:\Users\omara\Documents\folio1.xlsx");
+            libro.PrintPreview();
+            aplicacion.Quit();
         }
         /*
         private void obtenerClave(object sender, KeyEventArgs e)
