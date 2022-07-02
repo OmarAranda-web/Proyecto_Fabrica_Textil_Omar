@@ -351,5 +351,23 @@
   <ItemGroup>
     <None Include="Resources\insertarDetalle2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TituloFabrica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo_Fabrica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regresar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aicoprendas.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

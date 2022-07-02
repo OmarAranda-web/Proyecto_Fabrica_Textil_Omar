@@ -73,6 +73,16 @@ namespace Proyecto_Fabrica_Textil_Omar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aicoprendas {
+            get {
+                object obj = ResourceManager.GetObject("aicoprendas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap camisa {
             get {
                 object obj = ResourceManager.GetObject("camisa", resourceCulture);
@@ -123,6 +133,16 @@ namespace Proyecto_Fabrica_Textil_Omar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clientes {
+            get {
+                object obj = ResourceManager.GetObject("clientes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap compra {
             get {
                 object obj = ResourceManager.GetObject("compra", resourceCulture);
@@ -136,6 +156,26 @@ namespace Proyecto_Fabrica_Textil_Omar.Properties {
         internal static System.Drawing.Bitmap corbata {
             get {
                 object obj = ResourceManager.GetObject("corbata", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fondo_Fabrica {
+            get {
+                object obj = ResourceManager.GetObject("Fondo_Fabrica", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap guardar1 {
+            get {
+                object obj = ResourceManager.GetObject("guardar1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -483,6 +523,16 @@ namespace Proyecto_Fabrica_Textil_Omar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap regresar1 {
+            get {
+                object obj = ResourceManager.GetObject("regresar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap saco {
             get {
                 object obj = ResourceManager.GetObject("saco", resourceCulture);
@@ -526,6 +576,16 @@ namespace Proyecto_Fabrica_Textil_Omar.Properties {
         internal static System.Drawing.Bitmap suma {
             get {
                 object obj = ResourceManager.GetObject("suma", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TituloFabrica {
+            get {
+                object obj = ResourceManager.GetObject("TituloFabrica", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

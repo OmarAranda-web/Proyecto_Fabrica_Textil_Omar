@@ -20,32 +20,35 @@ namespace Proyecto_Fabrica_Textil_Omar
 
         private void mostrarMateriales(object sender, EventArgs e)
         {
-            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbMaterial, "Select upper(MATERIAL_OMAR.NOMBRE_MATERIAL_OMAR) from MATERIAL_OMAR where MATERIAL_OMAR.STATUS_MATERIAL_OMAR=1");
+            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbMaterial, "Select upper(MATERIAL_OMAR.NOMBRE_MATERIAL_OMAR) from MATERIAL_OMAR where MATERIAL_OMAR.STATUS_MATERIAL_OMAR=1 Group by MATERIAL_OMAR.NOMBRE_MATERIAL_OMAR");
         }
 
         private void prenda_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
-            CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabMostrarPrendas, "exec proc_consulta_mostrarPrendas");
+            //CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabMostrarPrendas, "exec proc_consulta_mostrarPrendas");
             if (PedidoOmar.inserPrend == 1)
             {
                 btnRegresarMenu.Visible = false;
+                lblRegMen.Visible = false;
+                
             }
             if (Form1.ocultaRegPrendas==1)
             {
                 btnRegPagAnterior.Visible = false;
+                lblReg.Visible = false;
             }
 
         }
 
         private void mostrarCategorias(object sender, EventArgs e)
         {
-            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbCategoria, "Select UPPER(CATEGORIA_OMAR.NOMBRE_CATEGORIA_OMAR) from CATEGORIA_OMAR where CATEGORIA_OMAR.STATUS_CATEGORIA_OMAR=1");
+            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbCategoria, "Select UPPER(CATEGORIA_OMAR.NOMBRE_CATEGORIA_OMAR) from  CATEGORIA_OMAR where CATEGORIA_OMAR.STATUS_CATEGORIA_OMAR=1 Group by CATEGORIA_OMAR.NOMBRE_CATEGORIA_OMAR");
         }
 
         private void mostrarColor(object sender, EventArgs e)
         {
-            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbColor, "select upper(COLOR_OMAR.NOMBRE_COLOR_OMAR) from COLOR_OMAR");
+            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbColor, "select upper(COLOR_OMAR.NOMBRE_COLOR_OMAR) from COLOR_OMAR Group by COLOR_OMAR.NOMBRE_COLOR_OMAR");
         }
 
         private void btnRegresarMenu_Click(object sender, EventArgs e)
@@ -68,14 +71,14 @@ namespace Proyecto_Fabrica_Textil_Omar
                 precio = (float)(Convert.ToDouble(txtPrecio.Text));
                 if (nombre=="" || material=="" || categoria=="" || color=="" || precio<0)
                 {
-                    MessageBox.Show("Llene todos los campos de manera adecuada");
+                    MessageBox.Show("Llene todos los campos de manera adecuada", "MENSAJE DE FABRICA");
                 }
                 else
                 {
                     CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_insertar_Prenda  '"+nombre+"','"+material+"','"+categoria+"','"+color+"',"+precio+"");
                     if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                     {
-                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString(), "MENSAJE DE FABRICA");
                     }
                     CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
                     txtNombrePrenda.Clear();
@@ -83,12 +86,12 @@ namespace Proyecto_Fabrica_Textil_Omar
                     cmbCategoria.Items.Clear();
                     cmbColor.Items.Clear();
                     cmbMaterial.Items.Clear();
-                    CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabMostrarPrendas, "exec proc_consulta_mostrarPrendas");
+                    //CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabMostrarPrendas, "exec proc_consulta_mostrarPrendas");
                 }
             }
             catch
             {
-                MessageBox.Show("Coloque Valores Aceptados: ");
+                MessageBox.Show("Coloque Valores Aceptados:","MENSAJE DE FABRICA");
             }
         }
 
@@ -96,7 +99,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             Incluir_Detalles_FabricaOmar detaPrenda = new Incluir_Detalles_FabricaOmar();
             detallesPrenda1 = 1;
-            detaPrenda.Show();
+            detaPrenda.ShowDialog();
             
         }
 

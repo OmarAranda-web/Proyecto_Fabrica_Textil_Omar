@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="playera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\playera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="corbata" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\corbata.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,17 +133,17 @@
   <data name="playera2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\playera2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="insertarCompra1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\insertarCompra1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="insertarProveedor2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insertarProveedor2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="insertarPersonal1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\insertarPersonal1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="insertarPrenda21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\insertarPrenda21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="saco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\saco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icono_fa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icono_fa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="insertar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\insertar2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,14 +151,20 @@
   <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="insertarCompra2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\insertarCompra2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="guardar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\guardar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insertarCliente2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insertarCliente2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="insertarProveedor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\insertarProveedor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="playera" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\playera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="actualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\actualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insertarDetalle2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insertarDetalle2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="camiseta2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\camiseta2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,6 +175,9 @@
   <data name="insertarPrenda2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\insertarPrenda2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TituloFabrica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TituloFabrica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="insertarCliente1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\insertarCliente1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,8 +187,8 @@
   <data name="insertarPrenda11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\insertarPrenda11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="insertarProveedor2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\insertarProveedor2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="insertarVenta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insertarVenta1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="suma" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\suma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,11 +202,8 @@
   <data name="vestido2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vestido2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="actualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\actualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="insertarPedido2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\insertarPedido2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="regresar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\regresar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shorts" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shorts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,14 +214,14 @@
   <data name="insertarMateria1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\insertarMateria1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="insertarMateria2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\insertarMateria2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="insertarCompra2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insertarCompra2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pantalon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pantalon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icono_fa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icono_fa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fondo_Fabrica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fondo_Fabrica.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vestido3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vestido3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,6 +232,9 @@
   <data name="insertarAsistencia2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\insertarAsistencia2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="insertarDetalle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insertarDetalle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="camiseta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\camiseta1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -231,6 +243,9 @@
   </data>
   <data name="insertarPerdida2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\insertarPerdida2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insertarCompra1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insertarCompra1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sueter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sueter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,17 +256,20 @@
   <data name="vestido" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vestido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="insertarVenta1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\insertarVenta1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="insertarMateria2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insertarMateria2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="insertarPerdida1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\insertarPerdida1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="clientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="chamarra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chamarra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="insertarCliente2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\insertarCliente2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="insertarPrenda21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insertarPrenda21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="insertarPersonal2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\insertarPersonal2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,13 +277,13 @@
   <data name="insertarDevoluciones2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\insertarDevoluciones2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="insertarPedido2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insertarPedido2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sueter2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sueter2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="insertarDetalle1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\insertarDetalle1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="insertarDetalle2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\insertarDetalle2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="aicoprendas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aicoprendas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

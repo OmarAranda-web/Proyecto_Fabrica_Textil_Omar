@@ -21,18 +21,18 @@ namespace Proyecto_Fabrica_Textil_Omar
 
         private void mostrarModeloPrenda(object sender, EventArgs e)
         {
-            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbModeloPrenda,"Select PRENDA_OMAR.NOMBRE_PRENDA_OMAR from PRENDA_OMAR where PRENDA_OMAR.STATUS_PRENDA=1");
+            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbModeloPrenda, "Select UPPER(PRENDA_OMAR.NOMBRE_PRENDA_OMAR) from PRENDA_OMAR where PRENDA_OMAR.STATUS_PRENDA=1 group by PRENDA_OMAR.NOMBRE_PRENDA_OMAR");
         }
 
         private void Pedido_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
-            CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPedido, "exec proc_consulta_pedido");
+            //CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPedido, "exec proc_consulta_pedido");
         }
 
         private void mostrarClientes(object sender, EventArgs e)
         {
-            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(comboBox1, "Select CLIENTE_OMAR.RAZON_SOCIAL_CLIENTE_OMAR from CLIENTE_OMAR where CLIENTE_OMAR.STATUS_CLIENTE_OMAR=1");
+            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(comboBox1, "Select Upper(CLIENTE_OMAR.RAZON_SOCIAL_CLIENTE_OMAR) from CLIENTE_OMAR where CLIENTE_OMAR.STATUS_CLIENTE_OMAR=1 Group by CLIENTE_OMAR.RAZON_SOCIAL_CLIENTE_OMAR");
         }
 
         private void btnMenuOmar_Click(object sender, EventArgs e)
@@ -53,17 +53,17 @@ namespace Proyecto_Fabrica_Textil_Omar
                 cantidadPrendas =(float) (Convert.ToDouble(txtcantidadProd.Text));
                 if (cantidadPrendas < 0)
                 {
-                    MessageBox.Show("No Coloque Canitdades negativas");
+                    MessageBox.Show("No Coloque Canitdades negativas", "MENSAJE DE FABRICA");
                 }
                 else
                 {
                     CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_insertar_pedido '" + nombrePrenda + "', " + cantidadPrendas + ", '" + cliente + "'");
                     if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                     {
-                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString(), "MENSAJE DE FABRICA");
                     }
                     CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
-                    CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPedido, "exec proc_consulta_pedido");
+                    //CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPedido, "exec proc_consulta_pedido");
                     cmbModeloPrenda.Items.Clear();
                     comboBox1.Items.Clear();
                     txtcantidadProd.Clear();
@@ -71,7 +71,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             }
             catch
             {
-                MessageBox.Show("Coloque valores Validos");
+                MessageBox.Show("Coloque valores Validos", "MENSAJE DE FABRICA");
             }
         }
 
