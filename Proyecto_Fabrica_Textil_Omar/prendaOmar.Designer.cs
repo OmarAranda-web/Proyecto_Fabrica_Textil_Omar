@@ -42,7 +42,13 @@
             this.btnRegresarMenu = new System.Windows.Forms.Button();
             this.btnRegPagAnterior = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombrePrenda = new System.Windows.Forms.TextBox();
@@ -59,18 +65,13 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.pnlTitulo.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.pnlTitulo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -223,6 +224,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.Fondo_Fabrica;
+            this.panel6.Controls.Add(this.label10);
             this.panel6.Controls.Add(this.label12);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.label2);
@@ -241,6 +243,17 @@
             this.panel6.Size = new System.Drawing.Size(1574, 792);
             this.panel6.TabIndex = 18;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(32, 147);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(1132, 21);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "LLENA TODOS LOS CAMPOS PARA PODER INSERTAR UNA PRENDA CON EL BOTON DE LA PARTE IZ" +
+    "QUIERDA DE LA PANTALLA";
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.MediumTurquoise;
@@ -254,6 +267,57 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1574, 100);
             this.panel7.TabIndex = 11;
+            // 
+            // panel13
+            // 
+            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
+            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel13.Location = new System.Drawing.Point(246, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(246, 100);
+            this.panel13.TabIndex = 7;
+            // 
+            // panel12
+            // 
+            this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
+            this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(246, 100);
+            this.panel12.TabIndex = 6;
+            // 
+            // panel11
+            // 
+            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
+            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel11.Location = new System.Drawing.Point(1122, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(226, 100);
+            this.panel11.TabIndex = 5;
+            // 
+            // panel9
+            // 
+            this.panel9.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.camiseta;
+            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel9.Location = new System.Drawing.Point(1348, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(226, 100);
+            this.panel9.TabIndex = 4;
+            // 
+            // panel10
+            // 
+            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
+            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(226, 100);
+            this.panel10.TabIndex = 4;
             // 
             // label1
             // 
@@ -426,67 +490,16 @@
             this.panel2.Size = new System.Drawing.Size(240, 159);
             this.panel2.TabIndex = 0;
             // 
-            // label12
+            // label10
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(32, 147);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(1132, 21);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "LLENA TODOS LOS CAMPOS PARA PODER INSERTAR UNA PRENDA CON EL BOTON DE LA PARTE IZ" +
-    "QUIERDA DE LA PANTALLA";
-            // 
-            // panel9
-            // 
-            this.panel9.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.camiseta;
-            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel9.Controls.Add(this.panel10);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel9.Location = new System.Drawing.Point(1348, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(226, 100);
-            this.panel9.TabIndex = 4;
-            // 
-            // panel10
-            // 
-            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
-            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(226, 100);
-            this.panel10.TabIndex = 4;
-            // 
-            // panel11
-            // 
-            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
-            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel11.Location = new System.Drawing.Point(1122, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(226, 100);
-            this.panel11.TabIndex = 5;
-            // 
-            // panel12
-            // 
-            this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
-            this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel12.Location = new System.Drawing.Point(0, 0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(246, 100);
-            this.panel12.TabIndex = 6;
-            // 
-            // panel13
-            // 
-            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
-            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel13.Location = new System.Drawing.Point(246, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(246, 100);
-            this.panel13.TabIndex = 7;
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(32, 116);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(171, 21);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "INSTRUCCIONES: ";
             // 
             // prendaOmar
             // 
@@ -510,8 +523,8 @@
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.pnlTitulo.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            this.pnlTitulo.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -554,5 +567,6 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label10;
     }
 }

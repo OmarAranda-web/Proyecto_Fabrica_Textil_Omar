@@ -133,7 +133,7 @@ namespace Proyecto_Fabrica_Textil_Omar
 
         private void mosatrarImgCliente2(object sender, MouseEventArgs e)
         {
-            btnCliente.BackgroundImage = Properties.Resources.insertarCliente21;
+            btnCliente.BackgroundImage = Properties.Resources.insertarCliente3;
         }
 
         private void mostrarImgCliente1(object sender, EventArgs e)

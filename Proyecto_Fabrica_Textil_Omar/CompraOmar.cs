@@ -30,7 +30,9 @@ namespace Proyecto_Fabrica_Textil_Omar
         }
         public void mostrar_clientes()
         {
-            CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("Select PROVEEDOR_OMAR.RAZON_SOCIAL_PROVE_OMAR, PROVEEDOR_OMAR.CLAVE_PROVEEDOR_OMAR from PROVEEDOR_OMAR");
+            btnOtraCompra.Visible = false;
+            lblotraCom.Visible = false;
+            CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("Select UPPER(PROVEEDOR_OMAR.RAZON_SOCIAL_PROVE_OMAR), PROVEEDOR_OMAR.CLAVE_PROVEEDOR_OMAR from PROVEEDOR_OMAR order by PROVEEDOR_OMAR.RAZON_SOCIAL_PROVE_OMAR");
             while (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
             {
                 creear_botones_provedores_omar(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString(), CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[1].ToString());
@@ -43,11 +45,12 @@ namespace Proyecto_Fabrica_Textil_Omar
             Button btn_proveedores = new Button();
             btn_proveedores.Text = nombreProve_omar;
             btn_proveedores.Tag = claveProve_omar;
-            btn_proveedores.TextAlign = ContentAlignment.MiddleRight;
+            btn_proveedores.TextAlign = ContentAlignment.BottomCenter;
             btn_proveedores.Width = 150;
-            btn_proveedores.Height = 150;
-            btn_proveedores.Image = Properties.Resources.camiseta;
-            btn_proveedores.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_proveedores.Height = 100;
+            btn_proveedores.Image = Properties.Resources.clientes;
+            btn_proveedores.ImageAlign = ContentAlignment.MiddleCenter;
+            btn_proveedores.BackColor = Color.PaleTurquoise;
             flpanelProveedores.Controls.Add(btn_proveedores);
             btn_proveedores.Click += new EventHandler(eventos_btnProvedores);
         }
@@ -61,7 +64,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                 folio_compra=txtFolioCompra.Text;
                 if (folio_compra=="")
                 {
-                    MessageBox.Show("Coloque el folio de compra");
+                    MessageBox.Show("COLOQUE EL FOLIO DE COMPRA", "MENSAJE DE FABRICA");
                 }
                 else
                 {
@@ -74,7 +77,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                     CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
                     if (respuesta == "El folio ya existe escribalo de forma adecuada")
                     {
-                        MessageBox.Show(respuesta);
+                        MessageBox.Show(respuesta,"MENSAJE DE FABRICA");
                     }
                     else
                     {
@@ -86,9 +89,9 @@ namespace Proyecto_Fabrica_Textil_Omar
                         
                 }
             }
-            catch(Exception ex)
+            catch
             {
-                MessageBox.Show("Error: " + ex);
+                MessageBox.Show("EL FOLIO DE LA COMPRA DEBE SER DE 10 CARACTERES COMO MAXIMO", "MENSAJE DE FABRICA");
             }
             
         }
@@ -106,11 +109,12 @@ namespace Proyecto_Fabrica_Textil_Omar
             Button btn_materias = new Button();
             btn_materias.Text = nommbre_Materia_Omar;
             btn_materias.Tag = id_materia;
-            btn_materias.TextAlign = ContentAlignment.MiddleRight;
+            btn_materias.TextAlign = ContentAlignment.BottomCenter;
             btn_materias.Width = 150;
-            btn_materias.Height = 150;
-            btn_materias.Image = Properties.Resources.camiseta;
-            btn_materias.ImageAlign = ContentAlignment.MiddleLeft;
+            btn_materias.Height = 100;
+            btn_materias.Image = Properties.Resources.amaterias;
+            btn_materias.ImageAlign = ContentAlignment.MiddleCenter;
+            btn_materias.BackColor = Color.PaleTurquoise;
             flpanelProveedores.Controls.Add(btn_materias);
             btn_materias.Click += new EventHandler(eventos_btnMaterias);
         }
@@ -124,13 +128,13 @@ namespace Proyecto_Fabrica_Textil_Omar
                 calidad = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox("En una escala del 1 al 10 coloque la calidad"));
                 if (cantidad < 0 || calidad<0)
                 {
-                    MessageBox.Show("Coloque valores positivos");
+                    MessageBox.Show("Coloque valores positivos","MENSAJE DE FABRICA");
                 }
                 else
                 {
                     if (calidad>10)
                     {
-                        MessageBox.Show("La calidad solo acepta valores entre 1 y el 9");
+                        MessageBox.Show("La calidad solo acepta valores entre 1 y el 9","MENSAJE DE FABRICA");
                     }
                     else
                     {
@@ -138,7 +142,9 @@ namespace Proyecto_Fabrica_Textil_Omar
                         CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
                         CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("EXEC proc_insertar_Materia_Proveedor "+clave_provee+","+clave_materias+",'"+calidad+"'");
                         CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
-                        MessageBox.Show("Se inserto Compra");
+                        MessageBox.Show("Se inserto Compra","MENSAJE DE FABRICA");
+                        btnOtraCompra.Visible=true;
+                        lblotraCom.Visible=true;
                         CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabCompras, "exec proc_consulta_compra "+respuesta+"");
                         CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("Select COMPRA_OMAR.TOTAL_COMPRA_OMAR from COMPRA_OMAR where COMPRA_OMAR.ID_COMPRA_OMAR="+respuesta+"");
                         if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
@@ -150,9 +156,9 @@ namespace Proyecto_Fabrica_Textil_Omar
                 }
 
             }
-            catch(Exception ex)
+            catch
             {
-                MessageBox.Show("LLene los campos de manera correcta "+ex);
+                MessageBox.Show("LLene los campos de manera correcta","MENSAJE DE FABRICA");
             }
             
 
@@ -166,6 +172,23 @@ namespace Proyecto_Fabrica_Textil_Omar
             this.Close();
             Form1 menu = new Form1();
             menu.Show();
+        }
+
+        private void btnOtraCompra_Click(object sender, EventArgs e)
+        {
+            CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabCompras, "Select '' as 'NOMBRE DEL MATERIAL', '' as 'CANTIDAD DE LA MATERIA','' as 'PRECIO POR UNIDAD',''as 'TOTAL DE CADA MATERIA' ");
+            flpanelProveedores.Controls.Clear();
+            txtFolioCompra.Enabled = true;
+            lblnomProvedor.Text = "";
+            txtFolioCompra.Text = "";
+            lblTotal.Text = "0";
+            clave_provee = "";
+            clave_materias = "";
+            folio_compra = "";
+            calidad = 0;
+            cantidad = 0;
+            respuesta="";
+            mostrar_clientes();
         }
     }
 }
