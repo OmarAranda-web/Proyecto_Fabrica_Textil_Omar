@@ -21,7 +21,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void Incluir_Detalles_Fabrica_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
-            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbCategoriaMaq, "Select CATEGORIA_MAQUINARIA_OMAR.CATEGORIA_MAQUINARIA_OMAR FROM CATEGORIA_MAQUINARIA_OMAR");
+            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbCategoriaMaq, "Select UPPER(CATEGORIA_MAQUINARIA_OMAR.CATEGORIA_MAQUINARIA_OMAR) FROM CATEGORIA_MAQUINARIA_OMAR GROUP BY CATEGORIA_MAQUINARIA_OMAR.CATEGORIA_MAQUINARIA_OMAR");
             if ( prendaOmar.detallesPrenda1== 1)
             {
                 panelPersonal.Visible = false;
@@ -55,7 +55,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             colorPrrenda = txtColor.Text;
             if (colorPrrenda=="")
             {
-                MessageBox.Show("Coloque un color");
+                MessageBox.Show("Coloque un color","MENSAJE DE FRABRICA");
             }
             else
             {
@@ -63,7 +63,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                 if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                 {
                     string mensajeColor = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString();
-                    MessageBox.Show(mensajeColor);
+                    MessageBox.Show(mensajeColor,"MENSAJE DE FABRICA");
                 }
                 txtColor.Clear();
                 CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
@@ -84,7 +84,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             material = txtMaterial.Text;
             if (material=="")
             {
-                MessageBox.Show("Coloque un Material");
+                MessageBox.Show("COLOQUE UN MATERIAL","MENSAJE DE FABRICA");
             }
             else
             {
@@ -92,7 +92,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                 if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                 {
                     string mensajeMa = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString();
-                    MessageBox.Show(mensajeMa);
+                    MessageBox.Show(mensajeMa,"MENSAJE DE FABRICA");
                 }
                 txtMaterial.Clear();
                 CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
@@ -106,7 +106,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             categoria = txtCategoria.Text;
             if (categoria=="")
             {
-                MessageBox.Show("Coloque un Categoria");
+                MessageBox.Show("COLOQUE UNA CATEGORIA","MENSAJE DE FABRICA");
             }
             else
             {
@@ -114,7 +114,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                 if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                 {
                     string mensajeCa = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString();
-                    MessageBox.Show(mensajeCa);
+                    MessageBox.Show(mensajeCa,"MENSAJE DE FABRICA");
                 }
                 txtCategoria.Clear();
                 CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
@@ -128,7 +128,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             abre = txtAbre.Text;
             if (unidad=="" || abre=="")
             {
-                MessageBox.Show("Coloque un Unidad o Abreviatura");
+                MessageBox.Show("COLOQUE UN UNIDAD O ABREVIATURA","MENSAJE DE FABRICA");
             }
             else
             {
@@ -136,7 +136,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                 if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                 {
                     string mensajeUni = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString();
-                    MessageBox.Show(mensajeUni);
+                    MessageBox.Show(mensajeUni,"MENSAJE DE FABRICA");
                 }
                 txtUnidadMed.Clear();
                 txtAbre.Clear();
@@ -151,7 +151,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             capaArea=txtCapacidadArea.Text;
             if (nomArea=="" || capaArea=="")
             {
-                MessageBox.Show("Coloque el Nombre del Area o Capacidad");
+                MessageBox.Show("COLOQUE EL NOMBRE DEL AREA O CAPACIDAD", "MENSAJE DE FABRICA");
             }
             else
             {
@@ -159,7 +159,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                 if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                 {
                     string mensajeArea = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString();
-                    MessageBox.Show(mensajeArea);
+                    MessageBox.Show(mensajeArea, "MENSAJE DE FABRICA");
                 }
                 txtArea.Clear();
                 txtCapacidadArea.Clear();
@@ -174,7 +174,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             catMaq = txtCategoriaMaq.Text;
             if (catMaq == "")
             {
-                MessageBox.Show("Coloque el Nombre de la Categoria de Maquinaria");
+                MessageBox.Show("COLOQUE EL NOMBRE DE LA CATEGORIA DE MAQUINARIA", "MENSAJE DE FABRICA");
             }
             else
             {
@@ -182,7 +182,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                 if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                 {
                     string mensajeCat = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString();
-                    MessageBox.Show(mensajeCat);
+                    MessageBox.Show(mensajeCat,"MENSAJE DE FABRICA");
                 }
                 txtCategoriaMaq.Clear();             
                 CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
@@ -200,7 +200,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                 sueldoCar = (float)Convert.ToDouble(txtSueldoCargo.Text);
                 if (cargo==""|| actCargo==""||sueldoCar<0)
                 {
-                    MessageBox.Show("Llene los campos de forma correcta y no es valido cantidades negativas en el sueldo");
+                    MessageBox.Show("LLENE LOS CAMPOS DE FORMA CORRECTA Y NO ES VALIDO CANTIDADES NEGATIVAS EN EL SUELDO","MENSAJE DE FABRICA");
                 }
                 else
                 {
@@ -208,7 +208,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                     if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                     {
                         string mensajeCat = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString();
-                        MessageBox.Show(mensajeCat);
+                        MessageBox.Show(mensajeCat,"MENSAJE DE FABRICA");
                     }
                     txtCargo.Clear();
                     txtDescCargo.Clear();
@@ -218,7 +218,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             }
             catch
             {
-                MessageBox.Show("Coloque Correctamente el sueldo del cargo");
+                MessageBox.Show("COLOQUE CORRECTAMENTE EL SUELDO DEL CARGO","MENSAJE DE FABRICA");
             }
         }
 
@@ -249,23 +249,23 @@ namespace Proyecto_Fabrica_Textil_Omar
                 catMaqui = cmbCategoriaMaq.Text;
                 if (numMaq < 0)
                 {
-                    MessageBox.Show("El valor debe ser positivos");
+                    MessageBox.Show("EL VALOR DEBE SER POSITIVOS","MENSAJE DE FABRICA");
                 }
                 else
                 {
                     CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_insertar_numMaq "+numMaq+",'"+catMaqui+"'");
                     if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                     {
-                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString(),"MENSAJE DE FABRICA");
                     }
                     CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
                     txtNumMaquinaria.Clear();
                     cmbCategoriaMaq.Items.Clear();
                 }
             }
-            catch(Exception ex)
+            catch
             {
-                MessageBox.Show("Solo se admiten valores enteros"+ex);
+                MessageBox.Show("SOLO SE ADMITEN VALORES ENTEROS", "MENSAJE DE FABRICA");
             }
         }
     }
