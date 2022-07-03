@@ -43,14 +43,14 @@ namespace Proyecto_Fabrica_Textil_Omar
                 direccionProvee = txtDireccionOmar.Text;
                 if (razonSocialPorvee==""||contactoProve==""|| telefonoProvee<0|| emailProvee==""||direccionProvee=="")
                 {
-                    MessageBox.Show("LLENE TODOS LOS CAMPOS DEL FORMULARIO");
+                    MessageBox.Show("LLENE TODOS LOS CAMPOS DEL FORMULARIO","MENSAGE DE FABRICA");
                 }
                 else
                 {
                     CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_insertar_proveedor '"+razonSocialPorvee+"', '"+contactoProve+"', '"+telefonoProvee+"','"+emailProvee+"','"+direccionProvee+"'");
                     if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                     {
-                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString(),"MENSAJE DE FRABRICA");
                     }
                     CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
                     CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabProveedor, "exec proc_consul_proveedor");
@@ -63,7 +63,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             }
             catch
             {
-                MessageBox.Show("LLENE LOS CAMPOS DE FORMA ADECUADA");
+                MessageBox.Show("LLENE LOS CAMPOS DE FORMA ADECUADA","MENSAJE DE FABRICA");
             }
         }
     }

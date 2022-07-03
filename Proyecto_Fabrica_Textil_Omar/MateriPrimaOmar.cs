@@ -20,7 +20,7 @@ namespace Proyecto_Fabrica_Textil_Omar
 
         private void mostrarUnidadMedOmar(object sender, EventArgs e)
         {
-            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbUnidadMedida, "select Upper(UNIDAD_MEDIDA_OMAR.NOMBRE_MEDIDA_OMAR) from UNIDAD_MEDIDA_OMAR");
+            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbUnidadMedidas, "select Upper(UNIDAD_MEDIDA_OMAR.NOMBRE_MEDIDA_OMAR) from UNIDAD_MEDIDA_OMAR");
         }
 
         private void MateriPrimaOmar_Load(object sender, EventArgs e)
@@ -46,11 +46,11 @@ namespace Proyecto_Fabrica_Textil_Omar
                 existenciMatOmar = (float)(Convert.ToDouble(txtExitencias.Text));
                 stoKMinOmar = (float)(Convert.ToDouble(txtStockMin.Text));
                 stoKMaxOmar = (float)(Convert.ToDouble(txtStockMax.Text));
-                unidadMed = cmbUnidadMedida.Text;
+                unidadMed = cmbUnidadMedidas.Text;
                 precio = (float)(Convert.ToDouble(txtPrecio.Text));
                 if (nomMateriaOmar == "" || existenciMatOmar < 0 || precio<0 || stoKMinOmar <0 || stoKMaxOmar<0 || unidadMed=="")
                 {
-                    MessageBox.Show("LLENE TODOS LOS CAMPOS Y SOLO SE ADMITEN VALORES POSITIVOS");
+                    MessageBox.Show("LLENE TODOS LOS CAMPOS Y SOLO SE ADMITEN VALORES POSITIVOS","MENSAJE DE FABRICA");
                 }
                 else
                 {
@@ -59,7 +59,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                         CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_insertar_MateriasPrimas '" + nomMateriaOmar + "', " + existenciMatOmar + "," + stoKMinOmar + "," + stoKMaxOmar + ",'" + unidadMed + "', "+precio+"");
                         if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                         {
-                            MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                            MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString(),"MENSAJE DE FABRICA");
                         }
                         CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
                         CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabMateriasOmar, "exec proc_consul_materias");
@@ -67,18 +67,18 @@ namespace Proyecto_Fabrica_Textil_Omar
                         txtExitencias.Clear();
                         txtStockMax.Clear();
                         txtStockMin.Clear();
-                        cmbUnidadMedida.Items.Clear();
+                        cmbUnidadMedidas.Items.Clear();
                     }
                     else
                     {
-                        MessageBox.Show("EL STOCK MINIMO NO PUEDE SER MAYOR QUE EL MAXIMO Y LAS EXISTENCIAS MAYORES QUE EL STOCK MINIMO");
+                        MessageBox.Show("EL STOCK MINIMO NO PUEDE SER MAYOR QUE EL MAXIMO Y LAS EXISTENCIAS MAYORES QUE EL STOCK MINIMO","MENSAJE DE FABRICA");
                     }
                     
                 }
             }
             catch
             {
-                MessageBox.Show("COLOQUE VALORES CORRECTOS(CANTIDADES NUMERICAS)");
+                MessageBox.Show("COLOQUE VALORES CORRECTOS(CANTIDADES NUMERICAS)","MENSAJE DE FABRICA");
             }
         }
 
@@ -86,7 +86,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             Incluir_Detalles_FabricaOmar frmUnidad = new Incluir_Detalles_FabricaOmar();
             detaUni = 1;
-            frmUnidad.Show();
+            frmUnidad.ShowDialog();
         }
     }
 }

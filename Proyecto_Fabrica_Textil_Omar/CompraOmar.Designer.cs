@@ -40,28 +40,28 @@
             this.lblTotalCompra = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblotraCom = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnOtraCompra = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.btnOtraCompra = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlTitulo = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblotraCom = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tabCompras)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -78,7 +78,7 @@
             this.lblProveedor.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProveedor.Location = new System.Drawing.Point(75, 134);
             this.lblProveedor.Name = "lblProveedor";
-            this.lblProveedor.Size = new System.Drawing.Size(256, 40);
+            this.lblProveedor.Size = new System.Drawing.Size(245, 38);
             this.lblProveedor.TabIndex = 1;
             this.lblProveedor.Text = "PROVEEDOR :";
             // 
@@ -103,7 +103,7 @@
             this.label3.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(836, 139);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(345, 40);
+            this.label3.Size = new System.Drawing.Size(333, 38);
             this.label3.TabIndex = 4;
             this.label3.Text = "FOLIO DE COMPRA ";
             // 
@@ -142,7 +142,7 @@
             this.lblnomProvedor.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnomProvedor.Location = new System.Drawing.Point(373, 134);
             this.lblnomProvedor.Name = "lblnomProvedor";
-            this.lblnomProvedor.Size = new System.Drawing.Size(50, 40);
+            this.lblnomProvedor.Size = new System.Drawing.Size(50, 38);
             this.lblnomProvedor.TabIndex = 8;
             this.lblnomProvedor.Text = "---";
             // 
@@ -153,7 +153,7 @@
             this.lbllcompra.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbllcompra.Location = new System.Drawing.Point(75, 418);
             this.lbllcompra.Name = "lbllcompra";
-            this.lbllcompra.Size = new System.Drawing.Size(191, 40);
+            this.lbllcompra.Size = new System.Drawing.Size(185, 38);
             this.lbllcompra.TabIndex = 9;
             this.lbllcompra.Text = "COMPRAS";
             // 
@@ -164,7 +164,7 @@
             this.lblTotalCompra.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalCompra.Location = new System.Drawing.Point(882, 677);
             this.lblTotalCompra.Name = "lblTotalCompra";
-            this.lblTotalCompra.Size = new System.Drawing.Size(432, 40);
+            this.lblTotalCompra.Size = new System.Drawing.Size(421, 38);
             this.lblTotalCompra.TabIndex = 10;
             this.lblTotalCompra.Text = "TOTAL DE LA COMPRA: $";
             // 
@@ -175,7 +175,7 @@
             this.lblTotal.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.Location = new System.Drawing.Point(1398, 677);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(36, 40);
+            this.lblTotal.Size = new System.Drawing.Size(35, 38);
             this.lblTotal.TabIndex = 11;
             this.lblTotal.Text = "0";
             // 
@@ -193,6 +193,42 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(342, 872);
             this.panel1.TabIndex = 19;
+            // 
+            // lblotraCom
+            // 
+            this.lblotraCom.AutoSize = true;
+            this.lblotraCom.BackColor = System.Drawing.Color.Transparent;
+            this.lblotraCom.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblotraCom.Location = new System.Drawing.Point(96, 337);
+            this.lblotraCom.Name = "lblotraCom";
+            this.lblotraCom.Size = new System.Drawing.Size(145, 21);
+            this.lblotraCom.TabIndex = 23;
+            this.lblotraCom.Text = "OTRA COMPRA";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(64, 154);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(198, 21);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "REGRESAR AL MENU";
+            // 
+            // btnOtraCompra
+            // 
+            this.btnOtraCompra.BackColor = System.Drawing.SystemColors.Info;
+            this.btnOtraCompra.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.actualizar;
+            this.btnOtraCompra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnOtraCompra.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOtraCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOtraCompra.Location = new System.Drawing.Point(110, 370);
+            this.btnOtraCompra.Name = "btnOtraCompra";
+            this.btnOtraCompra.Size = new System.Drawing.Size(114, 98);
+            this.btnOtraCompra.TabIndex = 21;
+            this.btnOtraCompra.UseVisualStyleBackColor = false;
+            this.btnOtraCompra.Click += new System.EventHandler(this.btnOtraCompra_Click);
             // 
             // label8
             // 
@@ -237,16 +273,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1582, 100);
             this.panel7.TabIndex = 20;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(699, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 55);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "COMPRA";
             // 
             // panel13
             // 
@@ -299,19 +325,15 @@
             this.panel10.Size = new System.Drawing.Size(226, 100);
             this.panel10.TabIndex = 4;
             // 
-            // btnOtraCompra
+            // label1
             // 
-            this.btnOtraCompra.BackColor = System.Drawing.SystemColors.Info;
-            this.btnOtraCompra.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.actualizar;
-            this.btnOtraCompra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnOtraCompra.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOtraCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOtraCompra.Location = new System.Drawing.Point(110, 370);
-            this.btnOtraCompra.Name = "btnOtraCompra";
-            this.btnOtraCompra.Size = new System.Drawing.Size(114, 98);
-            this.btnOtraCompra.TabIndex = 21;
-            this.btnOtraCompra.UseVisualStyleBackColor = false;
-            this.btnOtraCompra.Click += new System.EventHandler(this.btnOtraCompra_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(699, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(232, 55);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "COMPRA";
             // 
             // pnlTitulo
             // 
@@ -392,6 +414,17 @@
             this.panel6.Size = new System.Drawing.Size(1582, 772);
             this.panel6.TabIndex = 21;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(113, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(171, 21);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "INSTRUCCIONES: ";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -415,39 +448,6 @@
             this.label12.Text = "COLOQUE EL FOLIO DE LA COMPRA, NO DEBE EXCEDER A LOS 10 CARACTERES UNA VEZ HECHO " +
     "PULSE AL PROVEEDOR";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(113, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 21);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "INSTRUCCIONES: ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(64, 154);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(198, 21);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "REGRESAR AL MENU";
-            // 
-            // lblotraCom
-            // 
-            this.lblotraCom.AutoSize = true;
-            this.lblotraCom.BackColor = System.Drawing.Color.Transparent;
-            this.lblotraCom.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblotraCom.Location = new System.Drawing.Point(96, 337);
-            this.lblotraCom.Name = "lblotraCom";
-            this.lblotraCom.Size = new System.Drawing.Size(145, 21);
-            this.lblotraCom.TabIndex = 23;
-            this.lblotraCom.Text = "OTRA COMPRA";
-            // 
             // CompraOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -457,6 +457,7 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CompraOmar";
             this.Text = "Compra";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

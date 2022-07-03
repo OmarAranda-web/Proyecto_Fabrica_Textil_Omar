@@ -20,12 +20,12 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void DevolucionesOmar_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
-            CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabDevolucionOmar, "exec proc_consul_devolucion");
+            //CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabDevolucionOmar, "exec proc_consul_devolucion");
         }
 
         private void mostrarCliente(object sender, EventArgs e)
         {
-            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbModPrenda, "Select PRENDA_OMAR.NOMBRE_PRENDA_OMAR from PRENDA_OMAR where PRENDA_OMAR.STATUS_PRENDA=1");
+            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbModPrenda, "Select UPPER(PRENDA_OMAR.NOMBRE_PRENDA_OMAR) from PRENDA_OMAR where PRENDA_OMAR.STATUS_PRENDA=1 group by PRENDA_OMAR.NOMBRE_PRENDA_OMAR");
         }
 
         private void btnRegMenuOmar_Click(object sender, EventArgs e)
@@ -45,24 +45,24 @@ namespace Proyecto_Fabrica_Textil_Omar
                 cantidDevOmar = (float)(Convert.ToDouble(txtCantidad.Text));
                 if (cantidDevOmar<0)
                 {
-                    MessageBox.Show("SOLO SE ADMITEN VALORES VALIDOS");
+                    MessageBox.Show("SOLO SE ADMITEN VALORES VALIDOS","MENSAJE DE FABRICA");
                 }
                 else
                 {
                     CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_insertar_Devoluciones '"+prendaDevOmar+"', "+cantidDevOmar+"");
                     if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                     {
-                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString(),"MENSAJE DE FABRICA");
                     }
                     CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
-                    CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabDevolucionOmar, "exec proc_consul_devolucion");
+                    //CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabDevolucionOmar, "exec proc_consul_devolucion");
                     cmbModPrenda.Items.Clear();
                     txtCantidad.Clear();
                 }
             }
             catch
             {
-                MessageBox.Show("COLOQUE SOLO NUMEROS EN LA CASILLA");
+                MessageBox.Show("COLOQUE SOLO NUMEROS EN LA CASILLA","MENSAJE DE FABRICA");
             }
         }
     }

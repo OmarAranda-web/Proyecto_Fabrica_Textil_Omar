@@ -39,6 +39,7 @@
             this.lblregCli = new System.Windows.Forms.Label();
             this.lblRegMen = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -64,7 +65,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -198,6 +198,17 @@
             this.panel6.Size = new System.Drawing.Size(1582, 772);
             this.panel6.TabIndex = 20;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(130, 26);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(171, 21);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "INSTRUCCIONES: ";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -218,7 +229,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(709, 21);
             this.label6.TabIndex = 14;
-            this.label6.Text = "INSERTAR CLEINTE CON EL BOTON DE LA PARTE IZQUIERDA DE LA PANTALLA";
+            this.label6.Text = "INSERTAR CLIENTE CON EL BOTON DE LA PARTE IZQUIERDA DE LA PANTALLA";
             // 
             // label12
             // 
@@ -471,17 +482,6 @@
             this.panel2.Size = new System.Drawing.Size(240, 159);
             this.panel2.TabIndex = 0;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(130, 26);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(171, 21);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "INSTRUCCIONES: ";
-            // 
             // ClienteOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -491,6 +491,7 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ClienteOmar";
             this.Text = "CLIENTE";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

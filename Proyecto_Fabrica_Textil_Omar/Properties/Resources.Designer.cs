@@ -93,6 +93,16 @@ namespace Proyecto_Fabrica_Textil_Omar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aunidadMed {
+            get {
+                object obj = ResourceManager.GetObject("aunidadMed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap camisa {
             get {
                 object obj = ResourceManager.GetObject("camisa", resourceCulture);
