@@ -20,7 +20,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void PerdidasOmar_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
-            CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPerdidasOmar, "exec proc_consul_perdidas");
+            //CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPerdidasOmar, "exec proc_consul_perdidas");
         }
 
         private void btnRegMenOmar_Click(object sender, EventArgs e)
@@ -32,12 +32,12 @@ namespace Proyecto_Fabrica_Textil_Omar
 
         private void mostrarMateriaOmar(object sender, EventArgs e)
         {
-            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbMateriaOmar, "Select Upper(MATERIAS_PRIMAS_OMAR.NOMBRE_MATERIAPRIMA_OMAR) from MATERIAS_PRIMAS_OMAR where MATERIAS_PRIMAS_OMAR.STATUS_MATERIA_OMAR = 1");
+            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbMateriaOmar, "Select Upper(MATERIAS_PRIMAS_OMAR.NOMBRE_MATERIAPRIMA_OMAR) from MATERIAS_PRIMAS_OMAR where MATERIAS_PRIMAS_OMAR.STATUS_MATERIA_OMAR = 1 group by MATERIAS_PRIMAS_OMAR.NOMBRE_MATERIAPRIMA_OMAR");
         }
 
         private void mostrarRFCOmar(object sender, EventArgs e)
         {
-            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbRFCOmar, "Select UPPER(PERSONAL_OMAR.RFC_PERSONAL_OMAR) FROM PERSONAL_OMAR");
+            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbRFCOmar, "Select UPPER(PERSONAL_OMAR.RFC_PERSONAL_OMAR) FROM PERSONAL_OMAR GROUP BY PERSONAL_OMAR.RFC_PERSONAL_OMAR");
         }
 
         private void btnPerdidaPrendOmar_Click(object sender, EventArgs e)
@@ -52,17 +52,17 @@ namespace Proyecto_Fabrica_Textil_Omar
                 rfcEmpleado = cmbRFCOmar.Text;
                 if (materiPrima=="" || cantidadMateria<0 || observacionPerdida==""|| rfcEmpleado=="")
                 {
-                    MessageBox.Show("LLENE TODOS LOS CAMPOS DE LA PERDIDA, SINO HAY OBSERVACIONES COLOQUE NINGUNA Y NO SON VALIDOS NUMEROS NEGATIVOS");
+                    MessageBox.Show("LLENE TODOS LOS CAMPOS DE LA PERDIDA, SINO HAY OBSERVACIONES COLOQUE NINGUNA Y NO SON VALIDOS NUMEROS NEGATIVOS","MENSAJE DE FABRICA");
                 }
                 else
                 {
                     CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_insertar_perdida '"+materiPrima+"', "+cantidadMateria+", '"+observacionPerdida+"', '"+rfcEmpleado+"'");
                     if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                     {
-                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString(),"MENSAJE DE FABRICA");
                     }
                     CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
-                    CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPerdidasOmar, "exec proc_consul_perdidas");
+                    //CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPerdidasOmar, "exec proc_consul_perdidas");
                     cmbMateriaOmar.Items.Clear();
                     txtCantiPerd.Clear();
                     txtObservaPerd.Clear();
@@ -71,7 +71,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             }
             catch
             {
-                MessageBox.Show("SOLO SON VALIDOS NUMEROS EN LA CANTIDAD");
+                MessageBox.Show("SOLO SON VALIDOS NUMEROS EN LA CANTIDAD","MENSAJE DE FABRICA");
             }
         }
     }

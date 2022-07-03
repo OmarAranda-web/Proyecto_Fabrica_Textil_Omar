@@ -20,23 +20,23 @@ namespace Proyecto_Fabrica_Textil_Omar
 
         private void mostrarMaquOmar(object sender, EventArgs e)
         {
-            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbNumMaquOmar, "Select MAQUINARIA.NUMERO_MAQUINARIA_OMAR FROM MAQUINARIA");
+            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbNumMaquOmar, "Select MAQUINARIA.NUMERO_MAQUINARIA_OMAR FROM MAQUINARIA GROUP BY MAQUINARIA.NUMERO_MAQUINARIA_OMAR");
         }
 
         private void PersonalOmar_Load(object sender, EventArgs e)
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
-            CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPersonal, "exec proc_consul_personal");
+            //CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPersonal, "exec proc_consul_personal");
         }
 
         private void mostrarAreasOmar(object sender, EventArgs e)
         {
-            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbAreaFabriOmar, "Select UPPER(AREAS_FABRICA_OMAR.NOMBRE_AREA_OMAR) From AREAS_FABRICA_OMAR");
+            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbAreaFabriOmar, "Select UPPER(AREAS_FABRICA_OMAR.NOMBRE_AREA_OMAR) From AREAS_FABRICA_OMAR GROUP BY AREAS_FABRICA_OMAR.NOMBRE_AREA_OMAR");
         }
 
         private void mostrarCargoOmar(object sender, EventArgs e)
         {
-            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbCargoOmar, "SELECT UPPER(CARGO_OMAR.NOMBRE_CARGO_OMAR) FROM CARGO_OMAR");
+            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbCargoOmar, "SELECT UPPER(CARGO_OMAR.NOMBRE_CARGO_OMAR) FROM CARGO_OMAR GROUP BY CARGO_OMAR.NOMBRE_CARGO_OMAR");
         }
 
         private void btnRegMenOmar_Click(object sender, EventArgs e)
@@ -65,17 +65,17 @@ namespace Proyecto_Fabrica_Textil_Omar
                 if (refc_perosnal=="" || nomPersonal=="" || ap1Pers=="" || ap2Pers=="" || direcPers=="" ||
                     emailOmarPers==""|| telefonoPerso<0 || numMaquPers=="" || areaFabri==""|| cargPersonal=="")
                 {
-                    MessageBox.Show("LLENA TODOS LOS CAMPOS DE PERSONAL");
+                    MessageBox.Show("LLENA TODOS LOS CAMPOS DE PERSONAL","MENSAJE DE FABRICA");
                 }
                 else
                 {
                     CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_insertar_personal '"+refc_perosnal+"', '"+nomPersonal+"','"+ap1Pers+"','"+ap2Pers+"','"+direcPers+"','"+emailOmarPers+"','"+telefonoPerso+"','"+numMaquPers+"','"+areaFabri+"','"+cargPersonal+"'");
                     if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                     {
-                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                        MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString(),"MENSAJE DE FABRICA");
                     }
                     CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
-                    CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPersonal, "exec proc_consul_personal");
+                    //CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabPersonal, "exec proc_consul_personal");
                     txtRFCPersoOmar.Clear();
                     txtNomPersonal.Clear();
                     txtApellido1Omar.Clear();
@@ -90,7 +90,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             }
             catch
             {
-                MessageBox.Show("Lle los campos de forma correcta");
+                MessageBox.Show("LLENA LOS CAMPOS DE FORMA CORRECTA","MENSAJE DE FABRICA");
             }
         }
 
@@ -98,7 +98,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             Incluir_Detalles_FabricaOmar frmDeta = new Incluir_Detalles_FabricaOmar();
             detaPersonal = 1;
-            frmDeta.Show();
+            frmDeta.ShowDialog();
         }
     }
 }

@@ -22,10 +22,10 @@ namespace Proyecto_Fabrica_Textil_Omar
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
         }
 
-        private void mostrarRFCPerOmar(object sender, EventArgs e)
+        /*private void mostrarRFCPerOmar(object sender, EventArgs e)
         {
-            CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbRFCPerOmar, "Select UPPER(PERSONAL_OMAR.RFC_PERSONAL_OMAR) FROM PERSONAL_OMAR");
-        }
+            //CONEXION_MAESTRA_OMAR_FA.llenar_Combox_Omar(cmbRFCPerOmar, "Select UPPER(PERSONAL_OMAR.RFC_PERSONAL_OMAR) FROM PERSONAL_OMAR");
+        }*/
 
         private void btnRegMenOmar_Click(object sender, EventArgs e)
         {
@@ -43,7 +43,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                 if (cmbHoraEnt.Text=="" || cmbMinsEnt.Text=="" || cmbEntampm.Text==""||cmbHoraSal.Text==""||cmbMinsSal.Text==""||cmbampmSal.Text==""
                     || txtRFC.Text==""||txtUnidOmar.Text=="" || calenFecha.SelectionRange.Start.ToShortDateString()=="")
                 {
-                    MessageBox.Show("Llene todos los campos");
+                    MessageBox.Show("LLENE TODOS LOS CAMPOS","MENSAJE DE FABRICA");
                 }
                 else
                 {
@@ -54,14 +54,14 @@ namespace Proyecto_Fabrica_Textil_Omar
                     unidades = Convert.ToInt32(txtUnidOmar.Text);
                     if (horaEnt == horaSal)
                     {
-                        MessageBox.Show("La hora de entrada es la misma que la hora de Salida");
+                        MessageBox.Show("LA HORA DE ENTRADA ES LA MISMA QUE LA HORA DE SALIDA","MENSAJE DE FABRICA");
                     }
                     else
                     {
                         CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec proc_insertar_Asistencias '" + horaEnt + "','" + horaSal + "','" + rfcPersonal + "','" + unidades + "','" + fechaAsis + "'");
                         if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
                         {
-                            MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString());
+                            MessageBox.Show(CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString(),"MENSAJE DE FABRICA");
                         }
                         CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
                         cmbampmSal.SelectedIndex = 0;
@@ -77,7 +77,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             }
             catch
             {
-                MessageBox.Show("Solo se aceptan Numeros en la cantidad");
+                MessageBox.Show("Solo se aceptan Numeros en la cantidad", "MENSAJE DE FABRICA");
             }            
         }
     }
