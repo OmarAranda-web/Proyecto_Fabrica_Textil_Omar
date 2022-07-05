@@ -313,12 +313,43 @@ namespace Proyecto_Fabrica_Textil_Omar
 
         private void btnExcel_Click(object sender, EventArgs e)
         {
+            string cliente="", direccionClien="", emailCli="", telefonoClien="",fecha="";
+            int filas = 14;
             Excel.Application aplicacion = new Microsoft.Office.Interop.Excel.Application();
             Workbook libro = aplicacion.Workbooks.Add("Disenio_de_factuta");
             aplicacion.Visible = true;
             hoja = (Excel.Worksheet)libro.Worksheets.get_Item(1);
             hoja.Cells[4, 7]=folioVenta;
-            libro.SaveAs(@"C:\Users\omara\Documents\folio1.xlsx");
+            CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("Select VENTA_OMAR.FOLIO_VENTA_OMAR from VENTA_OMAR Where VENTA_OMAR.FOLIO_VENTA_OMAR='"+folioVenta+"'");
+            if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+            {
+                hoja.Cells[1, 7] = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString();
+            }
+            CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+            CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("select CLIENTE_OMAR.RAZON_SOCIAL_CLIENTE_OMAR , CLIENTE_OMAR.DIRECCION_CLIENTE_OMAR, CLIENTE_OMAR.EMAIL_CLIENTE_OMAR, CLIENTE_OMAR.TELEFONO_CLIENTE_OMAR from CLIENTE_OMAR where CLIENTE_OMAR.CLAVE_CLIENTE_OMAR='"+cliente_omar+"'");
+            if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+            {
+                cliente = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString();
+                direccionClien = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[1].ToString();
+                emailCli = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[2].ToString();
+                telefonoClien = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[3].ToString();
+            }
+            CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Close();
+            hoja.Cells[7, 3] = cliente;
+            hoja.Cells[10, 3] = direccionClien;
+            hoja.Cells[10, 7] = emailCli;
+            hoja.Cells[11,7] = telefonoClien;
+
+            CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("exec consulta_detalle_venta '"+folioVenta+"'");
+            while (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
+            {
+                hoja.Cells[filas, 3] = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString();
+                hoja.Cells[filas,6]=CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[2].ToString();
+                hoja.Cells[filas, 7] = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[1].ToString();
+                hoja.Cells[filas, 8] = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[3].ToString();
+                filas++;
+            }
+            libro.SaveAs(@"C:\Users\omara\Documents\"+folioVenta+".xlsx");
             libro.PrintPreview();
             aplicacion.Quit();
         }
