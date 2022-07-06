@@ -29,6 +29,9 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             Incluir_Detalles_FabricaOmar formIncluir = new Incluir_Detalles_FabricaOmar();
             ocultaBotines = 1;
+            prendaOmar.detallesPrenda1 = 0;
+            PersonalOmar.detaPersonal = 0;
+            MateriPrimaOmar.detaUni = 0;
             formIncluir.ShowDialog();
         }
 

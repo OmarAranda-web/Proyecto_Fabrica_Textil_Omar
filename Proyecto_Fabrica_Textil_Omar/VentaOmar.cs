@@ -320,7 +320,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             aplicacion.Visible = true;
             hoja = (Excel.Worksheet)libro.Worksheets.get_Item(1);
             hoja.Cells[4, 7]=folioVenta;
-            CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("Select VENTA_OMAR.FOLIO_VENTA_OMAR from VENTA_OMAR Where VENTA_OMAR.FOLIO_VENTA_OMAR='"+folioVenta+"'");
+            CONEXION_MAESTRA_OMAR_FA.ejecutar_Omar_Fa("Select VENTA_OMAR.FECHA_HORA_VENTA from VENTA_OMAR Where VENTA_OMAR.FOLIO_VENTA_OMAR='" + folioVenta+"'");
             if (CONEXION_MAESTRA_OMAR_FA.leer_omar_fa.Read())
             {
                 hoja.Cells[1, 7] = CONEXION_MAESTRA_OMAR_FA.leer_omar_fa[0].ToString();

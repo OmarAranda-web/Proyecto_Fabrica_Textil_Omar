@@ -53,6 +53,7 @@
             this.btnInsertarMaterial = new System.Windows.Forms.Button();
             this.txtColor = new System.Windows.Forms.TextBox();
             this.panelPersonal = new System.Windows.Forms.Panel();
+            this.label28 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -90,13 +91,12 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.panelMateria.SuspendLayout();
             this.panelPrendas.SuspendLayout();
             this.panelPersonal.SuspendLayout();
@@ -146,7 +146,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(201, 43);
+            this.label10.Location = new System.Drawing.Point(212, 43);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 16);
             this.label10.TabIndex = 19;
@@ -156,7 +156,7 @@
             // 
             this.txtAbre.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtAbre.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAbre.Location = new System.Drawing.Point(202, 62);
+            this.txtAbre.Location = new System.Drawing.Point(215, 62);
             this.txtAbre.Name = "txtAbre";
             this.txtAbre.Size = new System.Drawing.Size(63, 24);
             this.txtAbre.TabIndex = 18;
@@ -399,6 +399,16 @@
             this.panelPersonal.Size = new System.Drawing.Size(1582, 194);
             this.panelPersonal.TabIndex = 40;
             // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(656, 10);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(239, 21);
+            this.label28.TabIndex = 48;
+            this.label28.Text = "DETALLES DE PERSONAL";
+            // 
             // label26
             // 
             this.label26.AutoSize = true;
@@ -445,7 +455,7 @@
             // 
             this.cmbCategoriaMaq.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCategoriaMaq.FormattingEnabled = true;
-            this.cmbCategoriaMaq.Location = new System.Drawing.Point(1279, 117);
+            this.cmbCategoriaMaq.Location = new System.Drawing.Point(1264, 117);
             this.cmbCategoriaMaq.Name = "cmbCategoriaMaq";
             this.cmbCategoriaMaq.Size = new System.Drawing.Size(142, 28);
             this.cmbCategoriaMaq.TabIndex = 43;
@@ -453,7 +463,7 @@
             // txtNumMaquinaria
             // 
             this.txtNumMaquinaria.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumMaquinaria.Location = new System.Drawing.Point(1098, 122);
+            this.txtNumMaquinaria.Location = new System.Drawing.Point(1103, 120);
             this.txtNumMaquinaria.Name = "txtNumMaquinaria";
             this.txtNumMaquinaria.Size = new System.Drawing.Size(100, 25);
             this.txtNumMaquinaria.TabIndex = 42;
@@ -525,10 +535,10 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(734, 91);
+            this.label18.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(724, 91);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(123, 16);
+            this.label18.Size = new System.Drawing.Size(111, 16);
             this.label18.TabIndex = 32;
             this.label18.Text = "Nombre del Cargo";
             // 
@@ -548,18 +558,19 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(861, 91);
+            this.label19.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(849, 91);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(147, 16);
+            this.label19.Size = new System.Drawing.Size(134, 16);
             this.label19.TabIndex = 33;
             this.label19.Text = "Descripcion del Cargo";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(20, 107);
+            this.label13.Location = new System.Drawing.Point(3, 107);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(129, 16);
             this.label13.TabIndex = 24;
@@ -568,10 +579,10 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(1017, 91);
+            this.label20.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(1022, 91);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(52, 16);
+            this.label20.Size = new System.Drawing.Size(47, 16);
             this.label20.TabIndex = 34;
             this.label20.Text = "Sueldo";
             // 
@@ -619,7 +630,7 @@
             // 
             this.txtCategoriaMaq.BackColor = System.Drawing.SystemColors.ControlLight;
             this.txtCategoriaMaq.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCategoriaMaq.Location = new System.Drawing.Point(645, 70);
+            this.txtCategoriaMaq.Location = new System.Drawing.Point(634, 69);
             this.txtCategoriaMaq.Name = "txtCategoriaMaq";
             this.txtCategoriaMaq.Size = new System.Drawing.Size(72, 25);
             this.txtCategoriaMaq.TabIndex = 28;
@@ -666,7 +677,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(20, 72);
+            this.label12.Location = new System.Drawing.Point(3, 69);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(104, 16);
             this.label12.TabIndex = 21;
@@ -789,16 +800,6 @@
             this.panel11.Size = new System.Drawing.Size(177, 100);
             this.panel11.TabIndex = 5;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(553, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(567, 55);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "DETALLES DE FABRICA";
-            // 
             // panel9
             // 
             this.panel9.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.camiseta;
@@ -808,6 +809,16 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(162, 100);
             this.panel9.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(533, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(567, 55);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "DETALLES DE FABRICA";
             // 
             // panel1
             // 
@@ -820,16 +831,15 @@
             this.panel1.Size = new System.Drawing.Size(1581, 51);
             this.panel1.TabIndex = 46;
             // 
-            // label22
+            // label29
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(188, 4);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(1266, 18);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "A CONTINUACION SE PRESENTA UNA SERIE DE FORMULARIOS, QUE NO ES NECESARIO LLENARLO" +
-    "S TODOS, SOLO LLENA AQUELLOS QUE NECESITES AGREGAR UN DATO";
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(40, 4);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(134, 18);
+            this.label29.TabIndex = 2;
+            this.label29.Text = "INSTRUCCIONES";
             // 
             // label27
             // 
@@ -842,32 +852,22 @@
             this.label27.Text = "DE LA INDOLE, EL CUAL LO AGREGARAS CON EL BOTON QUE DICE RESPECTIVAMENTE LO QUE V" +
     "A AGREGAR EL FORMULARIO.";
             // 
-            // label28
+            // label22
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(656, 10);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(239, 21);
-            this.label28.TabIndex = 48;
-            this.label28.Text = "DETALLES DE PERSONAL";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(40, 4);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(134, 18);
-            this.label29.TabIndex = 2;
-            this.label29.Text = "INSTRUCCIONES";
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(188, 4);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(1266, 18);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "A CONTINUACION SE PRESENTA UNA SERIE DE FORMULARIOS, QUE NO ES NECESARIO LLENARLO" +
+    "S TODOS, SOLO LLENA AQUELLOS QUE NECESITES AGREGAR UN DATO";
             // 
             // Incluir_Detalles_FabricaOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.Fondo_Fabrica;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(1617, 698);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel7);

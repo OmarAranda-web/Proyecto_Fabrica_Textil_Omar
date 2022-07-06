@@ -49,7 +49,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void btnPersonal_Click(object sender, EventArgs e)
         {
             string refc_perosnal, nomPersonal, ap1Pers, ap2Pers, direcPers, emailOmarPers, numMaquPers, areaFabri, cargPersonal;
-            int telefonoPerso;
+            long telefonoPerso;
             try
             {
                 refc_perosnal=txtRFCPersoOmar.Text;
@@ -58,7 +58,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                 ap2Pers=txtApellido2Omar.Text;
                 direcPers = txtDireccionOmar.Text;
                 emailOmarPers = txtemailOmar.Text;
-                telefonoPerso= Convert.ToInt32 (txtTelefonoPerOmar.Text);
+                telefonoPerso= Convert.ToInt64 (txtTelefonoPerOmar.Text);
                 numMaquPers = cmbNumMaquOmar.Text;
                 areaFabri = cmbAreaFabriOmar.Text;
                 cargPersonal = cmbCargoOmar.Text;

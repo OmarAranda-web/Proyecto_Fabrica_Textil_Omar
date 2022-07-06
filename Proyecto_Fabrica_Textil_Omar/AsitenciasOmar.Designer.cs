@@ -63,16 +63,16 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlTitulo.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -618,83 +618,6 @@
             this.panel6.Size = new System.Drawing.Size(1582, 772);
             this.panel6.TabIndex = 22;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(754, 175);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 35);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "HORAS";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(754, 310);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(123, 35);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "HORAS";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(979, 175);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(152, 35);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "MINUTOS";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(979, 310);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(152, 35);
-            this.label12.TabIndex = 22;
-            this.label12.Text = "MINUTOS";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(1268, 175);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(229, 35);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "ABREVIATURA";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(1268, 310);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(229, 35);
-            this.label14.TabIndex = 24;
-            this.label14.Text = "ABREVIATURA";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(1050, 422);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(354, 35);
-            this.label15.TabIndex = 25;
-            this.label15.Text = "FECHA DE ASISTENCIA";
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -730,6 +653,83 @@
             this.label18.Text = "LLENA TODOS LOS CAMPOS PARA PODER INSERTAR UNA ASISTENCIA, UNA VEZ QUE LLENO LOS " +
     "CAMPOS OPRIMA EL BOTON";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(1050, 422);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(354, 35);
+            this.label15.TabIndex = 25;
+            this.label15.Text = "FECHA DE ASISTENCIA";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(1268, 310);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(229, 35);
+            this.label14.TabIndex = 24;
+            this.label14.Text = "ABREVIATURA";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(1268, 175);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(229, 35);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "ABREVIATURA";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(979, 310);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(152, 35);
+            this.label12.TabIndex = 22;
+            this.label12.Text = "MINUTOS";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(979, 175);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(152, 35);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "MINUTOS";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(754, 310);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(123, 35);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "HORAS";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(754, 175);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(123, 35);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "HORAS";
+            // 
             // AsitenciasOmar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -739,6 +739,7 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AsitenciasOmar";
             this.Text = "Asitencias";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

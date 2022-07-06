@@ -32,8 +32,8 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void evenRegresar(object sender, EventArgs e)
         {
             this.Close();
-            VentaOmar frmVenta = new VentaOmar();
-            frmVenta.Show();
+            //VentaOmar frmVenta = new VentaOmar();
+            //frmVenta.Show();
 
         }
     }

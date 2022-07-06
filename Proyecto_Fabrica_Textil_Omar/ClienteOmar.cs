@@ -21,7 +21,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             CONEXION_MAESTRA_OMAR_FA.ConectarBDFabrica();
             CONEXION_MAESTRA_OMAR_FA.mostrar_Tabla_Omar(tabCliente, "exec proc_consulta_cliente");
-            if (PedidoOmar.inserClient == 1)
+            if (PedidoOmar.insertClient == 1)
             {
                 button1.Visible = false;
                 lblRegMen.Visible = false;
@@ -43,14 +43,14 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void btnInsertarCliente_Click(object sender, EventArgs e)
         {
             String razonSocialCliente, direcCliente, emailClien;
-            int telefonoClien;
+            long telefonoClien;
 
 
             try
             {
                 razonSocialCliente = TXTRazonSocial.Text;
                 direcCliente = txtDireccion.Text;
-                telefonoClien = Convert.ToInt32(txtTelefono.Text);
+                telefonoClien = Convert.ToInt64(txtTelefono.Text);
                 emailClien = txtEmail.Text;
                 if (razonSocialCliente=="" || direcCliente=="" || telefonoClien<0 || emailClien=="")
                 {
@@ -82,7 +82,7 @@ namespace Proyecto_Fabrica_Textil_Omar
         {
             this.Close();
             PedidoOmar frmPed = new PedidoOmar();
-            PedidoOmar.inserClient = 0;
+            PedidoOmar.insertClient = 0;
             frmPed.Show();
         }
     }

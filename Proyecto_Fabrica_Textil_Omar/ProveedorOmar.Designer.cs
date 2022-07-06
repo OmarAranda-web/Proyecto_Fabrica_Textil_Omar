@@ -486,6 +486,7 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pnlTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ProveedorOmar";
             this.Text = "Proveedor";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

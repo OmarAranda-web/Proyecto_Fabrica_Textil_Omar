@@ -33,12 +33,12 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void btnInsertarProveedor_Click(object sender, EventArgs e)
         {
             String razonSocialPorvee, contactoProve, emailProvee, direccionProvee;
-            int telefonoProvee;
+            long telefonoProvee;
             try
             {
                 razonSocialPorvee = txtRazonSocialOmar.Text;
                 contactoProve = txtContacto.Text;
-                telefonoProvee = Convert.ToInt32(txtTelefono.Text);
+                telefonoProvee = Convert.ToInt64(txtTelefono.Text);
                 emailProvee = txtEmail.Text;
                 direccionProvee = txtDireccionOmar.Text;
                 if (razonSocialPorvee==""||contactoProve==""|| telefonoProvee<0|| emailProvee==""||direccionProvee=="")

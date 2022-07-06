@@ -158,7 +158,7 @@ namespace Proyecto_Fabrica_Textil_Omar
             }
             catch
             {
-                MessageBox.Show("LLene los campos de manera correcta","MENSAJE DE FABRICA");
+                MessageBox.Show("LLENE LOS CAMPOS DE MANERA CORRECTA", "MENSAJE DE FABRICA");
             }
             
 

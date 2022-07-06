@@ -30,15 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentaOmar));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblOtra = new System.Windows.Forms.Label();
             this.lblRegMen = new System.Windows.Forms.Label();
             this.lblgenFactura = new System.Windows.Forms.Label();
             this.lblbuscar = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnBuscarPrend = new System.Windows.Forms.Button();
+            this.btnExcel = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnRegresarMenu = new System.Windows.Forms.Button();
+            this.btnRegClientes = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblOtra = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,15 +64,6 @@
             this.lblDetaVenta = new System.Windows.Forms.Label();
             this.lblCategorias = new System.Windows.Forms.Label();
             this.lblClientCate = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.btnBuscarPrend = new System.Windows.Forms.Button();
-            this.btnExcel = new System.Windows.Forms.Button();
-            this.btnRegresarMenu = new System.Windows.Forms.Button();
-            this.btnRegClientes = new System.Windows.Forms.Button();
             this.pnlTitulo = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -72,9 +72,9 @@
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.taaVentas)).BeginInit();
-            this.panel9.SuspendLayout();
             this.pnlTitulo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,6 +96,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(342, 872);
             this.panel1.TabIndex = 19;
+            // 
+            // lblOtra
+            // 
+            this.lblOtra.AutoSize = true;
+            this.lblOtra.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOtra.Location = new System.Drawing.Point(117, 362);
+            this.lblOtra.Name = "lblOtra";
+            this.lblOtra.Size = new System.Drawing.Size(101, 18);
+            this.lblOtra.TabIndex = 23;
+            this.lblOtra.Text = "OTRA VENTA";
             // 
             // lblRegMen
             // 
@@ -137,6 +147,35 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "DE UN CLIC EN LA OPCION QUE NECESITE";
             // 
+            // btnBuscarPrend
+            // 
+            this.btnBuscarPrend.BackColor = System.Drawing.SystemColors.Info;
+            this.btnBuscarPrend.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.abusqueda;
+            this.btnBuscarPrend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscarPrend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscarPrend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarPrend.Location = new System.Drawing.Point(89, 150);
+            this.btnBuscarPrend.Name = "btnBuscarPrend";
+            this.btnBuscarPrend.Size = new System.Drawing.Size(158, 60);
+            this.btnBuscarPrend.TabIndex = 14;
+            this.btnBuscarPrend.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btnBuscarPrend.UseVisualStyleBackColor = false;
+            this.btnBuscarPrend.Click += new System.EventHandler(this.btnBuscarPrend_Click);
+            // 
+            // btnExcel
+            // 
+            this.btnExcel.BackColor = System.Drawing.SystemColors.Info;
+            this.btnExcel.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.afactura;
+            this.btnExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExcel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcel.Location = new System.Drawing.Point(92, 271);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(158, 60);
+            this.btnExcel.TabIndex = 15;
+            this.btnExcel.UseVisualStyleBackColor = false;
+            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.PowderBlue;
@@ -157,6 +196,33 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "MENU DE OPCIONES";
             // 
+            // btnRegresarMenu
+            // 
+            this.btnRegresarMenu.BackColor = System.Drawing.SystemColors.Info;
+            this.btnRegresarMenu.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.menu;
+            this.btnRegresarMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRegresarMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresarMenu.Location = new System.Drawing.Point(89, 533);
+            this.btnRegresarMenu.Name = "btnRegresarMenu";
+            this.btnRegresarMenu.Size = new System.Drawing.Size(158, 60);
+            this.btnRegresarMenu.TabIndex = 3;
+            this.btnRegresarMenu.UseVisualStyleBackColor = false;
+            this.btnRegresarMenu.Click += new System.EventHandler(this.btnRegresarMenu_Click);
+            // 
+            // btnRegClientes
+            // 
+            this.btnRegClientes.BackColor = System.Drawing.SystemColors.Info;
+            this.btnRegClientes.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.compra;
+            this.btnRegClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRegClientes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegClientes.Location = new System.Drawing.Point(92, 388);
+            this.btnRegClientes.Name = "btnRegClientes";
+            this.btnRegClientes.Size = new System.Drawing.Size(158, 60);
+            this.btnRegClientes.TabIndex = 10;
+            this.btnRegClientes.UseVisualStyleBackColor = false;
+            this.btnRegClientes.Click += new System.EventHandler(this.btnRegClientes_Click);
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.MediumTurquoise;
@@ -171,6 +237,57 @@
             this.panel7.Size = new System.Drawing.Size(1582, 100);
             this.panel7.TabIndex = 20;
             // 
+            // panel13
+            // 
+            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
+            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel13.Location = new System.Drawing.Point(246, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(246, 100);
+            this.panel13.TabIndex = 7;
+            // 
+            // panel12
+            // 
+            this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
+            this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(246, 100);
+            this.panel12.TabIndex = 6;
+            // 
+            // panel11
+            // 
+            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
+            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel11.Location = new System.Drawing.Point(1130, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(226, 100);
+            this.panel11.TabIndex = 5;
+            // 
+            // panel9
+            // 
+            this.panel9.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.camiseta;
+            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel9.Location = new System.Drawing.Point(1356, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(226, 100);
+            this.panel9.TabIndex = 4;
+            // 
+            // panel10
+            // 
+            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
+            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(226, 100);
+            this.panel10.TabIndex = 4;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -180,16 +297,6 @@
             this.label2.Size = new System.Drawing.Size(179, 55);
             this.label2.TabIndex = 0;
             this.label2.Text = "VENTA";
-            // 
-            // lblOtra
-            // 
-            this.lblOtra.AutoSize = true;
-            this.lblOtra.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOtra.Location = new System.Drawing.Point(117, 362);
-            this.lblOtra.Name = "lblOtra";
-            this.lblOtra.Size = new System.Drawing.Size(101, 18);
-            this.lblOtra.TabIndex = 23;
-            this.lblOtra.Text = "OTRA VENTA";
             // 
             // panel6
             // 
@@ -277,6 +384,7 @@
             // 
             // flpanelCategoria
             // 
+            this.flpanelCategoria.AutoScroll = true;
             this.flpanelCategoria.BackColor = System.Drawing.Color.PaleTurquoise;
             this.flpanelCategoria.Location = new System.Drawing.Point(130, 150);
             this.flpanelCategoria.Name = "flpanelCategoria";
@@ -381,113 +489,6 @@
             this.lblClientCate.TabIndex = 9;
             this.lblClientCate.Text = "CLIENTES/PRENDAS";
             // 
-            // panel13
-            // 
-            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
-            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel13.Location = new System.Drawing.Point(246, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(246, 100);
-            this.panel13.TabIndex = 7;
-            // 
-            // panel12
-            // 
-            this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
-            this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel12.Location = new System.Drawing.Point(0, 0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(246, 100);
-            this.panel12.TabIndex = 6;
-            // 
-            // panel11
-            // 
-            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
-            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel11.Location = new System.Drawing.Point(1130, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(226, 100);
-            this.panel11.TabIndex = 5;
-            // 
-            // panel9
-            // 
-            this.panel9.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.camiseta;
-            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel9.Controls.Add(this.panel10);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel9.Location = new System.Drawing.Point(1356, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(226, 100);
-            this.panel9.TabIndex = 4;
-            // 
-            // panel10
-            // 
-            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
-            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(226, 100);
-            this.panel10.TabIndex = 4;
-            // 
-            // btnBuscarPrend
-            // 
-            this.btnBuscarPrend.BackColor = System.Drawing.SystemColors.Info;
-            this.btnBuscarPrend.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.abusqueda;
-            this.btnBuscarPrend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBuscarPrend.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscarPrend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarPrend.Location = new System.Drawing.Point(89, 150);
-            this.btnBuscarPrend.Name = "btnBuscarPrend";
-            this.btnBuscarPrend.Size = new System.Drawing.Size(158, 60);
-            this.btnBuscarPrend.TabIndex = 14;
-            this.btnBuscarPrend.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnBuscarPrend.UseVisualStyleBackColor = false;
-            this.btnBuscarPrend.Click += new System.EventHandler(this.btnBuscarPrend_Click);
-            // 
-            // btnExcel
-            // 
-            this.btnExcel.BackColor = System.Drawing.SystemColors.Info;
-            this.btnExcel.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.afactura;
-            this.btnExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnExcel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcel.Location = new System.Drawing.Point(92, 271);
-            this.btnExcel.Name = "btnExcel";
-            this.btnExcel.Size = new System.Drawing.Size(158, 60);
-            this.btnExcel.TabIndex = 15;
-            this.btnExcel.UseVisualStyleBackColor = false;
-            this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
-            // 
-            // btnRegresarMenu
-            // 
-            this.btnRegresarMenu.BackColor = System.Drawing.SystemColors.Info;
-            this.btnRegresarMenu.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.menu;
-            this.btnRegresarMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnRegresarMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresarMenu.Location = new System.Drawing.Point(89, 533);
-            this.btnRegresarMenu.Name = "btnRegresarMenu";
-            this.btnRegresarMenu.Size = new System.Drawing.Size(158, 60);
-            this.btnRegresarMenu.TabIndex = 3;
-            this.btnRegresarMenu.UseVisualStyleBackColor = false;
-            this.btnRegresarMenu.Click += new System.EventHandler(this.btnRegresarMenu_Click);
-            // 
-            // btnRegClientes
-            // 
-            this.btnRegClientes.BackColor = System.Drawing.SystemColors.Info;
-            this.btnRegClientes.BackgroundImage = global::Proyecto_Fabrica_Textil_Omar.Properties.Resources.compra;
-            this.btnRegClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnRegClientes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegClientes.Location = new System.Drawing.Point(92, 388);
-            this.btnRegClientes.Name = "btnRegClientes";
-            this.btnRegClientes.Size = new System.Drawing.Size(158, 60);
-            this.btnRegClientes.TabIndex = 10;
-            this.btnRegClientes.UseVisualStyleBackColor = false;
-            this.btnRegClientes.Click += new System.EventHandler(this.btnRegClientes_Click);
-            // 
             // pnlTitulo
             // 
             this.pnlTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -565,10 +566,10 @@
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.panel9.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.taaVentas)).EndInit();
-            this.panel9.ResumeLayout(false);
             this.pnlTitulo.ResumeLayout(false);
             this.ResumeLayout(false);
 

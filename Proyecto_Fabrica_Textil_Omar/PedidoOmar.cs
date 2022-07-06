@@ -13,7 +13,7 @@ namespace Proyecto_Fabrica_Textil_Omar
     public partial class PedidoOmar : Form
     {
         public static int inserPrend=0;
-        public static int inserClient = 0;
+        public static int insertClient = 0;
         public PedidoOmar()
         {
             InitializeComponent();
@@ -86,8 +86,8 @@ namespace Proyecto_Fabrica_Textil_Omar
         private void btnInsertarClientePed_Click(object sender, EventArgs e)
         {
             this.Hide();
+            insertClient = 1;
             ClienteOmar frmClien = new ClienteOmar();
-            inserClient = 1;
             frmClien.Show();
         }
     }

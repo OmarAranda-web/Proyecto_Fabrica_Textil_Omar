@@ -67,6 +67,7 @@ namespace Proyecto_Fabrica_Textil_Omar
                         txtExitencias.Clear();
                         txtStockMax.Clear();
                         txtStockMin.Clear();
+                        txtPrecio.Clear();
                         cmbUnidadMedidas.Items.Clear();
                     }
                     else
